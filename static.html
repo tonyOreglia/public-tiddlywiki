@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes"/>
 <meta name="format-detection" content="telephone=no">
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>My TiddlyWiki — a non-linear personal web notebook</title>
+<title>Tony's Wiki — a non-linear personal web notebook</title>
 <div id="styleArea">
 <style data-tiddler-title="$:/boot/boot.css" data-tiddler-type="text/css" type="text/css">/*
 Basic styles used before we boot up the parsing engine
@@ -89,7 +89,7 @@ Error message and password prompt
 <style type="text/css">
 
 .tc-sidebar-header {
-	text-shadow: 0 1px 0 rgba(255,255,255, 0.8);
+	text-shadow: 0 1px 0 transparent;
 }.tc-tiddler-info {
 	
   -webkit-box-shadow: inset 1px 2px 3px rgba(0,0,0,0.1);
@@ -668,9 +668,9 @@ th {
 	-webkit-box-sizing: border-box;
 }html button {
 	line-height: 1.2;
-	color: ;
-	background: ;
-	border-color: ;
+	color: rgb(179, 179, 179);
+	background: rgb(63, 63, 63);
+	border-color: rgb(127, 127, 127);
 }/*
 ** Basic element styles
 */html {
@@ -679,7 +679,7 @@ th {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }html:-webkit-full-screen {
-	background-color: #f4f4f4;
+	background-color: rgb(26, 26, 26);
 }body.tc-body {
 	font-size: 14px;
 	line-height: 20px;
@@ -687,9 +687,9 @@ th {
 	
 
 
-	color: #333333;
-	background-color: #f4f4f4;
-	fill: #333333;
+	color: rgb(179, 179, 179);
+	background-color: rgb(26, 26, 26);
+	fill: rgb(179, 179, 179);
 }h1, h2, h3, h4, h5, h6 {
 	line-height: 1.2;
 	font-weight: 300;
@@ -701,28 +701,28 @@ th {
 	word-break: normal;
 	word-wrap: break-word;
 	white-space: pre-wrap;
-	background-color: #f5f5f5;
-	border: 1px solid #cccccc;
+	background-color: rgb(25, 25, 25);
+	border: 1px solid rgba(0,0,0,.2);
 	padding: 0 3px 2px;
 	border-radius: 3px;
 	font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
 }code {
-	color: #dd1144;
-	background-color: #f7f7f9;
-	border: 1px solid #e1e1e8;
+	color: rgb(255, 94, 94);
+	background-color: rgba(0,0,0,0.03);
+	border: 1px solid rgba(0,0,0,0.08);
 	white-space: pre-wrap;
 	padding: 0 3px 2px;
 	border-radius: 3px;
 	font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
 }blockquote {
-	border-left: 5px solid #bbb;
+	border-left: 5px solid rgba(240, 196, 117, 0.7);
 	margin-left: 25px;
 	padding-left: 10px;
 	quotes: "\201C""\201D""\2018""\2019";
 }blockquote.tc-big-quote {
 	font-family: Georgia, serif;
 	position: relative;
-	background: #f5f5f5;
+	background: rgb(25, 25, 25);
 	border-left: none;
 	margin-left: 50px;
 	margin-right: 50px;
@@ -732,7 +732,7 @@ th {
 	content: "\2014 \2009";
 }blockquote.tc-big-quote:before {
 	font-family: Georgia, serif;
-	color: #bbb;
+	color: rgba(240, 196, 117, 0.7);
 	content: open-quote;
 	font-size: 8em;
 	line-height: 0.1em;
@@ -743,7 +743,7 @@ th {
     top: 42px;
 }blockquote.tc-big-quote:after {
 	font-family: Georgia, serif;
-	color: #bbb;
+	color: rgba(240, 196, 117, 0.7);
 	content: close-quote;
 	font-size: 8em;
 	line-height: 0.1em;
@@ -756,18 +756,18 @@ th {
 	font-weight: bold;
 	margin-top: 6px;
 }button, textarea, input, select {
-	outline-color: #5778d8;
+	outline-color: rgb(255, 201, 102);
 }textarea,
 input[type=text],
 input[type=search],
 input[type=""],
 input:not([type]) {
-	color: #333333;
-	background: #ffffff;
+	color: rgb(179, 179, 179);
+	background: rgb(38, 38, 38);
 }input[type="checkbox"] {
   vertical-align: middle;
 }.tc-muted {
-	color: #bbb;
+	color: rgb(255, 255, 255);
 }svg.tc-image-button {
 	padding: 0px 1px 1px 0px;
 }.tc-icon-wrapper > svg {
@@ -778,13 +778,13 @@ input:not([type]) {
 	padding: 3px 5px;
 	font-size: 0.8em;
 	line-height: 1.2;
-	color: #333333;
+	color: rgb(179, 179, 179);
 	vertical-align: middle;
-	background-color: #ffffff;
-	border: solid 1px #bbb;
-	border-bottom-color: #bbb;
+	background-color: rgb(38, 38, 38);
+	border: solid 1px rgb(255, 255, 255);
+	border-bottom-color: rgb(255, 255, 255);
 	border-radius: 3px;
-	box-shadow: inset 0 -1px 0 #bbb;
+	box-shadow: inset 0 -1px 0 rgb(255, 255, 255);
 }/*
 Markdown likes putting code elements inside pre elements
 */
@@ -794,7 +794,7 @@ pre > code {
 	background-color: inherit;
 	color: inherit;
 }table {
-	border: 1px solid #dddddd;
+	border: 1px solid rgba(255,255,255,.3);
 	width: auto;
 	max-width: 100%;
 	caption-side: bottom;
@@ -802,13 +802,13 @@ pre > code {
 	margin-bottom: 1em;
 }table th, table td {
 	padding: 0 7px 0 7px;
-	border-top: 1px solid #dddddd;
-	border-left: 1px solid #dddddd;
+	border-top: 1px solid rgba(255,255,255,.3);
+	border-left: 1px solid rgba(255,255,255,.3);
 }table thead tr td, table th {
-	background-color: #f0f0f0;
+	background-color: rgba(0,0,0,.1);
 	font-weight: bold;
 }table tfoot tr td {
-	background-color: #a8a8a8;
+	background-color: rgba(0,0,0,.4);
 }.tc-csv-table {
 	white-space: nowrap;
 }.tc-tiddler-frame img,
@@ -827,12 +827,12 @@ pre > code {
 a.tc-tiddlylink {
 	text-decoration: none;
 	font-weight: 500;
-	color: #5778d8;
+	color: rgb(204, 204, 255);
 	-webkit-user-select: inherit; /* Otherwise the draggable attribute makes links impossible to select */
 }.tc-sidebar-lists a.tc-tiddlylink {
-	color: #999999;
+	color: rgb(179, 179, 179);
 }.tc-sidebar-lists a.tc-tiddlylink:hover {
-	color: #444444;
+	color: rgb(115, 115, 115);
 }button.tc-tiddlylink:hover,
 a.tc-tiddlylink:hover {
 	text-decoration: underline;
@@ -845,10 +845,10 @@ a.tc-tiddlylink:hover {
 	font-style: italic;
 }a.tc-tiddlylink-external {
 	text-decoration: underline;
-	color: #0000ee;
+	color: rgb(179, 179, 255);
 	background-color: inherit;
 }a.tc-tiddlylink-external:visited {
-	color: #0000aa;
+	color: rgb(153, 153, 255);
 	background-color: inherit;
 }a.tc-tiddlylink-external:hover {
 	color: inherit;
@@ -867,15 +867,15 @@ a.tc-tiddlylink:hover {
 	font-size: 16.9px;
 	font-weight: bold;
 	line-height: 20px;
-	color: #ffffff;
+	color: rgb(38, 38, 38);
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 1);
 	white-space: nowrap;
 	vertical-align: baseline;
-	background-color: #333333;
+	background-color: rgb(179, 179, 179);
 	border-radius: 20px;
 }.tc-tiddler-dragger-cover {
 	position: absolute;
-	background-color: #f4f4f4;
+	background-color: rgb(26, 26, 26);
 }.tc-dropzone {
 	position: relative;
 }.tc-dropzone.tc-dragover:before {
@@ -885,14 +885,14 @@ a.tc-tiddlylink:hover {
 	top: 0;
 	left: 0;
 	right: 0;
-	background: rgba(0,200,0,0.7);
+	background: #9eebcf;
 	text-align: center;
 	content: "Drop here (or use the 'Escape' key to cancel)";
 }.tc-droppable > .tc-droppable-placeholder {
 	display: none;
 }.tc-droppable.tc-dragover > .tc-droppable-placeholder {
 	display: block;
-	border: 2px dashed rgba(0,200,0,0.7);
+	border: 2px dashed #9eebcf;
 }.tc-draggable {
 	cursor: move;
 }.tc-sidebar-tab-open .tc-droppable-placeholder, .tc-tagged-draggable-list .tc-droppable-placeholder,
@@ -903,7 +903,7 @@ a.tc-tiddlylink:hover {
 	position: relative;
 }.tc-sidebar-tab-open .tc-btn-invisible.tc-btn-mini svg {
 	font-size: 0.7em;
-	fill: #bbb;
+	fill: rgb(255, 255, 255);
 }/*
 ** Plugin reload warning
 */.tc-plugin-reload-warning {
@@ -913,7 +913,7 @@ a.tc-tiddlylink:hover {
 	top: 0;
 	left: 0;
 	right: 0;
-	background: #ffe476;
+	background: rgb(255, 255, 102);
 	text-align: center;
 }/*
 ** Buttons
@@ -925,43 +925,43 @@ a.tc-tiddlylink:hover {
 	background: none;
 	border: none;
     	cursor: pointer;
-	color: #333333;
+	color: rgb(179, 179, 179);
 }.tc-btn-boxed {
 	font-size: 0.6em;
 	padding: 0.2em;
 	margin: 1px;
 	background: none;
-	border: 1px solid #cccccc;
+	border: 1px solid rgb(128, 128, 128);
 	border-radius: 0.25em;
 }html body.tc-body .tc-btn-boxed svg {
 	font-size: 1.6666em;
 }.tc-btn-boxed:hover {
-	background: #bbb;
-	color: #ffffff;
+	background: rgb(255, 255, 255);
+	color: rgb(38, 38, 38);
 }html body.tc-body .tc-btn-boxed:hover svg {
-	fill: #ffffff;
+	fill: rgb(38, 38, 38);
 }.tc-btn-rounded {
 	font-size: 0.5em;
 	line-height: 2;
 	padding: 0em 0.3em 0.2em 0.4em;
 	margin: 1px;
-	border: 1px solid #bbb;
-	background: #bbb;
-	color: #ffffff;
+	border: 1px solid rgb(255, 255, 255);
+	background: rgb(255, 255, 255);
+	color: rgb(38, 38, 38);
 	border-radius: 2em;
 }html body.tc-body .tc-btn-rounded svg {
 	font-size: 1.6666em;
-	fill: #ffffff;
+	fill: rgb(38, 38, 38);
 }.tc-btn-rounded:hover {
-	border: 1px solid #bbb;
-	background: #ffffff;
-	color: #bbb;
+	border: 1px solid rgb(255, 255, 255);
+	background: rgb(38, 38, 38);
+	color: rgb(255, 255, 255);
 }html body.tc-body .tc-btn-rounded:hover svg {
-	fill: #bbb;
+	fill: rgb(255, 255, 255);
 }.tc-btn-icon svg {
 	height: 1em;
 	width: 1em;
-	fill: #bbb;
+	fill: rgb(255, 255, 255);
 }.tc-btn-text {
 	padding: 0;
 	margin: 0;
@@ -977,9 +977,9 @@ a.tc-tiddlylink:hover {
 	display: inline-block;
 	padding: 8px;
 	margin: 4px 8px 4px 8px;
-	background: #34c734;
-	color: #ffffff;
-	fill: #ffffff;
+	background: #19a974;
+	color: rgb(38, 38, 38);
+	fill: rgb(38, 38, 38);
 	border: none;
 	border-radius: 2px;
 	font-size: 1.2em;
@@ -990,18 +990,18 @@ a.tc-tiddlylink:hover {
 	height: 2em;
 	width: 2em;
 	vertical-align: middle;
-	fill: #ffffff;
+	fill: rgb(38, 38, 38);
 }.tc-primary-btn {
- 	background: #5778d8;
+ 	background: rgb(255, 201, 102);
 }.tc-sidebar-lists input {
-	color: #333333;
+	color: rgb(179, 179, 179);
 }.tc-sidebar-lists button {
-	color: #333333;
-	fill: #333333;
+	color: rgb(179, 179, 179);
+	fill: rgb(179, 179, 179);
 }.tc-sidebar-lists button.tc-btn-mini {
-	color: #c0c0c0;
+	color: rgba(0, 0, 0, 0.5);
 }.tc-sidebar-lists button.tc-btn-mini:hover {
-	color: #444444;
+	color: rgb(141, 141, 141);
 }button svg.tc-image-button, button .tc-image-button img {
 	height: 1em;
 	width: 1em;
@@ -1015,16 +1015,16 @@ a.tc-tiddlylink:hover {
 	width: calc(100% + 2px);
 	margin-left: -43px;
 	text-align: center;
-	border-top: 2px solid #f8f8f8;
+	border-top: 2px solid rgb(43, 43, 43);
 	margin-top: 4px;
 }.tc-unfold-banner:hover {
-	background: #f8f8f8;
-	border-top: 2px solid #dddddd;
+	background: rgb(43, 43, 43);
+	border-top: 2px solid rgb(25, 25, 25);
 }.tc-unfold-banner svg, .tc-fold-banner svg {
 	height: 0.75em;
-	fill: #cccccc;
+	fill: rgb(128, 128, 128);
 }.tc-unfold-banner:hover svg, .tc-fold-banner:hover svg {
-	fill: #888888;
+	fill: rgba(255, 255, 255, 0.8);
 }.tc-fold-banner {
 	position: absolute;
 	padding: 0;
@@ -1037,7 +1037,7 @@ a.tc-tiddlylink:hover {
 	top: 6px;
 	bottom: 6px;
 }.tc-fold-banner:hover {
-	background: #f8f8f8;
+	background: rgb(43, 43, 43);
 }@media (max-width: 960px) {.tc-unfold-banner {
 		position: static;
 		width: calc(100% + 59px);
@@ -1067,10 +1067,10 @@ a.tc-tiddlylink:hover {
 	font-size: 0.9em;
 	font-weight: 400;
 	line-height: 1.2em;
-	color: #ffffff;
+	color: rgb(25, 25, 25);
 	white-space: nowrap;
 	vertical-align: baseline;
-	background-color: #ec6;
+	background-color: rgb(255, 201, 102);
 	border-radius: 1em;
 }.tc-sidebar-scrollable .tc-tag-label {
 	text-shadow: none;
@@ -1080,9 +1080,9 @@ a.tc-tiddlylink:hover {
 	margin-left: 0;
 	border: 0;
 	height: 1px;
-	background: #d8d8d8;
+	background: rgb(255, 201, 102);
 }button.tc-untagged-label {
-	background-color: #999999;
+	background-color: rgb(255, 255, 255);
 }.tc-tag-label svg, .tc-tag-label img {
 	height: 1em;
 	width: 1em;
@@ -1110,19 +1110,19 @@ a.tc-tiddlylink:hover {
 }.tc-topbar button {
 	padding: 8px;
 }.tc-topbar svg {
-	fill: #bbb;
+	fill: rgb(255, 255, 255);
 }.tc-topbar button:hover svg {
-	fill: #333333;
+	fill: rgb(179, 179, 179);
 }.tc-sidebar-header {
-	color: #acacac;
-	fill: #acacac;
+	color: rgb(141, 141, 141);
+	fill: rgb(141, 141, 141);
 }.tc-sidebar-header .tc-title a.tc-tiddlylink-resolves {
 	font-weight: 300;
 }.tc-sidebar-header .tc-sidebar-lists p {
 	margin-top: 3px;
 	margin-bottom: 3px;
 }.tc-sidebar-header .tc-missing-tiddler-label {
-	color: #acacac;
+	color: rgb(141, 141, 141);
 }.tc-advanced-search input {
 	width: 60%;
 }.tc-search a svg {
@@ -1141,9 +1141,9 @@ a.tc-tiddlylink:hover {
 }.tc-page-controls img {
 	width: 1em;
 }.tc-page-controls svg {
-	fill: #aaaaaa;
+	fill: rgb(153, 153, 153);
 }.tc-page-controls button:hover svg, .tc-page-controls a:hover svg {
-	fill: #000000;
+	fill: rgba(255, 255, 255, 0.8);
 }.tc-menu-list-item {
 	white-space: nowrap;
 }.tc-menu-list-count {
@@ -1165,7 +1165,7 @@ a.tc-tiddlylink:hover {
 	}.tc-sidebar-scrollable {
 		position: fixed;
 		top: 0px;
-		left: 770px;
+		left: 1250px;
 		bottom: 0;
 		right: 0;
 		overflow-y: auto;
@@ -1175,12 +1175,12 @@ a.tc-tiddlylink:hover {
 		padding: 71px 0 28px 42px;
 	}html[dir="rtl"] .tc-sidebar-scrollable {
 		left: auto;
-		right: 770px;
+		right: 1250px;
 	}.tc-story-river {
 		position: relative;
 		left: 0px;
 		top: 0px;
-		width: 770px;
+		width: 120px;
 		padding: 42px 42px 42px 42px;
 	}}@media print {body.tc-body {
 		background-color: transparent;
@@ -1199,20 +1199,20 @@ a.tc-tiddlylink:hover {
 */.tc-tiddler-frame {
 	position: relative;
 	margin-bottom: 28px;
-	background-color: #ffffff;
-	border: 1px solid #ffffff;
+	background-color: rgb(38, 38, 38);
+	border: 1px solid rgba(240, 196, 117, 0.7);
 }
 .tc-tiddler-info {
 	padding: 14px 42px 14px 42px;
-	background-color: #f8f8f8;
-	border-top: 1px solid #dddddd;
-	border-bottom: 1px solid #dddddd;
+	background-color: rgb(43, 43, 43);
+	border-top: 1px solid rgb(25, 25, 25);
+	border-bottom: 1px solid rgb(25, 25, 25);
 }.tc-tiddler-info p {
 	margin-top: 3px;
 	margin-bottom: 3px;
 }.tc-tiddler-info .tc-tab-buttons button.tc-tab-selected {
-	background-color: #f8f8f8;
-	border-bottom: 1px solid #f8f8f8;
+	background-color: rgb(43, 43, 43);
+	border-bottom: 1px solid rgb(43, 43, 43);
 }.tc-view-field-table {
 	width: 100%;
 }.tc-view-field-name {
@@ -1230,7 +1230,7 @@ a.tc-tiddlylink:hover {
 }@media (min-width: 960px) {
 	.tc-tiddler-frame {
 		padding: 28px 42px 42px 42px;
-		width: 686px;
+		width: 1150px;
 		border-radius: 2px;
 	}.tc-tiddler-info {
 		margin: 0 -42px 0 -42px;
@@ -1240,14 +1240,14 @@ a.tc-tiddlylink:hover {
 	font-weight: 300;
 	font-size: 2.35em;
 	line-height: 1.2em;
-	color: #182955;
+	color: rgb(255, 192, 76);
 	margin: 0;
 }.tc-site-title {
-	color: #182955;
+	color: rgb(255, 201, 102);
 }.tc-tiddler-title-icon {
 	vertical-align: middle;
 }.tc-system-title-prefix {
-	color: #bbb;
+	color: rgb(255, 255, 255);
 }.tc-titlebar h2 {
 	font-size: 1em;
 	display: inline;
@@ -1255,7 +1255,7 @@ a.tc-tiddlylink:hover {
 	height: 1em;
 }.tc-subtitle {
 	font-size: 0.9em;
-	color: #c0c0c0;
+	color: rgb(255, 255, 255);
 	font-weight: 300;
 }.tc-tiddler-missing .tc-title {
   font-style: italic;
@@ -1273,7 +1273,7 @@ a.tc-tiddlylink:hover {
 	margin-left:5px;
 }.tc-tiddler-controls button svg, .tc-tiddler-controls button img,
 .tc-search button svg, .tc-search a svg {
-	fill: #cccccc;
+	fill: rgb(128, 128, 128);
 }.tc-tiddler-controls button svg, .tc-tiddler-controls button img {
 	height: 0.75em;
 }.tc-search button svg, .tc-search a svg {
@@ -1282,19 +1282,19 @@ a.tc-tiddlylink:hover {
     margin: 0 0.25em;
 }.tc-tiddler-controls button.tc-selected svg,
 .tc-page-controls button.tc-selected svg  {
-	fill: #444444;
+	fill: rgba(255, 255, 255, 0.9);
 }.tc-tiddler-controls button.tc-btn-invisible:hover svg,
 .tc-search button:hover svg, .tc-search a:hover svg {
-	fill: #888888;
+	fill: rgba(255, 255, 255, 0.8);
 }@media print {
 	.tc-tiddler-controls {
 		display: none;
 	}
 }.tc-tiddler-help { /* Help prompts within tiddler template */
-	color: #bbb;
+	color: rgb(255, 255, 255);
 	margin-top: 14px;
 }.tc-tiddler-help a.tc-tiddlylink {
-	color: #888888;
+	color: rgba(240, 196, 117, 0.7);
 }.tc-tiddler-frame .tc-edit-texteditor {
 	width: 100%;
 	margin: 4px 0 4px 0;
@@ -1302,8 +1302,8 @@ a.tc-tiddlylink:hover {
 .tc-tiddler-frame textarea.tc-edit-texteditor,
 .tc-tiddler-frame iframe.tc-edit-texteditor {
 	padding: 3px 3px 3px 3px;
-	border: 1px solid #cccccc;
-	background-color: #f8f8f8;
+	border: 1px solid rgb(63, 63, 63);
+	background-color: rgb(33, 33, 33);
 	line-height: 1.3em;
 	-webkit-appearance: none;
 	font-family: ;
@@ -1312,10 +1312,10 @@ a.tc-tiddlylink:hover {
 	height: 5em;
 	text-align: center;
 	padding: 3em 3em 6em 3em;
-	background: #ffe476;
-	border: 1px solid #b99e2f;
+	background: rgb(255, 255, 102);
+	border: 1px solid rgb(232, 232, 125);
 }canvas.tc-edit-bitmapeditor  {
-	border: 6px solid #ffffff;
+	border: 6px solid rgb(25, 25, 25);
 	cursor: crosshair;
 	-moz-user-select: none;
 	-webkit-user-select: none;
@@ -1335,7 +1335,7 @@ a.tc-tiddlylink:hover {
 	overflow: hidden; /* https://github.com/Jermolene/TiddlyWiki5/issues/282 */
 }html body.tc-body.tc-single-tiddler-window {
 	margin: 1em;
-	background: #ffffff;
+	background: rgb(38, 38, 38);
 }.tc-single-tiddler-window img,
 .tc-single-tiddler-window svg,
 .tc-single-tiddler-window canvas,
@@ -1348,9 +1348,9 @@ a.tc-tiddlylink:hover {
 	margin-top: 8px;
 }.tc-editor-toolbar button {
 	vertical-align: middle;
-	background-color: #cccccc;
-	color: #444444;
-	fill: #444444;
+	background-color: rgb(128, 128, 128);
+	color: rgba(255, 255, 255, 0.9);
+	fill: rgba(255, 255, 255, 0.9);
 	border-radius: 4px;
 	padding: 3px;
 	margin: 2px 0 2px 4px;
@@ -1361,14 +1361,14 @@ a.tc-tiddlylink:hover {
 }.tc-editor-toolbar button.tc-text-editor-toolbar-item-start-group {
 	margin-left: 11px;
 }.tc-editor-toolbar button.tc-selected {
-	background-color: #5778d8;
+	background-color: rgb(255, 201, 102);
 }.tc-editor-toolbar button svg {
 	width: 1.6em;
 	height: 1.2em;
 }.tc-editor-toolbar button:hover {
-	background-color: #444444;
-	fill: #ffffff;
-	color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.9);
+	fill: rgb(38, 38, 38);
+	color: rgb(38, 38, 38);
 }.tc-editor-toolbar .tc-text-editor-toolbar-more {
 	white-space: normal;
 }.tc-editor-toolbar .tc-text-editor-toolbar-more button {
@@ -1402,12 +1402,12 @@ a.tc-tiddlylink:hover {
 }/*
 ** Tiddler edit mode
 */.tc-tiddler-edit-frame em.tc-edit {
-	color: #bbb;
+	color: rgb(255, 255, 255);
 	font-style: normal;
 }.tc-edit-type-dropdown a.tc-tiddlylink-missing {
 	font-style: normal;
 }.tc-edit-tags {
-	border: 1px solid #cccccc;
+	border: 1px solid rgb(63, 63, 63);
 	padding: 4px 8px 4px 8px;
 }.tc-edit-add-tag {
 	display: inline-block;
@@ -1426,7 +1426,7 @@ a.tc-tiddlylink:hover {
 }.tc-tiddler-preview-preview {
 	float: right;
 	width: 49%;
-	border: 1px solid #cccccc;
+	border: 1px solid rgb(63, 63, 63);
 	margin: 4px 0 3px 3px;
 	padding: 3px 3px 3px 3px;
 }.tc-tiddler-frame .tc-tiddler-preview .tc-edit-texteditor {
@@ -1439,9 +1439,9 @@ a.tc-tiddlylink:hover {
 	border: none;
 	padding: 4px;
 }.tc-edit-fields > tbody > .tc-edit-field:nth-child(odd) {
-	background-color: #f0f4f0;
+	background-color: rgb(28, 28, 28);
 }.tc-edit-fields > tbody > .tc-edit-field:nth-child(even) {
-	background-color: #e0e8e0;
+	background-color: rgb(33, 33, 33);
 }.tc-edit-field-name {
 	text-align: right;
 }.tc-edit-field-value input {
@@ -1450,7 +1450,7 @@ a.tc-tiddlylink:hover {
 }.tc-edit-field-remove svg {
 	height: 1em;
 	width: 1em;
-	fill: #bbb;
+	fill: rgb(255, 255, 255);
 	vertical-align: middle;
 }.tc-edit-field-add-name {
 	display: inline-block;
@@ -1476,13 +1476,13 @@ a.tc-tiddlylink:hover {
 }.tc-btn-dropdown svg, .tc-btn-dropdown img {
 	height: 1em;
 	width: 1em;
-	fill: #bbb;
+	fill: rgb(255, 255, 255);
 }.tc-drop-down-wrapper {
 	position: relative;
 }.tc-drop-down {
 	min-width: 380px;
-	border: 1px solid #bbb;
-	background-color: #ffffff;
+	border: 1px solid rgb(255, 255, 255);
+	background-color: rgb(38, 38, 38);
 	padding: 7px 0 7px 0;
 	margin: 4px 0 0 0;
 	white-space: nowrap;
@@ -1491,9 +1491,9 @@ a.tc-tiddlylink:hover {
 }.tc-drop-down .tc-drop-down {
 	margin-left: 14px;
 }.tc-drop-down button svg, .tc-drop-down a svg  {
-	fill: #333333;
+	fill: rgb(179, 179, 179);
 }.tc-drop-down button.tc-btn-invisible:hover svg {
-	fill: #333333;
+	fill: rgb(179, 179, 179);
 }.tc-drop-down p {
 	padding: 0 14px 0 14px;
 }.tc-drop-down svg {
@@ -1506,7 +1506,7 @@ a.tc-tiddlylink:hover {
 	padding: 0 14px 0 14px;
 	width: 100%;
 	text-align: left;
-	color: #333333;
+	color: rgb(179, 179, 179);
 	line-height: 1.4;
 }.tc-drop-down .tc-tab-set .tc-tab-buttons button {
 	display: inline-block;
@@ -1524,16 +1524,16 @@ a.tc-tiddlylink:hover {
 }.tc-drop-down .tc-file-input-wrapper {
 	width: 100%;
 }.tc-drop-down .tc-file-input-wrapper button {
-	color: #333333;
+	color: rgb(179, 179, 179);
 }.tc-drop-down a:hover, .tc-drop-down button:hover, .tc-drop-down .tc-file-input-wrapper:hover button {
-	color: #ffffff;
-	background-color: #5778d8;
+	color: rgb(38, 38, 38);
+	background-color: rgb(204, 204, 255);
 	text-decoration: none;
 }.tc-drop-down .tc-tab-buttons button {
-	background-color: #ececec;
+	background-color: rgba(0,0,0,.1);
 }.tc-drop-down .tc-tab-buttons button.tc-tab-selected {
-	background-color: #fff;
-	border-bottom: 1px solid #fff;
+	background-color: rgba(255,255,255,1);
+	border-bottom: 1px solid rgba(255,255,255,1);
 }.tc-drop-down-bullet {
 	display: inline-block;
 	width: 0.5em;
@@ -1544,8 +1544,8 @@ a.tc-tiddlylink:hover {
 }.tc-block-dropdown {
 	position: absolute;
 	min-width: 220px;
-	border: 1px solid #bbb;
-	background-color: #ffffff;
+	border: 1px solid rgb(255, 255, 255);
+	background-color: rgb(38, 38, 38);
 	padding: 7px 0;
 	margin: 4px 0 0 0;
 	white-space: nowrap;
@@ -1565,10 +1565,10 @@ a.tc-tiddlylink:hover {
 }.tc-drop-down .tc-dropdown-item,
 .tc-block-dropdown .tc-dropdown-item {
 	padding: 4px 14px 4px 7px;
-	color: #bbb;
+	color: rgb(255, 255, 255);
 }.tc-block-dropdown a:hover {
-	color: #ffffff;
-	background-color: #5778d8;
+	color: rgb(38, 38, 38);
+	background-color: rgb(204, 204, 255);
 	text-decoration: none;
 }.tc-search-results {
 	padding: 0 7px 0 7px;
@@ -1581,7 +1581,7 @@ a.tc-tiddlylink:hover {
 	text-align: center;
 	position: relative;
 }.tc-image-chooser a {
-	border: 1px solid #bbb;
+	border: 1px solid rgb(255, 255, 255);
 	padding: 2px;
 	margin: 2px;
 	width: 4em;
@@ -1593,9 +1593,9 @@ a.tc-tiddlylink:hover {
 	vertical-align: middle;
 }.tc-image-chooser a:hover,
 .tc-colour-chooser a:hover {
-	background: #5778d8;
+	background: rgb(255, 201, 102);
 	padding: 0px;
-	border: 3px solid #5778d8;
+	border: 3px solid rgb(255, 201, 102);
 }.tc-image-chooser a svg,
 .tc-image-chooser a img {
 	display: inline-block;
@@ -1627,11 +1627,11 @@ a.tc-tiddlylink:hover {
 	bottom: 0;
 	left: 0;
 	z-index: 1000;
-	background-color: #333333;
+	background-color: rgb(179, 179, 179);
 }.tc-modal {
 	z-index: 1100;
-	background-color: #ffffff;
-	border: 1px solid #999999;
+	background-color: rgb(38, 38, 38);
+	border: 1px solid rgba(0,0,0,.5);
 }@media (max-width: 55em) {
 	.tc-modal {
 		position: fixed;
@@ -1656,7 +1656,7 @@ a.tc-tiddlylink:hover {
 	}
 }.tc-modal-header {
 	padding: 9px 15px;
-	border-bottom: 1px solid #eeeeee;
+	border-bottom: 1px solid rgba(0,0,0,.2);
 }.tc-modal-header h3 {
 	margin: 0;
 	line-height: 30px;
@@ -1669,8 +1669,8 @@ a.tc-tiddlylink:hover {
 	padding: 14px 15px 15px;
 	margin-bottom: 0;
 	text-align: right;
-	background-color: #f5f5f5;
-	border-top: 1px solid #dddddd;
+	background-color: #f4f4f4;
+	border-top: 1px solid rgba(0,0,0,.1);
 }/*
 ** Notifications
 */.tc-notification {
@@ -1680,8 +1680,8 @@ a.tc-tiddlylink:hover {
 	z-index: 1300;
 	max-width: 280px;
 	padding: 0 14px 0 14px;
-	background-color: #ffffdd;
-	border: 1px solid #999999;
+	background-color: rgb(25, 25, 25);
+	border: 1px solid rgb(255, 201, 102);
 }/*
 ** Tabs
 */.tc-tab-set.tc-vertical {
@@ -1703,22 +1703,22 @@ a.tc-tiddlylink:hover {
 	-webkit-flex: 0 0 auto;
 	flex: 0 0 auto;
 }.tc-tab-buttons button.tc-tab-selected {
-	color: #666666;
-	background-color: #ffffff;
-	border-left: 1px solid #d8d8d8;
-	border-top: 1px solid #d8d8d8;
-	border-right: 1px solid #d8d8d8;
+	color: rgb(179, 179, 179);
+	background-color: rgb(38, 38, 38);
+	border-left: 1px solid rgb(255, 201, 102);
+	border-top: 1px solid rgb(255, 201, 102);
+	border-right: 1px solid rgb(255, 201, 102);
 }.tc-tab-buttons button {
-	color: #666666;
+	color: rgb(179, 179, 179);
 	padding: 3px 5px 3px 5px;
 	margin-right: 0.3em;
 	font-weight: 300;
 	border: none;
 	background: inherit;
-	background-color: #d8d8d8;
-	border-left: 1px solid #cccccc;
-	border-top: 1px solid #cccccc;
-	border-right: 1px solid #cccccc;
+	background-color: rgba(0,0,0,0.125);
+	border-left: 1px solid rgb(255, 201, 102);
+	border-top: 1px solid rgb(255, 201, 102);
+	border-right: 1px solid rgb(255, 201, 102);
 	border-top-left-radius: 2px;
 	border-top-right-radius: 2px;
 	border-bottom-left-radius: 0;
@@ -1729,19 +1729,19 @@ a.tc-tiddlylink:hover {
 	margin-top: 3px;
 	margin-right: 0;
 	text-align: right;
-	background-color: #d8d8d8;
-	border-left: 1px solid #cccccc;
-	border-bottom: 1px solid #cccccc;
+	background-color: rgba(0,0,0,0.125);
+	border-left: 1px solid rgb(255, 201, 102);
+	border-bottom: 1px solid rgb(255, 201, 102);
 	border-right: none;
 	border-top-left-radius: 2px;
 	border-bottom-left-radius: 2px;
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
 }.tc-tab-buttons.tc-vertical button.tc-tab-selected {
-	background-color: #ffffff;
-	border-right: 1px solid #ffffff;
+	background-color: rgb(38, 38, 38);
+	border-right: 1px solid rgb(38, 38, 38);
 }.tc-tab-divider {
-	border-top: 1px solid #d8d8d8;
+	border-top: 1px solid rgb(255, 201, 102);
 }.tc-tab-divider.tc-vertical  {
 	display: none;
 }.tc-tab-content {
@@ -1752,36 +1752,36 @@ a.tc-tiddlylink:hover {
 	vertical-align: top;
 	padding-top: 0;
 	padding-left: 14px;
-	border-left: 1px solid #cccccc;
+	border-left: 1px solid rgb(255, 201, 102);
 	-webkit-flex: 1 0 70%;
 	flex: 1 0 70%;
 }.tc-sidebar-lists .tc-tab-buttons {
 	margin-bottom: -1px;
 }.tc-sidebar-lists .tc-tab-buttons button.tc-tab-selected {
-	background-color: #f4f4f4;
-	color: ;
-	border-left: 1px solid #d8d8d8;
-	border-top: 1px solid #d8d8d8;
-	border-right: 1px solid #d8d8d8;
+	background-color: rgb(26, 26, 26);
+	color: rgb(179, 179, 179);
+	border-left: 1px solid rgb(127, 127, 127);
+	border-top: 1px solid rgb(127, 127, 127);
+	border-right: 1px solid rgb(127, 127, 127);
 }.tc-sidebar-lists .tc-tab-buttons button {
-	background-color: #e0e0e0;
-	color: #666666;
-	border-left: 1px solid #cccccc;
-	border-top: 1px solid #cccccc;
-	border-right: 1px solid #cccccc;
+	background-color: rgba(141, 141, 141, 0.2);
+	color: rgb(179, 179, 179);
+	border-left: 1px solid rgb(127, 127, 127);
+	border-top: 1px solid rgb(127, 127, 127);
+	border-right: 1px solid rgb(127, 127, 127);
 }.tc-sidebar-lists .tc-tab-divider {
-	border-top: 1px solid #e4e4e4;
+	border-top: 1px solid rgb(127, 127, 127);
 }.tc-more-sidebar > .tc-tab-set > .tc-tab-buttons > button {
 	display: block;
 	width: 100%;
-	background-color: #e0e0e0;
+	background-color: rgba(141, 141, 141, 0.2);
 	border-top: none;
 	border-left: none;
 	border-bottom: none;
 	border-right: 1px solid #ccc;
 	margin-bottom: inherit;
 }.tc-more-sidebar > .tc-tab-set > .tc-tab-buttons > button.tc-tab-selected {
-	background-color: #f4f4f4;
+	background-color: rgb(26, 26, 26);
 	border: none;
 }/*
 ** Manager
@@ -1793,36 +1793,36 @@ a.tc-tiddlylink:hover {
 	margin: 0.5em 0;
 }.tc-manager-list {
 	width: 100%;
-	border-top: 1px solid #bbb;
-	border-left: 1px solid #bbb;
-	border-right: 1px solid #bbb;
+	border-top: 1px solid rgb(255, 255, 255);
+	border-left: 1px solid rgb(255, 255, 255);
+	border-right: 1px solid rgb(255, 255, 255);
 }.tc-manager-list-item {}.tc-manager-list-item-heading {
     display: block;
     width: 100%;
     text-align: left;	
-	border-bottom: 1px solid #bbb;
+	border-bottom: 1px solid rgb(255, 255, 255);
 	padding: 3px;
 }.tc-manager-list-item-heading-selected {
 	font-weight: bold;
-	color: #ffffff;
-	fill: #ffffff;
-	background-color: #333333;
+	color: rgb(38, 38, 38);
+	fill: rgb(38, 38, 38);
+	background-color: rgb(179, 179, 179);
 }.tc-manager-list-item-heading:hover {
-	background: #5778d8;
-	color: #ffffff;
+	background: rgb(255, 201, 102);
+	color: rgb(38, 38, 38);
 }.tc-manager-list-item-content {
 	display: flex;
 }.tc-manager-list-item-content-sidebar {
     flex: 1 0;
-    background: #f8f8f8;
-    border-right: 0.5em solid #bbb;
-    border-bottom: 0.5em solid #bbb;
+    background: rgb(33, 33, 33);
+    border-right: 0.5em solid rgb(255, 255, 255);
+    border-bottom: 0.5em solid rgb(255, 255, 255);
     white-space: nowrap;
 }.tc-manager-list-item-content-item-heading {
 	display: block;
 	width: 100%;
 	text-align: left;
-    background: #bbb;
+    background: rgb(255, 255, 255);
 	text-transform: uppercase;
 	font-size: 0.6em;
 	font-weight: bold;
@@ -1835,9 +1835,9 @@ a.tc-tiddlylink:hover {
 	background: inherit;
 }.tc-manager-list-item-content-tiddler {
     flex: 3 1;
-    border-left: 0.5em solid #bbb;
-    border-right: 0.5em solid #bbb;
-    border-bottom: 0.5em solid #bbb;
+    border-left: 0.5em solid rgb(255, 255, 255);
+    border-right: 0.5em solid rgb(255, 255, 255);
+    border-bottom: 0.5em solid rgb(255, 255, 255);
 }.tc-manager-list-item-content-item-body > table {
 	border: none;
 	padding: 0;
@@ -1862,19 +1862,19 @@ a.tc-tiddlylink:hover {
 	position: relative;
 	margin: 28px;
 	padding: 14px 14px 14px 14px;
-	border: 2px solid #b99e2f;
-	background-color: #ffe476;
+	border: 2px solid rgb(232, 232, 125);
+	background-color: rgb(255, 255, 102);
 }.tc-alert-toolbar {
 	position: absolute;
 	top: 14px;
 	right: 14px;
 }.tc-alert-toolbar svg {
-	fill: #b99e2f;
+	fill: rgb(224, 82, 82);
 }.tc-alert-subtitle {
-	color: #b99e2f;
+	color: rgb(224, 82, 82);
 	font-weight: bold;
 }.tc-alert-highlight {
-	color: #881122;
+	color: rgb(255, 51, 51);
 }@media (min-width: 960px) {.tc-static-alert {
 		position: relative;
 	}.tc-static-alert-inner {
@@ -1882,7 +1882,7 @@ a.tc-tiddlylink:hover {
 		z-index: 100;
 	}}.tc-static-alert-inner {
 	padding: 0 2px 2px 42px;
-	color: #aaaaaa;
+	color: rgba(0,0,0,.3);
 }/*
 ** Floating drafts list
 */.tc-drafts-list {
@@ -1896,16 +1896,16 @@ a.tc-tiddlylink:hover {
 	padding: 4px 4px;
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
-	border: 1px solid #ffffff;
+	border: 1px solid rgb(38, 38, 38);
 	border-bottom-none;
-	background: #ff0000;
-	color: #ffffff;
-	fill: #ffffff;
+	background: rgb(255, 94, 94);
+	color: rgb(38, 38, 38);
+	fill: rgb(38, 38, 38);
 }.tc-drafts-list a:hover {
 	text-decoration: none;
-	background: #333333;
-	color: #ffffff;
-	fill: #ffffff;
+	background: rgb(179, 179, 179);
+	color: rgb(38, 38, 38);
+	fill: rgb(38, 38, 38);
 }.tc-drafts-list a svg {
 	width: 1em;
 	height: 1em;
@@ -1918,8 +1918,8 @@ a.tc-tiddlylink:hover {
 	width: 100%;
 }.tc-plugin-info {
 	display: block;
-	border: 1px solid #bbb;
-	background-colour: #ffffff;
+	border: 1px solid rgb(255, 255, 255);
+	background-colour: rgb(38, 38, 38);
 	margin: 0.5em 0 0.5em 0;
 	padding: 4px;
 }.tc-plugin-info-disabled {
@@ -1930,11 +1930,11 @@ a.tc-tiddlylink:hover {
 	background: repeating-linear-gradient(45deg, #aa0, #aa0 10px, #888 10px, #888 20px);
 }a.tc-tiddlylink.tc-plugin-info:hover {
 	text-decoration: none;
-	background-color: #5778d8;
-	color: #ffffff;
-	fill: #333333;
+	background-color: rgb(255, 201, 102);
+	color: rgb(38, 38, 38);
+	fill: rgb(179, 179, 179);
 }a.tc-tiddlylink.tc-plugin-info:hover .tc-plugin-info > .tc-plugin-info-chunk > svg {
-	fill: #333333;
+	fill: rgb(179, 179, 179);
 }.tc-plugin-info-chunk {
 	display: inline-block;
 	vertical-align: middle;
@@ -1950,19 +1950,19 @@ a.tc-tiddlylink:hover {
 }.tc-plugin-info:hover > .tc-plugin-info-chunk > img, .tc-plugin-info:hover > .tc-plugin-info-chunk > svg {
 	width: 2em;
 	height: 2em;
-	fill: #333333;
+	fill: rgb(179, 179, 179);
 }.tc-plugin-info > .tc-plugin-info-chunk > img, .tc-plugin-info > .tc-plugin-info-chunk > svg {
 	width: 2em;
 	height: 2em;
-	fill: #bbb;
+	fill: rgb(255, 255, 255);
 }.tc-plugin-info.tc-small-icon > .tc-plugin-info-chunk > img, .tc-plugin-info.tc-small-icon > .tc-plugin-info-chunk > svg {
 	width: 1em;
 	height: 1em;
 }.tc-plugin-info-dropdown {
-	border: 1px solid #bbb;
+	border: 1px solid rgb(255, 255, 255);
 	margin-top: -8px;
 }.tc-plugin-info-dropdown-message {
-	background: #ecf2ff;
+	background: rgb(25, 25, 25);
 	padding: 0.5em 1em 0.5em 1em;
 	font-weight: bold;
 	font-size: 0.8em;
@@ -1975,12 +1975,12 @@ a.tc-tiddlylink:hover {
 }/*
 ** Message boxes
 */.tc-message-box {
-	border: 1px solid #cfd6e6;
-	background: #ecf2ff;
+	border: 1px solid #96ccff;
+	background: rgb(25, 25, 25);
 	padding: 0px 21px 0px 21px;
 	font-size: 12px;
 	line-height: 18px;
-	color: #547599;
+	color: rgb(255, 201, 102);
 }.tc-message-box svg {
 	width: 1em;
 	height: 1em;
@@ -1988,7 +1988,7 @@ a.tc-tiddlylink:hover {
 }/*
 ** Pictures
 */.tc-bordered-image {
-	border: 1px solid #bbb;
+	border: 1px solid rgb(255, 255, 255);
 	padding: 5px;
 	margin: 5px;
 }/*
@@ -1998,18 +1998,18 @@ a.tc-tiddlylink:hover {
 }/*
 ** Chooser
 */.tc-chooser {
-	border-right: 1px solid #f0f0f0;
-	border-left: 1px solid #f0f0f0;
+	border-right: 1px solid rgba(0,0,0,.1);
+	border-left: 1px solid rgba(0,0,0,.1);
 }.tc-chooser-item {
-	border-bottom: 1px solid #f0f0f0;
-	border-top: 1px solid #f0f0f0;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	border-top: 1px solid rgba(0,0,0,.1);
 	padding: 2px 4px 2px 14px;
 }.tc-drop-down .tc-chooser-item {
 	padding: 2px;
 }.tc-chosen,
 .tc-chooser-item:hover {
-	background-color: #f0f0f0;
-	border-color: #a8a8a8;
+	background-color: rgba(0,0,0,.1);
+	border-color: rgba(0,0,0,.4);
 }.tc-chosen .tc-tiddlylink {
 	cursor:default;
 }.tc-chooser-item .tc-tiddlylink {
@@ -2020,7 +2020,7 @@ a.tc-tiddlylink:hover {
 	text-decoration: none;
 }.tc-drop-down .tc-chosen .tc-tiddlylink,
 .tc-drop-down .tc-chooser-item .tc-tiddlylink:hover {
-	color: #333333;
+	color: rgb(179, 179, 179);
 }.tc-chosen > .tc-tiddlylink:before {
 	margin-left: -10px;
 	position: relative;
@@ -2051,12 +2051,12 @@ a.tc-tiddlylink:hover {
 */.tc-sidebar-lists .tc-table-of-contents {
 	white-space: nowrap;
 }.tc-table-of-contents button {
-	color: #acacac;
+	color: rgb(141, 141, 141);
 }.tc-table-of-contents svg {
 	width: 0.7em;
 	height: 0.7em;
 	vertical-align: middle;
-	fill: #acacac;
+	fill: rgb(141, 141, 141);
 }.tc-table-of-contents ol {
 	list-style-type: none;
 	padding-left: 0;
@@ -2090,29 +2090,29 @@ a.tc-tiddlylink:hover {
 	max-width: 50%;
 	-webkit-flex: 0 0 auto;
 	flex: 0 0 auto;
-	background: #d8d8d8;
-	border-left: 1px solid #cccccc;
-	border-top: 1px solid #cccccc;
-	border-bottom: 1px solid #cccccc;
+	background: rgba(0,0,0,0.125);
+	border-left: 1px solid rgb(255, 201, 102);
+	border-top: 1px solid rgb(255, 201, 102);
+	border-bottom: 1px solid rgb(255, 201, 102);
 }.tc-tabbed-table-of-contents .tc-table-of-contents .toc-item > a,
 .tc-tabbed-table-of-contents .tc-table-of-contents .toc-item-selected > a {
 	display: block;
 	padding: 0.12em 1em 0.12em 0.25em;
 }.tc-tabbed-table-of-contents .tc-table-of-contents .toc-item > a {
-	border-top: 1px solid #d8d8d8;
-	border-left: 1px solid #d8d8d8;
-	border-bottom: 1px solid #d8d8d8;
+	border-top: 1px solid rgba(0,0,0,0.125);
+	border-left: 1px solid rgba(0,0,0,0.125);
+	border-bottom: 1px solid rgba(0,0,0,0.125);
 }.tc-tabbed-table-of-contents .tc-table-of-contents .toc-item > a:hover {
 	text-decoration: none;
-	border-top: 1px solid #cccccc;
-	border-left: 1px solid #cccccc;
-	border-bottom: 1px solid #cccccc;
-	background: #cccccc;
+	border-top: 1px solid rgb(255, 201, 102);
+	border-left: 1px solid rgb(255, 201, 102);
+	border-bottom: 1px solid rgb(255, 201, 102);
+	background: rgb(255, 201, 102);
 }.tc-tabbed-table-of-contents .tc-table-of-contents .toc-item-selected > a {
-	border-top: 1px solid #cccccc;
-	border-left: 1px solid #cccccc;
-	border-bottom: 1px solid #cccccc;
-	background: #ffffff;
+	border-top: 1px solid rgb(255, 201, 102);
+	border-left: 1px solid rgb(255, 201, 102);
+	border-bottom: 1px solid rgb(255, 201, 102);
+	background: rgb(38, 38, 38);
 	margin-right: -1px;
 }.tc-tabbed-table-of-contents .tc-table-of-contents .toc-item-selected > a:hover {
 	text-decoration: none;
@@ -2121,14 +2121,14 @@ a.tc-tiddlylink:hover {
 	vertical-align: top;
 	padding-left: 1.5em;
 	padding-right: 1.5em;
-	border: 1px solid #cccccc;
+	border: 1px solid rgb(255, 201, 102);
 	-webkit-flex: 1 0 50%;
 	flex: 1 0 50%;
 }/*
 ** Dirty indicator
 */body.tc-dirty span.tc-dirty-indicator, body.tc-dirty span.tc-dirty-indicator svg {
-	fill: #ff0000;
-	color: #ff0000;
+	fill: rgb(255, 94, 94);
+	color: rgb(255, 94, 94);
 }/*
 ** File inputs
 */.tc-file-input-wrapper {
@@ -2227,19 +2227,19 @@ a.tc-tiddlylink:hover {
 ** Diffs
 */.tc-diff-equal {
 	background-color: ;
-	color: #333333;
+	color: rgb(179, 179, 179);
 }.tc-diff-insert {
 	background-color: #aaefad;
-	color: #333333;
+	color: rgb(179, 179, 179);
 }.tc-diff-delete {
 	background-color: #ffc9c9;
-	color: #333333;
+	color: rgb(179, 179, 179);
 }.tc-diff-invisible {
 	background-color: ;
-	color: #bbb;
+	color: rgb(255, 255, 255);
 }.tc-diff-tiddlers th {
 	text-align: right;
-	background: #ffffff;
+	background: rgb(38, 38, 38);
 	font-weight: normal;
 	font-style: italic;
 }.tc-diff-tiddlers pre {
@@ -2409,11 +2409,76 @@ button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fnew-tiddler, .tc-drop-down bu
 </svg></button>
 </span>
 <span class=" tc-reveal" hidden="true"></span>
-</span><div class="tc-sidebar-scrollable" style="overflow-y:auto;overflow-x:auto;-webkit-overflow-scrolling:touch;"><div><div class="tc-sidebar-header"><div class=" tc-reveal"><div class=" tc-reveal"><h1 class="tc-site-title">My TiddlyWiki</h1></div><div class=" tc-reveal"><div class="tc-site-subtitle">a non-linear personal web notebook</div></div><div class=" tc-reveal"><p><div class="tc-page-controls"><button aria-label="new tiddler" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fnew-tiddler" title="Create a new tiddler">
+</span><div class="tc-sidebar-scrollable" style="overflow-y:auto;overflow-x:auto;-webkit-overflow-scrolling:touch;"><div><div class="tc-sidebar-header"><div class=" tc-reveal"><div class=" tc-reveal"><h1 class="tc-site-title">Tony's Wiki</h1></div><div class=" tc-reveal"><div class="tc-site-subtitle">a non-linear personal web notebook</div></div><div class=" tc-reveal"><p><div class="tc-page-controls"><button aria-label="home" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fhome" title="Open the default tiddlers">
+
+<svg class="tc-image-home-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
+    <g fill-rule="evenodd">
+        <path d="M112.9847,119.501583 C112.99485,119.336814 113,119.170705 113,119.003406 L113,67.56802 C116.137461,70.5156358 121.076014,70.4518569 124.133985,67.3938855 C127.25818,64.2696912 127.260618,59.2068102 124.131541,56.0777326 L70.3963143,2.34250601 C68.8331348,0.779326498 66.7828947,-0.000743167069 64.7337457,1.61675364e-05 C62.691312,-0.00409949529 60.6426632,0.777559815 59.077717,2.34250601 L33,28.420223 L33,28.420223 L33,8.00697327 C33,3.58484404 29.4092877,0 25,0 C20.581722,0 17,3.59075293 17,8.00697327 L17,44.420223 L5.3424904,56.0777326 C2.21694607,59.2032769 2.22220878,64.2760483 5.34004601,67.3938855 C8.46424034,70.5180798 13.5271213,70.5205187 16.6561989,67.3914411 L17,67.04764 L17,119.993027 C17,119.994189 17.0000002,119.995351 17.0000007,119.996514 C17.0000002,119.997675 17,119.998838 17,120 C17,124.418278 20.5881049,128 24.9992458,128 L105.000754,128 C109.418616,128 113,124.409288 113,120 C113,119.832611 112.99485,119.666422 112.9847,119.501583 Z M97,112 L97,51.5736087 L97,51.5736087 L64.7370156,19.3106244 L33,51.04764 L33,112 L97,112 Z"></path>
+    </g>
+</svg>
+
+
+</button><button aria-label="close all" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose-all" title="Close all tiddlers">
+
+<svg class="tc-close-all-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
+    <g fill-rule="evenodd" transform="translate(-23.000000, -23.000000)">
+        <path d="M43,131 L22.9976794,131 C18.5827987,131 15,127.418278 15,123 C15,118.590712 18.5806831,115 22.9976794,115 L43,115 L43,94.9976794 C43,90.5827987 46.581722,87 51,87 C55.4092877,87 59,90.5806831 59,94.9976794 L59,115 L79.0023206,115 C83.4172013,115 87,118.581722 87,123 C87,127.409288 83.4193169,131 79.0023206,131 L59,131 L59,151.002321 C59,155.417201 55.418278,159 51,159 C46.5907123,159 43,155.419317 43,151.002321 L43,131 Z" transform="translate(51.000000, 123.000000) rotate(-45.000000) translate(-51.000000, -123.000000) "></path>
+        <path d="M43,59 L22.9976794,59 C18.5827987,59 15,55.418278 15,51 C15,46.5907123 18.5806831,43 22.9976794,43 L43,43 L43,22.9976794 C43,18.5827987 46.581722,15 51,15 C55.4092877,15 59,18.5806831 59,22.9976794 L59,43 L79.0023206,43 C83.4172013,43 87,46.581722 87,51 C87,55.4092877 83.4193169,59 79.0023206,59 L59,59 L59,79.0023206 C59,83.4172013 55.418278,87 51,87 C46.5907123,87 43,83.4193169 43,79.0023206 L43,59 Z" transform="translate(51.000000, 51.000000) rotate(-45.000000) translate(-51.000000, -51.000000) "></path>
+        <path d="M115,59 L94.9976794,59 C90.5827987,59 87,55.418278 87,51 C87,46.5907123 90.5806831,43 94.9976794,43 L115,43 L115,22.9976794 C115,18.5827987 118.581722,15 123,15 C127.409288,15 131,18.5806831 131,22.9976794 L131,43 L151.002321,43 C155.417201,43 159,46.581722 159,51 C159,55.4092877 155.419317,59 151.002321,59 L131,59 L131,79.0023206 C131,83.4172013 127.418278,87 123,87 C118.590712,87 115,83.4193169 115,79.0023206 L115,59 Z" transform="translate(123.000000, 51.000000) rotate(-45.000000) translate(-123.000000, -51.000000) "></path>
+        <path d="M115,131 L94.9976794,131 C90.5827987,131 87,127.418278 87,123 C87,118.590712 90.5806831,115 94.9976794,115 L115,115 L115,94.9976794 C115,90.5827987 118.581722,87 123,87 C127.409288,87 131,90.5806831 131,94.9976794 L131,115 L151.002321,115 C155.417201,115 159,118.581722 159,123 C159,127.409288 155.419317,131 151.002321,131 L131,131 L131,151.002321 C131,155.417201 127.418278,159 123,159 C118.590712,159 115,155.419317 115,151.002321 L115,131 Z" transform="translate(123.000000, 123.000000) rotate(-45.000000) translate(-123.000000, -123.000000) "></path>
+    </g>
+</svg>
+
+
+</button><button aria-label="fold all tiddlers" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Ffold-all" title="Fold the bodies of all opened tiddlers">
+
+
+<svg class="tc-image-fold-all tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
+    <g fill-rule="evenodd">
+        <rect height="16" rx="8" width="128" x="0" y="0"></rect>
+        <rect height="16" rx="8" width="128" x="0" y="64"></rect>
+        <path d="M64.0292774,58.6235628 C61.9791013,58.6242848 59.9275217,57.8435723 58.3632024,56.279253 L35.7458219,33.6618725 C32.6211696,30.5372202 32.6166093,25.4673401 35.7408036,22.3431458 C38.8586409,19.2253085 43.9325646,19.2211982 47.0595304,22.348164 L64.0250749,39.3137085 L80.9906194,22.348164 C84.1152717,19.2235117 89.1851518,19.2189514 92.3093461,22.3431458 C95.4271834,25.460983 95.4312937,30.5349067 92.3043279,33.6618725 L69.6869474,56.279253 C68.1237851,57.8424153 66.0737951,58.6247195 64.0241231,58.6250809 Z" transform="translate(64.024316, 39.313708) scale(1, -1) translate(-64.024316, -39.313708) "></path>
+        <path d="M64.0292774,123.621227 C61.9791013,123.621949 59.9275217,122.841236 58.3632024,121.276917 L35.7458219,98.6595365 C32.6211696,95.5348842 32.6166093,90.4650041 35.7408036,87.3408098 C38.8586409,84.2229725 43.9325646,84.2188622 47.0595304,87.345828 L64.0250749,104.311373 L80.9906194,87.345828 C84.1152717,84.2211757 89.1851518,84.2166154 92.3093461,87.3408098 C95.4271834,90.458647 95.4312937,95.5325707 92.3043279,98.6595365 L69.6869474,121.276917 C68.1237851,122.840079 66.0737951,123.622383 64.0241231,123.622745 Z" transform="translate(64.024316, 104.311372) scale(1, -1) translate(-64.024316, -104.311372) "></path>
+    </g>
+</svg>
+
+
+</button><button aria-label="unfold all tiddlers" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Funfold-all" title="Unfold the bodies of all opened tiddlers">
+
+
+<svg class="tc-image-unfold-all tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
+    <g fill-rule="evenodd">
+        <rect height="16" rx="8" width="128" x="0" y="0"></rect>
+        <rect height="16" rx="8" width="128" x="0" y="64"></rect>
+        <path d="M85.598226,8.34884273 C84.1490432,6.89863875 82.1463102,6 79.9340286,6 L47.9482224,6 C43.5292967,6 39.9411255,9.581722 39.9411255,14 C39.9411255,18.4092877 43.5260249,22 47.9482224,22 L71.9411255,22 L71.9411255,45.9929031 C71.9411255,50.4118288 75.5228475,54 79.9411255,54 C84.3504132,54 87.9411255,50.4151006 87.9411255,45.9929031 L87.9411255,14.0070969 C87.9411255,11.7964515 87.0447363,9.79371715 85.5956548,8.34412458 Z" transform="translate(63.941125, 30.000000) scale(1, -1) rotate(-45.000000) translate(-63.941125, -30.000000) "></path>
+        <path d="M85.6571005,72.2899682 C84.2079177,70.8397642 82.2051847,69.9411255 79.9929031,69.9411255 L48.0070969,69.9411255 C43.5881712,69.9411255 40,73.5228475 40,77.9411255 C40,82.3504132 43.5848994,85.9411255 48.0070969,85.9411255 L72,85.9411255 L72,109.934029 C72,114.352954 75.581722,117.941125 80,117.941125 C84.4092877,117.941125 88,114.356226 88,109.934029 L88,77.9482224 C88,75.737577 87.1036108,73.7348426 85.6545293,72.2852501 Z" transform="translate(64.000000, 93.941125) scale(1, -1) rotate(-45.000000) translate(-64.000000, -93.941125) "></path>
+    </g>
+</svg>
+
+
+</button><button aria-label="new tiddler" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fnew-tiddler" title="Create a new tiddler">
 
 <svg class="tc-image-new-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
     <g fill-rule="evenodd">
         <path d="M56,72 L8.00697327,72 C3.59075293,72 0,68.418278 0,64 C0,59.5907123 3.58484404,56 8.00697327,56 L56,56 L56,8.00697327 C56,3.59075293 59.581722,0 64,0 C68.4092877,0 72,3.58484404 72,8.00697327 L72,56 L119.993027,56 C124.409247,56 128,59.581722 128,64 C128,68.4092877 124.415156,72 119.993027,72 L72,72 L72,119.993027 C72,124.409247 68.418278,128 64,128 C59.5907123,128 56,124.415156 56,119.993027 L56,72 L56,72 Z"></path>
+    </g>
+</svg>
+
+
+</button>
+<button aria-label="new journal" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fnew-journal" title="Create a new journal tiddler">
+
+<svg class="tc-image-new-journal-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
+    <g fill-rule="evenodd">
+        <path d="M102.545455,112.818182 L102.545455,124.636364 L102.545455,124.636364 L102.545455,124.636364 C102.545455,125.941761 103.630828,127 104.969697,127 L111.030303,127 C112.369172,127 113.454545,125.941761 113.454545,124.636364 L113.454545,112.818182 L125.575758,112.818182 C126.914626,112.818182 128,111.759982 128,110.454545 L128,104.545455 C128,103.240018 126.914626,102.181818 125.575758,102.181818 L113.454545,102.181818 L113.454545,90.3636364 C113.454545,89.0582 112.369172,88 111.030303,88 L104.969697,88 L104.969697,88 C103.630828,88 102.545455,89.0582 102.545455,90.3636364 L102.545455,102.181818 L90.4242424,102.181818 L90.4242424,102.181818 C89.0853705,102.181818 88,103.240018 88,104.545455 L88,110.454545 L88,110.454545 L88,110.454545 C88,111.759982 89.0853705,112.818182 90.4242424,112.818182 L102.545455,112.818182 Z"></path>
+        <g transform="translate(59.816987, 64.316987) rotate(30.000000) translate(-59.816987, -64.316987) translate(20.316987, 12.816987)">
+            <g transform="translate(0.000000, 0.000000)">
+                <path d="M9.99631148,0 C4.4755011,0 -2.27373675e-13,4.48070044 -2.27373675e-13,9.99759461 L-2.27373675e-13,91.6128884 C-2.27373675e-13,97.1344074 4.46966773,101.610483 9.99631148,101.610483 L68.9318917,101.610483 C74.4527021,101.610483 78.9282032,97.1297826 78.9282032,91.6128884 L78.9282032,9.99759461 C78.9282032,4.47607557 74.4585355,0 68.9318917,0 L9.99631148,0 Z M20.8885263,26 C24.2022348,26 26.8885263,23.3137085 26.8885263,20 C26.8885263,16.6862915 24.2022348,14 20.8885263,14 C17.5748178,14 14.8885263,16.6862915 14.8885263,20 C14.8885263,23.3137085 17.5748178,26 20.8885263,26 Z M57.3033321,25.6783342 C60.6170406,25.6783342 63.3033321,22.9920427 63.3033321,19.6783342 C63.3033321,16.3646258 60.6170406,13.6783342 57.3033321,13.6783342 C53.9896236,13.6783342 51.3033321,16.3646258 51.3033321,19.6783342 C51.3033321,22.9920427 53.9896236,25.6783342 57.3033321,25.6783342 Z"></path>
+                <text fill="#FFFFFF" font-family="Helvetica" font-size="47.1724138" font-weight="bold">
+                    <tspan text-anchor="middle" x="42" y="77.4847912">5</tspan>
+                </text>
+            </g>
+        </g>
     </g>
 </svg>
 
@@ -2429,20 +2494,79 @@ button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fnew-tiddler, .tc-drop-down bu
 
 
 </button>
-<button aria-label="save changes" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fsave-wiki" title="Save changes">
+<button aria-label="advanced search" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fadvanced-search " title="Advanced search">
 
-
-
-<span class="tc-dirty-indicator">
-
-<svg class="tc-image-save-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
+<svg class="tc-image-advanced-search-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
     <g fill-rule="evenodd">
-        <path d="M120.78304,34.329058 C125.424287,43.1924006 128.049406,53.2778608 128.049406,63.9764502 C128.049406,99.3226742 99.3956295,127.97645 64.0494055,127.97645 C28.7031816,127.97645 0.0494055385,99.3226742 0.0494055385,63.9764502 C0.0494055385,28.6302262 28.7031816,-0.0235498012 64.0494055,-0.0235498012 C82.8568763,-0.0235498012 99.769563,8.08898558 111.479045,21.0056358 L114.159581,18.3250998 C117.289194,15.1954866 122.356036,15.1939641 125.480231,18.3181584 C128.598068,21.4359957 128.601317,26.5107804 125.473289,29.6388083 L120.78304,34.329058 Z M108.72451,46.3875877 C110.870571,51.8341374 112.049406,57.767628 112.049406,63.9764502 C112.049406,90.4861182 90.5590735,111.97645 64.0494055,111.97645 C37.5397375,111.97645 16.0494055,90.4861182 16.0494055,63.9764502 C16.0494055,37.4667822 37.5397375,15.9764502 64.0494055,15.9764502 C78.438886,15.9764502 91.3495036,22.308215 100.147097,32.3375836 L58.9411255,73.5435552 L41.975581,56.5780107 C38.8486152,53.4510448 33.7746915,53.4551552 30.6568542,56.5729924 C27.5326599,59.6971868 27.5372202,64.7670668 30.6618725,67.8917192 L53.279253,90.5090997 C54.8435723,92.073419 56.8951519,92.8541315 58.9380216,92.8558261 C60.987971,92.8559239 63.0389578,92.0731398 64.6049211,90.5071765 L108.72451,46.3875877 Z"></path>
+        <path d="M74.5651535,87.9848361 C66.9581537,93.0488876 57.8237115,96 48,96 C21.490332,96 0,74.509668 0,48 C0,21.490332 21.490332,0 48,0 C74.509668,0 96,21.490332 96,48 C96,57.8541369 93.0305793,67.0147285 87.9377231,74.6357895 L122.284919,108.982985 C125.978897,112.676963 125.973757,118.65366 122.284271,122.343146 C118.593975,126.033442 112.613238,126.032921 108.92411,122.343793 L74.5651535,87.9848361 Z M48,80 C65.673112,80 80,65.673112 80,48 C80,30.326888 65.673112,16 48,16 C30.326888,16 16,30.326888 16,48 C16,65.673112 30.326888,80 48,80 Z"></path>
+        <circle cx="48" cy="48" r="8"></circle>
+        <circle cx="28" cy="48" r="8"></circle>
+        <circle cx="68" cy="48" r="8"></circle>
     </g>
 </svg>
 
 
+</button>
+<button aria-label="tiddler manager" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmanager " title="Open tiddler manager">
+
+<svg class="tc-image-list tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
+    <g fill-rule="evenodd">
+        <path d="M0.719999312,185.568543 C2.21955287,181.862817 3.0452019,177.812144 3.0452019,173.568542 C3.0452019,155.891545 -11.2816707,141.568542 -28.9547636,141.568542 L-60.9548326,141.568542 C-78.6344937,141.568542 -92.9547981,155.895431 -92.9547981,173.568542 C-92.9547981,191.24554 -78.6279255,205.568542 -60.9548326,205.568542 L-28.9547636,205.568542 C-27.593228,205.568542 -26.2516158,205.483573 -24.9349335,205.31865 C-31.5207556,201.78951 -36.8809788,196.272192 -40.2126959,189.568542 L-60.9493786,189.568542 C-69.7889277,189.568542 -76.9547981,182.407041 -76.9547981,173.568542 C-76.9547981,164.731986 -69.7994766,157.568542 -60.9493786,157.568542 L-28.9602176,157.568542 C-20.1206685,157.568542 -12.9547981,164.730044 -12.9547981,173.568542 C-12.9547981,176.946528 -14.0004297,180.080016 -15.7866505,182.6623 C-13.6856165,184.473592 -10.949961,185.568542 -7.9585771,185.568542 L0.720002586,185.568542 Z" transform="translate(-44.954798, 173.568542) rotate(-225.000000) translate(44.954798, -173.568542) "></path>
+        <path d="M87.7480315,128 L23.9992458,128 C19.5813843,128 16,124.409247 16,119.993027 L16,8.00697327 C16,3.58484404 19.5881049,0 23.9992458,0 L104.000754,0 C108.418616,0 112,3.59075293 112,8.00697327 L112,104 L91.2492027,104 C90.2848199,104 89.410573,104.391703 88.7768998,105.025201 C88.1373658,105.661376 87.7480315,106.53563 87.7480315,107.501171 L87.7480315,128 Z M95.7480315,127.879386 L111.627417,112 L95.7480315,112 L95.7480315,127.879386 Z M40,15.5089165 C40,13.5709954 41.5636015,12 43.4998101,12 L98.5001899,12 C100.433082,12 102,13.5614718 102,15.5089165 L102,16.4910835 C102,18.4290046 100.436399,20 98.5001899,20 L43.4998101,20 C41.5669183,20 40,18.4385282 40,16.4910835 L40,15.5089165 Z M32,22 C35.3137085,22 38,19.3137085 38,16 C38,12.6862915 35.3137085,10 32,10 C28.6862915,10 26,12.6862915 26,16 C26,19.3137085 28.6862915,22 32,22 Z M40,31.5089165 C40,29.5709954 41.5636015,28 43.4998101,28 L98.5001899,28 C100.433082,28 102,29.5614718 102,31.5089165 L102,32.4910835 C102,34.4290046 100.436399,36 98.5001899,36 L43.4998101,36 C41.5669183,36 40,34.4385282 40,32.4910835 L40,31.5089165 Z M40,47.5089165 C40,45.5709954 41.5636015,44 43.4998101,44 L98.5001899,44 C100.433082,44 102,45.5614718 102,47.5089165 L102,48.4910835 C102,50.4290046 100.436399,52 98.5001899,52 L43.4998101,52 C41.5669183,52 40,50.4385282 40,48.4910835 L40,47.5089165 Z M40,63.5089165 C40,61.5709954 41.5636015,60 43.4998101,60 L98.5001899,60 C100.433082,60 102,61.5614718 102,63.5089165 L102,64.4910835 C102,66.4290046 100.436399,68 98.5001899,68 L43.4998101,68 C41.5669183,68 40,66.4385282 40,64.4910835 L40,63.5089165 Z M40,79.5089165 C40,77.5709954 41.5636015,76 43.4998101,76 L98.5001899,76 C100.433082,76 102,77.5614718 102,79.5089165 L102,80.4910835 C102,82.4290046 100.436399,84 98.5001899,84 L43.4998101,84 C41.5669183,84 40,82.4385282 40,80.4910835 L40,79.5089165 Z M40,95.5089165 C40,93.5709954 41.5636015,92 43.4998101,92 L98.5001899,92 C100.433082,92 102,93.5614718 102,95.5089165 L102,96.4910835 C102,98.4290046 100.436399,100 98.5001899,100 L43.4998101,100 C41.5669183,100 40,98.4385282 40,96.4910835 L40,95.5089165 Z M40,111.508916 C40,109.570995 41.5680474,108 43.4972017,108 L76.5027983,108 C78.4342495,108 80,109.561472 80,111.508916 L80,112.491084 C80,114.429005 78.4319526,116 76.5027983,116 L43.4972017,116 C41.5657505,116 40,114.438528 40,112.491084 L40,111.508916 Z M32,38 C35.3137085,38 38,35.3137085 38,32 C38,28.6862915 35.3137085,26 32,26 C28.6862915,26 26,28.6862915 26,32 C26,35.3137085 28.6862915,38 32,38 Z M32,54 C35.3137085,54 38,51.3137085 38,48 C38,44.6862915 35.3137085,42 32,42 C28.6862915,42 26,44.6862915 26,48 C26,51.3137085 28.6862915,54 32,54 Z M32,70 C35.3137085,70 38,67.3137085 38,64 C38,60.6862915 35.3137085,58 32,58 C28.6862915,58 26,60.6862915 26,64 C26,67.3137085 28.6862915,70 32,70 Z M32,86 C35.3137085,86 38,83.3137085 38,80 C38,76.6862915 35.3137085,74 32,74 C28.6862915,74 26,76.6862915 26,80 C26,83.3137085 28.6862915,86 32,86 Z M32,102 C35.3137085,102 38,99.3137085 38,96 C38,92.6862915 35.3137085,90 32,90 C28.6862915,90 26,92.6862915 26,96 C26,99.3137085 28.6862915,102 32,102 Z M32,118 C35.3137085,118 38,115.313708 38,112 C38,108.686292 35.3137085,106 32,106 C28.6862915,106 26,108.686292 26,112 C26,115.313708 28.6862915,118 32,118 Z"></path>
+    </g>
+</svg>
+
+
+</button>
+<button aria-label="tag manager" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Ftag-manager " title="Open tag manager">
+
+<svg class="tc-image-tag-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
+    <g fill-rule="evenodd">
+        <path d="M18.1643182,47.6600756 L18.1677196,51.7651887 C18.1708869,55.5878829 20.3581578,60.8623899 23.0531352,63.5573673 L84.9021823,125.406414 C87.5996731,128.103905 91.971139,128.096834 94.6717387,125.396234 L125.766905,94.3010679 C128.473612,91.5943612 128.472063,87.2264889 125.777085,84.5315115 L63.9280381,22.6824644 C61.2305472,19.9849735 55.9517395,17.801995 52.1318769,17.8010313 L25.0560441,17.7942007 C21.2311475,17.7932358 18.1421354,20.8872832 18.1452985,24.7049463 L18.1535504,34.6641936 C18.2481119,34.6754562 18.3439134,34.6864294 18.4409623,34.6971263 C22.1702157,35.1081705 26.9295004,34.6530132 31.806204,33.5444844 C32.1342781,33.0700515 32.5094815,32.6184036 32.9318197,32.1960654 C35.6385117,29.4893734 39.5490441,28.718649 42.94592,29.8824694 C43.0432142,29.8394357 43.1402334,29.7961748 43.2369683,29.7526887 L43.3646982,30.0368244 C44.566601,30.5115916 45.6933052,31.2351533 46.6655958,32.2074439 C50.4612154,36.0030635 50.4663097,42.1518845 46.6769742,45.94122 C43.0594074,49.5587868 37.2914155,49.7181264 33.4734256,46.422636 C28.1082519,47.5454734 22.7987486,48.0186448 18.1643182,47.6600756 Z"></path>
+        <path d="M47.6333528,39.5324628 L47.6562932,39.5834939 C37.9670934,43.9391617 26.0718874,46.3819521 17.260095,45.4107025 C5.27267473,44.0894301 -1.02778744,36.4307276 2.44271359,24.0779512 C5.56175386,12.9761516 14.3014034,4.36129832 24.0466405,1.54817001 C34.7269254,-1.53487574 43.7955833,3.51606438 43.7955834,14.7730751 L35.1728168,14.7730752 C35.1728167,9.91428944 32.0946059,8.19982862 26.4381034,9.83267419 C19.5270911,11.8276553 13.046247,18.2159574 10.7440788,26.4102121 C8.82861123,33.2280582 11.161186,36.0634845 18.2047888,36.8398415 C25.3302805,37.6252244 35.7353482,35.4884477 44.1208333,31.7188498 L44.1475077,31.7781871 C44.159701,31.7725635 44.1718402,31.7671479 44.1839238,31.7619434 C45.9448098,31.0035157 50.4503245,38.3109156 47.7081571,39.5012767 C47.6834429,39.512005 47.6585061,39.5223987 47.6333528,39.5324628 Z"></path>
+    </g>
+</svg>
+
+
+</button>
+<span class="tc-popup-keep">
+<button aria-label="palette" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fpalette" title="Choose the colour palette">
+
+<svg class="tc-image-palette tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
+    <g fill-rule="evenodd">
+        <path d="M80.2470434,39.1821571 C75.0645698,38.2680897 69.6261555,37.7814854 64.0193999,37.7814854 C28.6624616,37.7814854 0,57.1324214 0,81.0030106 C0,90.644534 4.67604329,99.5487133 12.5805659,106.738252 C23.5031767,91.1899067 26.3405471,72.3946229 36.8885698,63.5622337 C52.0716764,50.8486559 63.4268694,55.7343343 63.4268694,55.7343343 L80.2470434,39.1821571 Z M106.781666,48.8370714 C119.830962,56.749628 128.0388,68.229191 128.0388,81.0030106 C128.0388,90.3534932 128.557501,98.4142085 116.165191,106.082518 C105.367708,112.763955 112.341384,99.546808 104.321443,95.1851533 C96.3015017,90.8234987 84.3749007,96.492742 86.1084305,103.091059 C89.3087234,115.272303 105.529892,114.54645 92.4224435,119.748569 C79.3149955,124.950687 74.2201582,124.224536 64.0193999,124.224536 C56.1979176,124.224536 48.7040365,123.277578 41.7755684,121.544216 C51.620343,117.347916 69.6563669,109.006202 75.129737,102.088562 C82.7876655,92.4099199 87.3713218,80.0000002 83.3235694,72.4837191 C83.1303943,72.1250117 94.5392656,60.81569 106.781666,48.8370714 Z M1.13430476,123.866563 C0.914084026,123.867944 0.693884185,123.868637 0.473712455,123.868637 C33.9526848,108.928928 22.6351223,59.642592 59.2924543,59.6425917 C59.6085574,61.0606542 59.9358353,62.5865065 60.3541977,64.1372318 C34.4465025,59.9707319 36.7873124,112.168427 1.13429588,123.866563 L1.13430476,123.866563 Z M1.84669213,123.859694 C40.7185279,123.354338 79.9985412,101.513051 79.9985401,79.0466836 C70.7284906,79.0466835 65.9257264,75.5670082 63.1833375,71.1051511 C46.585768,64.1019718 32.81846,116.819636 1.84665952,123.859695 L1.84669213,123.859694 Z M67.1980193,59.8524981 C62.748213,63.9666823 72.0838429,76.2846822 78.5155805,71.1700593 C89.8331416,59.8524993 112.468264,37.2173758 123.785825,25.8998146 C135.103386,14.5822535 123.785825,3.26469247 112.468264,14.5822535 C101.150703,25.8998144 78.9500931,48.9868127 67.1980193,59.8524981 Z"></path>
+    </g>
+</svg>
+
+
+</button>
 </span>
+<span class=" tc-reveal" hidden="true"></span><span class="tc-popup-keep">
+<button aria-label="theme" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Ftheme" title="Choose the display theme">
+
+<svg class="tc-image-theme-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
+    <g fill-rule="evenodd">
+        <path d="M55.854113,66.9453198 C54.3299482,65.1432292 53.0133883,63.518995 51.9542746,62.1263761 C40.8899947,47.578055 35.3091807,55.2383404 28.9941893,62.1263758 C22.6791979,69.0144112 30.6577916,74.5954741 24.6646171,79.4611023 C18.6714426,84.3267304 19.0414417,86.0133155 8.92654943,77.1119468 C-1.18834284,68.2105781 -1.88793412,65.7597832 2.7553553,60.6807286 C7.39864472,55.601674 11.2794845,63.5989423 20.7646627,54.5728325 C30.2498409,45.5467226 22.2819131,37.5470737 22.2819131,37.5470737 C22.2819131,37.5470737 42.0310399,-2.82433362 68.4206088,0.157393922 C94.8101776,3.13912147 58.4373806,-3.70356506 49.3898693,27.958066 C45.5161782,41.5139906 50.1107906,38.3197672 57.4560458,44.0453955 C59.1625767,45.3756367 63.8839488,48.777453 70.127165,53.3625321 C63.9980513,59.2416709 58.9704753,64.0315459 55.854113,66.9453198 Z M67.4952439,79.8919946 C83.5082212,96.9282402 105.237121,117.617674 112.611591,120.312493 C123.044132,124.12481 128.000001,117.170903 128,105.522947 C127.999999,98.3705516 104.170675,78.980486 84.0760493,63.7529565 C76.6683337,70.9090328 70.7000957,76.7055226 67.4952439,79.8919946 Z"></path>
+        <path d="M58.2852966,138.232794 L58.2852966,88.3943645 C56.318874,88.3923153 54.7254089,86.7952906 54.7254089,84.8344788 C54.7254089,82.8684071 56.3175932,81.2745911 58.2890859,81.2745911 L79.6408336,81.2745911 C81.608998,81.2745911 83.2045105,82.8724076 83.2045105,84.8344788 C83.2045105,86.7992907 81.614366,88.3923238 79.6446228,88.3943645 L79.6446228,88.3943646 L79.6446228,138.232794 C79.6446228,144.131009 74.8631748,148.912457 68.9649597,148.912457 C63.0667446,148.912457 58.2852966,144.131009 58.2852966,138.232794 Z M65.405072,-14.8423767 L72.5248474,-14.8423767 L76.0847351,-0.690681892 L72.5248474,6.51694947 L72.5248474,81.2745911 L65.405072,81.2745911 L65.405072,6.51694947 L61.8451843,-0.690681892 L65.405072,-14.8423767 Z" transform="translate(68.964960, 67.035040) rotate(45.000000) translate(-68.964960, -67.035040) "></path>
+    </g>
+</svg>
+
+
+</button>
+</span>
+<span class=" tc-reveal" hidden="true"></span><button aria-label="print page" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fprint" title="Print the current page">
+
+<svg class="tc-image-print-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
+    <g fill-rule="evenodd">
+        <path d="M112,71 L112,30.5 L111.96811,30.5 L111.96811,30.5 C111.932942,28.4998414 111.151676,26.510538 109.625176,24.9840387 L86.9982489,2.35711116 C85.3482153,0.707077645 83.1589869,-0.071534047 81,0.0201838424 L81,0 L23.9992458,0 C19.5808867,0 16,3.58213437 16,8.00092105 L16,71 L24,71 L24,8 L81,8 L81,22.4996539 C81,26.9216269 84.5818769,30.5 89.0003461,30.5 L104,30.5 L104,71 L112,71 Z"></path>
+        <rect height="8" rx="4" width="64" x="32" y="36"></rect>
+        <rect height="8" rx="4" width="64" x="32" y="52"></rect>
+        <rect height="8" rx="4" width="40" x="32" y="20"></rect>
+        <path d="M0,80.0054195 C0,71.1658704 7.15611005,64 16.0008841,64 L111.999116,64 C120.83616,64 128,71.1553215 128,80.0054195 L128,111.99458 C128,120.83413 120.84389,128 111.999116,128 L16.0008841,128 C7.16383982,128 0,120.844679 0,111.99458 L0,80.0054195 Z M104,96 C108.418278,96 112,92.418278 112,88 C112,83.581722 108.418278,80 104,80 C99.581722,80 96,83.581722 96,88 C96,92.418278 99.581722,96 104,96 Z"></path>
+    </g>
+</svg>
+
+
 </button></div></p></div><div class=" tc-reveal"><div class="tc-sidebar-lists tc-sidebar-search"><p>
 <div class="tc-search">
 <input class="tc-popup-handle" type="search" value="">
@@ -2498,9 +2622,9 @@ More
         <path d="M65.0864256,75.4091629 L14.9727349,125.522854 C11.8515951,128.643993 6.78104858,128.64922 3.65685425,125.525026 C0.539017023,122.407189 0.5336324,117.334539 3.65902635,114.209145 L53.7727171,64.0954544 L3.65902635,13.9817637 C0.537886594,10.8606239 0.532659916,5.79007744 3.65685425,2.6658831 C6.77469148,-0.451954124 11.8473409,-0.457338747 14.9727349,2.66805521 L65.0864256,52.7817459 L115.200116,2.66805521 C118.321256,-0.453084553 123.391803,-0.458311231 126.515997,2.6658831 C129.633834,5.78372033 129.639219,10.8563698 126.513825,13.9817637 L76.4001341,64.0954544 L126.513825,114.209145 C129.634965,117.330285 129.640191,122.400831 126.515997,125.525026 C123.39816,128.642863 118.32551,128.648248 115.200116,125.522854 L65.0864256,75.4091629 L65.0864256,75.4091629 Z"></path>
     </g>
 </svg>
-</button> <a class="tc-tiddlylink tc-tiddlylink-shadow" href="static/GettingStarted.html">GettingStarted</a></div></span></div><div><span class=" tc-droppable"><div class="tc-droppable-placeholder"></div><div><button class="tc-btn-invisible tc-btn-mini">close all</button></div></span></div></div></p></div><div class=" tc-reveal" hidden="true"></div><div class=" tc-reveal" hidden="true"></div><div class=" tc-reveal" hidden="true"></div>
+</button> <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Book%2520Summaries.html">Book Summaries</a></div></span></div><div><span class=" tc-droppable"><div class="tc-droppable-placeholder"></div><div><button class="tc-btn-invisible tc-btn-mini">close all</button></div></span></div></div></p></div><div class=" tc-reveal" hidden="true"></div><div class=" tc-reveal" hidden="true"></div><div class=" tc-reveal" hidden="true"></div>
 </div>
-</div></p></div></div></div></div></div></div><section class="tc-story-river"><section class="story-backdrop"></section><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists tc-tiddler-shadow  tc-tagged-%24%3A%2Ftags%2FGettingStarted" data-tags="$:/tags/GettingStarted" data-tiddler-title="GettingStarted"><div class="tc-tiddler-title">
+</div></p></div></div></div></div></div></div><section class="tc-story-river"><section class="story-backdrop"></section><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists  tc-tagged-Live tc-tagged-list tc-tagged-reading" data-tags="Live list reading" data-tiddler-title="Book Summaries"><div class="tc-tiddler-title">
 <div class="tc-titlebar">
 <span class="tc-tiddler-controls">
 <span class=" tc-reveal"><button aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"><svg class="tc-image-down-arrow tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
@@ -2527,7 +2651,7 @@ More
 
 
 <h2 class="tc-title">
-GettingStarted
+Book Summaries
 </h2>
 
 </span>
@@ -2538,30 +2662,34 @@ GettingStarted
 </div><div class=" tc-reveal" hidden="true"></div>
 <div class=" tc-reveal">
 <div class="tc-subtitle">
-<a class="tc-tiddlylink tc-tiddlylink-missing" href="static/.html">
-
-</a> 
+<a class="tc-tiddlylink tc-tiddlylink-missing" href="static/toreglia.html">
+toreglia
+</a> 5th April 2020 at 6:31pm
 </div>
 </div>
 <div class=" tc-reveal">
 <div class="tc-tags-wrapper"><span class="tc-tag-list-item">
 <span class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
-fill:#333333;
-color:#333333;">
- $:/tags/GettingStarted
+fill:rgb(38, 38, 38);
+color:rgb(38, 38, 38);">
+ list
+</span>
+<span class="tc-drop-down tc-reveal" hidden="true"></span></span><span class="tc-tag-list-item">
+<span class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+fill:rgb(38, 38, 38);
+color:rgb(38, 38, 38);">
+ Live
+</span>
+<span class="tc-drop-down tc-reveal" hidden="true"></span></span><span class="tc-tag-list-item">
+<span class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+fill:rgb(38, 38, 38);
+color:rgb(38, 38, 38);">
+ reading
 </span>
 <span class="tc-drop-down tc-reveal" hidden="true"></span></span></div>
 </div>
 
-<div class="tc-tiddler-body tc-reveal"><p>Welcome to TiddlyWiki and the TiddlyWiki community</p><p>Visit <a class="tc-tiddlylink-external" href="https://tiddlywiki.com/" rel="noopener noreferrer" target="_blank">https://tiddlywiki.com/</a> to find out more about TiddlyWiki and what it can do.</p><h1 class="">Syncing Changes to the Server</h1><p>Before you can start storing important information in TiddlyWiki it is important to make sure that your changes are being reliably saved by the server.</p><ol><li>Create a new tiddler using the <svg class="tc-image-new-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
-    <g fill-rule="evenodd">
-        <path d="M56,72 L8.00697327,72 C3.59075293,72 0,68.418278 0,64 C0,59.5907123 3.58484404,56 8.00697327,56 L56,56 L56,8.00697327 C56,3.59075293 59.581722,0 64,0 C68.4092877,0 72,3.58484404 72,8.00697327 L72,56 L119.993027,56 C124.409247,56 128,59.581722 128,64 C128,68.4092877 124.415156,72 119.993027,72 L72,72 L72,119.993027 C72,124.409247 68.418278,128 64,128 C59.5907123,128 56,124.415156 56,119.993027 L56,72 L56,72 Z"></path>
-    </g>
-</svg> button in the sidebar on the right</li><li>Click the <svg class="tc-image-done-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
-    <g fill-rule="evenodd">
-        <path d="M3.52445141,76.8322939 C2.07397484,75.3828178 1.17514421,73.3795385 1.17514421,71.1666288 L1.17514421,23.1836596 C1.17514421,18.7531992 4.75686621,15.1751442 9.17514421,15.1751442 C13.5844319,15.1751442 17.1751442,18.7606787 17.1751442,23.1836596 L17.1751442,63.1751442 L119.173716,63.1751442 C123.590457,63.1751442 127.175144,66.7568662 127.175144,71.1751442 C127.175144,75.5844319 123.592783,79.1751442 119.173716,79.1751442 L9.17657227,79.1751442 C6.96796403,79.1751442 4.9674142,78.279521 3.51911285,76.8315312 Z" id="Rectangle-285" transform="translate(64.175144, 47.175144) rotate(-45.000000) translate(-64.175144, -47.175144) "></path>
-    </g>
-</svg> button at the top right of the new tiddler</li><li>Check the TiddlyWiki command line for a message confirming the tiddler has been saved</li><li>Refresh the page in the browser to and verify that the new tiddler has been correctly saved</li></ol></div>
+<div class="tc-tiddler-body tc-reveal"><p><ul class=""><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/How%2520to%2520Read%2520a%2520Book.html">How to Read a Book</a></li></ul></p></div>
 
 
 
