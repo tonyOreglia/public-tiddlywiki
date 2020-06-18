@@ -157,3 +157,71 @@ Error: listen EADDRINUSE 0.0.0.0:8080
     at Function.Module.runMain (module.js:695:11)
     at startup (bootstrap_node.js:191:16)
     at bootstrap_node.js:612:3
+Serving on http://0.0.0.0:8080
+(press ctrl-C to exit)
+ syncer-server-filesystem: Dispatching 'save' task: $:/StoryList 
+ syncer-server-filesystem: Dispatching 'load' task: $:/_cpa/Data/todos 
+ syncer-server-filesystem: Dispatching 'load' task: add 2020 wrestling tournament dates to calendar 
+ syncer-server-filesystem: Dispatching 'load' task: Add TiddlyWiki Notification / share feature 
+ syncer-server-filesystem: Dispatching 'load' task: Age of Turbulence 
+ syncer-server-filesystem: Dispatching 'load' task: American History X 
+ syncer-server-filesystem: Dispatching 'load' task: Call of the Wild 
+ syncer-server-filesystem: Dispatching 'load' task: Cascata do Pincho 
+ syncer-server-filesystem: Dispatching 'load' task: Colocar flashcard em Anki 
+ syncer-server-filesystem: Dispatching 'load' task: Connect Tim and Rick on a call about sports writing 
+ syncer-server-filesystem: Dispatching 'load' task: Covas 
+ syncer-server-filesystem: Dispatching 'load' task: create english anki 
+ syncer-server-filesystem: Dispatching 'load' task: Create Github Repo 
+ syncer-server-filesystem: Dispatching 'load' task: Create list of places I’ve been in Portugal 
+ syncer-server-filesystem: Dispatching 'load' task: Create visualization of notes 
+ syncer-server-filesystem: Dispatching 'load' task: Criar um página com Tim Ferris's doze frases 
+ syncer-server-filesystem: Dispatching 'load' task: Crie uma lista de famosos portugueses 
+ syncer-server-filesystem: Dispatching 'load' task: Denis Gence 
+ syncer-server-filesystem: Dispatching 'load' task: Draft of 'get tickets to festival with cai' 
+ syncer-server-filesystem: Dispatching 'load' task: Encontra um filme Português para ver 
+ syncer-server-filesystem: Dispatching 'load' task: Encontra um livro de Português com fotos para ler 
+ syncer-server-filesystem: Dispatching 'load' task: Extend DB to include the date/time images are stored 
+ syncer-server-filesystem: Dispatching 'load' task: Find a mobile engineer to build a client 
+ syncer-server-filesystem: Dispatching 'load' task: Find way to add priority to tasks within tiddlywiki 
+ syncer-server-filesystem: Dispatching 'load' task: get a domain name for tiddlywiki 
+ syncer-server-filesystem: Dispatching 'load' task: get a proper soap holder for the bathroom 
+ syncer-server-filesystem: Dispatching 'load' task: Get a new cool hat 
+ syncer-server-filesystem: Dispatching 'load' task: get a scooter or rental account 
+ syncer-server-filesystem: Dispatching 'load' task: Get feedback on website 
+ syncer-server-filesystem: Dispatching 'load' task: Get clock for living room 
+ syncer-server-filesystem: Dispatching 'load' task: Get frames for pictures 
+ syncer-server-filesystem: Dispatching 'load' task: get new band for watch 
+ syncer-server-filesystem: Dispatching 'load' task: get some cool shirts 
+ syncer-server-filesystem: Dispatching 'load' task: hello 
+ syncer-server-filesystem: Dispatching 'load' task: Implement base image for people wanting a golang server with postgres in docker 
+ syncer-server-filesystem: Dispatching 'load' task: Implement image storage 
+ syncer-server-filesystem: Dispatching 'load' task: Implement machine learning 
+ syncer-server-filesystem: Dispatching 'load' task: Jerry Mcguire 
+ syncer-server-filesystem: Dispatching 'load' task: Live 
+ syncer-server-filesystem: Dispatching 'load' task: make a list of stuff we need for backpacking 
+ syncer-server-filesystem: Dispatching 'load' task: make the meetup presentation 
+ syncer-server-filesystem: Dispatching 'load' task: move rules of the road to tiddlywiki 
+ syncer-server-filesystem: Dispatching 'load' task: Old Boy 
+ syncer-server-filesystem: Dispatching 'load' task: password protect this tiddlywiki 
+ syncer-server-filesystem: Dispatching 'load' task: pay 2019 US taxes 
+ syncer-server-filesystem: Dispatching 'load' task: Pinnacles National Park, California 
+ syncer-server-filesystem: Dispatching 'load' task: Ponte De S. João 
+ syncer-server-filesystem: Dispatching 'load' task: Rain Man 
+ syncer-server-filesystem: Dispatching 'load' task: rate movies using a DB tiddler 
+ syncer-server-filesystem: Dispatching 'load' task: re-arrange living room 
+ syncer-server-filesystem: Dispatching 'load' task: Reach out to Luke Anear 
+ syncer-server-filesystem: Dispatching 'load' task: Research Investment Options 
+ syncer-server-filesystem: Dispatching 'load' task: Rio Alto Park 
+ syncer-server-filesystem: Dispatching 'load' task: Scott Arioto 
+ syncer-server-filesystem: Dispatching 'load' task: SEO 
+ syncer-server-filesystem: Dispatching 'load' task: set some tech project goals 
+ syncer-server-filesystem: Dispatching 'load' task: summarize wealth of nations 
+ syncer-server-filesystem: Dispatching 'load' task: take a look at prices for apartments outside of lisbon central 
+ syncer-server-filesystem: Dispatching 'load' task: talk to Dante about trip to Lisbon 
+ syncer-server-filesystem: Dispatching 'load' task: The Road to Serfdom 
+ syncer-server-filesystem: Dispatching 'load' task: upgrade to full detail photos on google 
+ syncer-server-filesystem: Dispatching 'load' task: Update the default display of the website wiki 
+ syncer-server-filesystem: Dispatching 'load' task: upload all go pro photos 
+ syncer-server-filesystem: Dispatching 'load' task: Viana do Castelo 
+ syncer-server-filesystem: Dispatching 'load' task: Wiplash 
+ syncer-server-filesystem: Dispatching 'save' task: $:/StoryList 
