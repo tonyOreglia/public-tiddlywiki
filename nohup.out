@@ -225,3 +225,13 @@ Serving on http://0.0.0.0:8080
  syncer-server-filesystem: Dispatching 'load' task: Viana do Castelo 
  syncer-server-filesystem: Dispatching 'load' task: Wiplash 
  syncer-server-filesystem: Dispatching 'save' task: $:/StoryList 
+Serving on http://0.0.0.0:8080
+(press ctrl-C to exit)
+ syncer-server-filesystem: Dispatching 'save' task: $:/StoryList 
+ syncer-server-filesystem: Dispatching 'save' task: $:/StoryList 
+ syncer-server-filesystem: Dispatching 'save' task: Draft of 'Wealth of Nations Book 1 Summary' by toreglia 
+ syncer-server-filesystem: Dispatching 'save' task: $:/StoryList 
+ syncer-server-filesystem: Dispatching 'save' task: Draft of 'Wealth of Nations Book 1 Summary' by toreglia 
+ syncer-server-filesystem: Dispatching 'delete' task: Draft of 'Wealth of Nations Book 1 Summary' by toreglia 
+ syncer-server-filesystem: Dispatching 'save' task: $:/StoryList 
+ syncer-server-filesystem: Dispatching 'save' task: Wealth of Nations Book 1 Summary 
