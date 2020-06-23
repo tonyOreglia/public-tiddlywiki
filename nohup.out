@@ -332,3 +332,20 @@ Serving on http://0.0.0.0:8080
  syncer-server-filesystem: Dispatching 'delete' task: Draft of 'Thu, 18th June 2020 at 9:46 AM' by toreglia 
  syncer-server-filesystem: Dispatching 'save' task: $:/StoryList 
  syncer-server-filesystem: Dispatching 'save' task: Thu, 18th June 2020 at 9:46 AM 
+Serving on http://0.0.0.0:8080
+(press ctrl-C to exit)
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE 0.0.0.0:8080
+    at Object._errnoException (util.js:992:11)
+    at _exceptionWithHostPort (util.js:1014:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1355:14)
+    at listenInCluster (net.js:1396:12)
+    at doListen (net.js:1505:7)
+    at _combinedTickCallback (internal/process/next_tick.js:141:11)
+    at process._tickCallback (internal/process/next_tick.js:180:9)
+    at Function.Module.runMain (module.js:695:11)
+    at startup (bootstrap_node.js:191:16)
+    at bootstrap_node.js:612:3
