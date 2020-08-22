@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="generator" content="TiddlyWiki" />
-<meta name="tiddlywiki-version" content="5.1.21" />
+<meta name="tiddlywiki-version" content="5.1.22" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -12,7 +12,7 @@
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
 <title>Tony's Wiki — a non-linear personal web notebook</title>
 <div id="styleArea">
-<style data-tiddler-title="$:/boot/boot.css" data-tiddler-type="text/css" type="text/css">/*
+<style data-tiddler-title="$:/boot/boot.css" data-tiddler-type="text/css" data-tiddler-revision="0" data-tiddler-bag="default" type="text/css">/*
 Basic styles used before we boot up the parsing engine
 */
 
@@ -239,134 +239,43 @@ background-image: -ms-linear-gradient(left, rgba(0,0,0,0.05) 0%, rgba(255,255,25
 
 /*
 ** Start with the normalize CSS reset, and then belay some of its effects
-*//*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+*//*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
 
 /**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
 html {
-  font-family: sans-serif; /* 1 */
-  -ms-text-size-adjust: 100%; /* 2 */
+  line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
+/* Sections
+   ========================================================================== */
+
 /**
- * Remove default margin.
+ * Remove the margin in all browsers.
  */
 
 body {
   margin: 0;
 }
 
-/* HTML5 display definitions
-   ========================================================================== */
-
 /**
- * Correct `block` display not defined in IE 8/9.
+ * Render the `main` element consistently in IE.
  */
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
+main {
   display: block;
 }
 
 /**
- * 1. Correct `inline-block` display not defined in IE 8/9.
- * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
- */
-
-audio,
-canvas,
-progress,
-video {
-  display: inline-block; /* 1 */
-  vertical-align: baseline; /* 2 */
-}
-
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-/**
- * Address `[hidden]` styling not present in IE 8/9.
- * Hide the `template` element in IE, Safari, and Firefox < 22.
- */
-
-[hidden],
-template {
-  display: none;
-}
-
-/* Links
-   ========================================================================== */
-
-/**
- * Remove the gray background color from active links in IE 10.
- */
-
-a {
-  background: transparent;
-}
-
-/**
- * Improve readability when focused and also mouse hovered in all browsers.
- */
-
-a:active,
-a:hover {
-  outline: 0;
-}
-
-/* Text-level semantics
-   ========================================================================== */
-
-/**
- * Address styling not present in IE 8/9, Safari 5, and Chrome.
- */
-
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-
-/**
- * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
- */
-
-b,
-strong {
-  font-weight: bold;
-}
-
-/**
- * Address styling not present in Safari 5 and Chrome.
- */
-
-dfn {
-  font-style: italic;
-}
-
-/**
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari 5, and Chrome.
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
  */
 
 h1 {
@@ -374,17 +283,75 @@ h1 {
   margin: 0.67em 0;
 }
 
+/* Grouping content
+   ========================================================================== */
+
 /**
- * Address styling not present in IE 8/9.
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
  */
 
-mark {
-  background: #ff0;
-  color: #000;
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
- * Address inconsistent and variable font size in all browsers.
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
  */
 
 small {
@@ -392,7 +359,8 @@ small {
 }
 
 /**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
  */
 
 sub,
@@ -403,87 +371,31 @@ sup {
   vertical-align: baseline;
 }
 
-sup {
-  top: -0.5em;
-}
-
 sub {
   bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
 }
 
 /* Embedded content
    ========================================================================== */
 
 /**
- * Remove border when inside `a` element in IE 8/9.
+ * Remove the border on images inside links in IE 10.
  */
 
 img {
-  border: 0;
-}
-
-/**
- * Correct overflow displayed oddly in IE 9.
- */
-
-svg:not(:root) {
-  overflow: hidden;
-}
-
-/* Grouping content
-   ========================================================================== */
-
-/**
- * Address margin not present in IE 8/9 and Safari 5.
- */
-
-figure {
-  margin: 1em 40px;
-}
-
-/**
- * Address differences between Firefox and other browsers.
- */
-
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
-}
-
-/**
- * Contain overflow in all browsers.
- */
-
-pre {
-  overflow: auto;
-}
-
-/**
- * Address odd `em`-unit font size rendering in all browsers.
- */
-
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
+  border-style: none;
 }
 
 /* Forms
    ========================================================================== */
 
 /**
- * Known limitation: by default, Chrome and Safari on OS X allow very limited
- * styling of `select`, unless a `border` property is set.
- */
-
-/**
- * 1. Correct color not being inherited.
- *    Known issue: affects color of disabled elements.
- * 2. Correct font properties not being inherited.
- * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
  */
 
 button,
@@ -491,146 +403,100 @@ input,
 optgroup,
 select,
 textarea {
-  color: inherit; /* 1 */
-  font: inherit; /* 2 */
-  margin: 0; /* 3 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
- * Address `overflow` set to `hidden` in IE 8/9/10.
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
  */
 
-button {
+button,
+input { /* 1 */
   overflow: visible;
 }
 
 /**
- * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Firefox, IE 8+, and Opera
- * Correct `select` style inheritance in Firefox.
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
  */
 
 button,
-select {
+select { /* 1 */
   text-transform: none;
 }
 
 /**
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
- * 2. Correct inability to style clickable `input` types in iOS.
- * 3. Improve usability and consistency of cursor style between image-type
- *    `input` and others.
+ * Correct the inability to style clickable types in iOS and Safari.
  */
 
 button,
-html input[type="button"], /* 1 */
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button; /* 2 */
-  cursor: pointer; /* 3 */
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
 }
 
 /**
- * Re-set default cursor for disabled elements.
- */
-
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-
-/**
- * Remove inner padding and border in Firefox 4+.
+ * Remove the inner border and padding in Firefox.
  */
 
 button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
   padding: 0;
 }
 
 /**
- * Address Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
+ * Restore the focus styles unset by the previous rule.
  */
 
-input {
-  line-height: normal;
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
 }
 
 /**
- * It's recommended that you don't attempt to style these elements.
- * Firefox's implementation doesn't respect box-sizing, padding, or width.
- *
- * 1. Address box sizing set to `content-box` in IE 8/9/10.
- * 2. Remove excess padding in IE 8/9/10.
- */
-
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
-}
-
-/**
- * Fix the cursor style for Chrome's increment/decrement buttons. For certain
- * `font-size` values of the `input`, it causes the cursor style of the
- * decrement button to change from `default` to `text`.
- */
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
- *    (include `-moz` to future-proof).
- */
-
-input[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box; /* 2 */
-  box-sizing: content-box;
-}
-
-/**
- * Remove inner padding and search cancel button in Safari and Chrome on OS X.
- * Safari (but not Chrome) clips the cancel button when the search input has
- * padding (and `textfield` appearance).
- */
-
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * Define consistent border, margin, and padding.
+ * Correct the padding in Firefox.
  */
 
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
+  padding: 0.35em 0.75em 0.625em;
 }
 
 /**
- * 1. Correct `color` not being inherited in IE 8/9.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
  */
 
 legend {
-  border: 0; /* 1 */
-  padding: 0; /* 2 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
- * Remove default vertical scrollbar in IE 8/9.
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
  */
 
 textarea {
@@ -638,29 +504,89 @@ textarea {
 }
 
 /**
- * Don't inherit the `font-weight` (applied by a rule above).
- * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
  */
 
-optgroup {
-  font-weight: bold;
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
-/* Tables
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
    ========================================================================== */
 
 /**
- * Remove most spacing between table cells.
+ * Add the correct display in IE 10+.
  */
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+template {
+  display: none;
 }
 
-td,
-th {
-  padding: 0;
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
 }
 *, input[type="search"] {
 	box-sizing: border-box;
@@ -719,6 +645,9 @@ th {
 	margin-left: 25px;
 	padding-left: 10px;
 	quotes: "\201C""\201D""\2018""\2019";
+}blockquote > div {
+	margin-top: 1em;
+	margin-bottom: 1em;
 }blockquote.tc-big-quote {
 	font-family: Georgia, serif;
 	position: relative;
@@ -800,6 +729,9 @@ pre > code {
 	caption-side: bottom;
 	margin-top: 1em;
 	margin-bottom: 1em;
+	/* next 2 elements needed, since normalize 8.0.1 */
+	border-collapse: collapse;
+	border-spacing: 0;
 }table th, table td {
 	padding: 0 7px 0 7px;
 	border-top: 1px solid rgba(255,255,255,.3);
@@ -1086,6 +1018,8 @@ a.tc-tiddlylink:hover {
 }.tc-tag-label svg, .tc-tag-label img {
 	height: 1em;
 	width: 1em;
+	margin-right: 3px; 
+	margin-bottom: 1px;
 	vertical-align: text-bottom;
 }.tc-edit-tags button.tc-remove-tag-button svg {
 	font-size: 0.7em;
@@ -1246,6 +1180,7 @@ a.tc-tiddlylink:hover {
 	color: rgb(255, 201, 102);
 }.tc-tiddler-title-icon {
 	vertical-align: middle;
+	margin-right: .1em;
 }.tc-system-title-prefix {
 	color: rgb(255, 255, 255);
 }.tc-titlebar h2 {
@@ -1257,6 +1192,8 @@ a.tc-tiddlylink:hover {
 	font-size: 0.9em;
 	color: rgb(255, 255, 255);
 	font-weight: 300;
+}.tc-subtitle .tc-tiddlylink {
+	margin-right: .3em;
 }.tc-tiddler-missing .tc-title {
   font-style: italic;
   font-weight: normal;
@@ -1406,6 +1343,8 @@ a.tc-tiddlylink:hover {
 	font-style: normal;
 }.tc-edit-type-dropdown a.tc-tiddlylink-missing {
 	font-style: normal;
+}.tc-type-selector .tc-edit-typeeditor {
+	width: 20%;
 }.tc-edit-tags {
 	border: 1px solid rgb(63, 63, 63);
 	padding: 4px 8px 4px 8px;
@@ -1463,7 +1402,9 @@ a.tc-tiddlylink:hover {
 	width: 10%;
 }/*
 ** Storyview Classes
-*/.tc-storyview-zoomin-tiddler {
+*/.tc-viewswitcher .tc-image-button {
+	margin-right: .3em;
+}.tc-storyview-zoomin-tiddler {
 	position: absolute;
 	display: block;
 	width: 100%;
@@ -1494,6 +1435,8 @@ a.tc-tiddlylink:hover {
 	fill: rgb(179, 179, 179);
 }.tc-drop-down button.tc-btn-invisible:hover svg {
 	fill: rgb(179, 179, 179);
+}.tc-drop-down .tc-drop-down-info {
+	padding-left: 14px;
 }.tc-drop-down p {
 	padding: 0 14px 0 14px;
 }.tc-drop-down svg {
@@ -1747,7 +1690,6 @@ a.tc-tiddlylink:hover {
 }.tc-tab-content {
 	margin-top: 14px;
 }.tc-tab-content.tc-vertical  {
-    word-break: break-word;
 	display: inline-block;
 	vertical-align: top;
 	padding-top: 0;
@@ -1755,6 +1697,7 @@ a.tc-tiddlylink:hover {
 	border-left: 1px solid rgb(255, 201, 102);
 	-webkit-flex: 1 0 70%;
 	flex: 1 0 70%;
+	overflow: auto;
 }.tc-sidebar-lists .tc-tab-buttons {
 	margin-bottom: -1px;
 }.tc-sidebar-lists .tc-tab-buttons button.tc-tab-selected {
@@ -1854,25 +1797,31 @@ a.tc-tiddlylink:hover {
 ** Alerts
 */.tc-alerts {
 	position: fixed;
-	top: 0;
+	top: 28px;
 	left: 0;
-	max-width: 500px;
+	right: 0;
+	max-width: 50%;
 	z-index: 20000;
 }.tc-alert {
 	position: relative;
-	margin: 28px;
-	padding: 14px 14px 14px 14px;
-	border: 2px solid rgb(232, 232, 125);
+	margin: 14px;
+	padding: 7px;
+	border: 1px solid rgb(232, 232, 125);
 	background-color: rgb(255, 255, 102);
 }.tc-alert-toolbar {
 	position: absolute;
-	top: 14px;
-	right: 14px;
+	top: 7px;
+	right: 7px;
+    line-height: 0;
 }.tc-alert-toolbar svg {
 	fill: rgb(224, 82, 82);
 }.tc-alert-subtitle {
 	color: rgb(224, 82, 82);
 	font-weight: bold;
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+}.tc-alert-body > p {
+	margin: 0;
 }.tc-alert-highlight {
 	color: rgb(255, 51, 51);
 }@media (min-width: 960px) {.tc-static-alert {
@@ -1917,11 +1866,27 @@ a.tc-tiddlylink:hover {
 }.tc-control-panel table, .tc-control-panel table input, .tc-control-panel table textarea {
 	width: 100%;
 }.tc-plugin-info {
-	display: block;
+	display: flex;
 	border: 1px solid rgb(255, 255, 255);
-	background-colour: rgb(38, 38, 38);
+	fill: rgb(255, 255, 255);
+	background-color: rgb(38, 38, 38);
 	margin: 0.5em 0 0.5em 0;
 	padding: 4px;
+    align-items: center;
+}.tc-plugin-info-sub-plugins .tc-plugin-info {
+    margin: 0.5em;
+	background: rgb(38, 38, 38);
+}.tc-plugin-info-sub-plugin-indicator {
+	margin: -16px 1em 0 2em;
+}.tc-plugin-info-sub-plugin-indicator button {
+	color: rgb(38, 38, 38);
+	background: rgb(179, 179, 179);
+	border-radius: 8px;
+    padding: 2px 7px;
+    font-size: 0.75em;
+}.tc-plugin-info-sub-plugins .tc-plugin-info-dropdown {
+	margin-left: 1em;
+	margin-right: 1em;
 }.tc-plugin-info-disabled {
 	background: -webkit-repeating-linear-gradient(45deg, #ff0, #ff0 10px, #eee 10px, #eee 20px);
 	background: repeating-linear-gradient(45deg, #ff0, #ff0 10px, #eee 10px, #eee 20px);
@@ -1936,30 +1901,44 @@ a.tc-tiddlylink:hover {
 }a.tc-tiddlylink.tc-plugin-info:hover .tc-plugin-info > .tc-plugin-info-chunk > svg {
 	fill: rgb(179, 179, 179);
 }.tc-plugin-info-chunk {
-	display: inline-block;
-	vertical-align: middle;
-}.tc-plugin-info-chunk h1 {
-	font-size: 1em;
-	margin: 2px 0 2px 0;
-}.tc-plugin-info-chunk h2 {
+    margin: 2px;
+}.tc-plugin-info-chunk.tc-plugin-info-toggle {
+	flex-grow: 0;
+	flex-shrink: 0;
+	line-height: 1;
+}.tc-plugin-info-chunk.tc-plugin-info-icon {
+	flex-grow: 0;
+	flex-shrink: 0;
+	line-height: 1;
+}.tc-plugin-info-chunk.tc-plugin-info-description {
+	flex-grow: 1;
+}.tc-plugin-info-chunk.tc-plugin-info-buttons {
 	font-size: 0.8em;
+	line-height: 1.2;
+	flex-grow: 0;
+	flex-shrink: 0;
+    text-align: right;
+}.tc-plugin-info-chunk.tc-plugin-info-description h1 {
+	font-size: 1em;
+	line-height: 1.2;
 	margin: 2px 0 2px 0;
-}.tc-plugin-info-chunk div {
+}.tc-plugin-info-chunk.tc-plugin-info-description h2 {
+	font-size: 0.8em;
+	line-height: 1.2;
+	margin: 2px 0 2px 0;
+}.tc-plugin-info-chunk.tc-plugin-info-description div {
 	font-size: 0.7em;
+	line-height: 1.2;
 	margin: 2px 0 2px 0;
-}.tc-plugin-info:hover > .tc-plugin-info-chunk > img, .tc-plugin-info:hover > .tc-plugin-info-chunk > svg {
-	width: 2em;
-	height: 2em;
-	fill: rgb(179, 179, 179);
-}.tc-plugin-info > .tc-plugin-info-chunk > img, .tc-plugin-info > .tc-plugin-info-chunk > svg {
-	width: 2em;
-	height: 2em;
-	fill: rgb(255, 255, 255);
-}.tc-plugin-info.tc-small-icon > .tc-plugin-info-chunk > img, .tc-plugin-info.tc-small-icon > .tc-plugin-info-chunk > svg {
+}.tc-plugin-info-chunk.tc-plugin-info-toggle img, .tc-plugin-info-chunk.tc-plugin-info-toggle svg {
 	width: 1em;
 	height: 1em;
+}.tc-plugin-info-chunk.tc-plugin-info-icon img, .tc-plugin-info-chunk.tc-plugin-info-icon svg {
+	width: 2em;
+	height: 2em;
 }.tc-plugin-info-dropdown {
 	border: 1px solid rgb(255, 255, 255);
+	background: rgb(38, 38, 38);
 	margin-top: -8px;
 }.tc-plugin-info-dropdown-message {
 	background: rgb(25, 25, 25);
@@ -1967,7 +1946,25 @@ a.tc-tiddlylink:hover {
 	font-weight: bold;
 	font-size: 0.8em;
 }.tc-plugin-info-dropdown-body {
-	padding: 1em 1em 1em 1em;
+	padding: 1em 1em 0 1em;
+	background: rgb(38, 38, 38);
+}.tc-plugin-info-sub-plugins {
+	padding: 0.5em;
+    margin: 0 1em 1em 1em;
+	background: rgb(25, 25, 25);
+}.tc-install-plugin {
+	font-weight: bold;
+	background: green;
+	color: white;
+	fill: white;
+	border-radius: 4px;
+	padding: 3px;
+}.tc-install-plugin.tc-reinstall-downgrade {
+	background: red;
+}.tc-install-plugin.tc-reinstall {
+	background: blue;
+}.tc-install-plugin.tc-reinstall-upgrade {
+	background: orange;
 }.tc-check-list {
 	line-height: 2em;
 }.tc-check-list .tc-image-button {
@@ -2275,6 +2272,10 @@ a.tc-tiddlylink:hover {
 }select {
         color: ;
         background: ;
+}/*
+** Utility classes for SVG icons
+*/.tc-fill-background {
+	fill: rgb(38, 38, 38);
 }
 
 /*
@@ -2395,200 +2396,96 @@ button.tc-btn-\%24\%3A\%2Fcore\%2Fui\%2FButtons\%2Fnew-tiddler, .tc-drop-down bu
 }
 
 
+body.tc-dirty span.tc-dirty-indicator svg {
+	transition: fill 250ms ease-in-out;
+}body .tc-image-cloud-idle {
+	fill: rgb(38, 38, 38);
+	transition: opacity 250ms ease-in-out;
+	opacity: 1;	
+}body.tc-dirty .tc-image-cloud-idle {
+	opacity: 0;
+}body .tc-image-cloud-progress {
+	transition: opacity 250ms ease-in-out;
+	transform-origin: 50% 50%;
+	transform: rotate(359deg);
+	animation: animation-rotate-slow 2s infinite linear;
+	fill: rgb(38, 38, 38);
+	opacity: 0;
+}body.tc-dirty .tc-image-cloud-progress {
+	opacity: 1;
+}@keyframes animation-rotate-slow {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: scale(359deg);
+	}
+}
+
+
 
 </style>
 </head>
 <body class="tc-body">
 
-<div class="tc-page-container tc-page-view-classic tc-language-en-GB"><div class="tc-dropzone"><span class="tc-topbar tc-topbar-left"></span><span class="tc-topbar tc-topbar-right"><span class=" tc-reveal">
-<button aria-label="hide sidebar" class="tc-btn-invisible" title="Hide sidebar"><svg class="tc-image-chevron-right tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
-    <g fill-rule="evenodd" transform="translate(-48.000000, -3.000000)">
-        <path d="M112.743107,112.12741 C111.310627,113.561013 109.331747,114.449239 107.145951,114.449239 L27.9777917,114.449239 C23.6126002,114.449239 20.0618714,110.904826 20.0618714,106.532572 C20.0618714,102.169214 23.6059497,98.6159054 27.9777917,98.6159054 L99.2285381,98.6159054 L99.2285381,27.365159 C99.2285381,22.9999675 102.77295,19.4492387 107.145205,19.4492387 C111.508562,19.4492387 115.061871,22.993317 115.061871,27.365159 L115.061871,106.533318 C115.061871,108.71579 114.175869,110.694669 112.743378,112.127981 Z" transform="translate(67.561871, 66.949239) rotate(-45.000000) translate(-67.561871, -66.949239) "></path>
-        <path d="M151.35638,112.12741 C149.923899,113.561013 147.94502,114.449239 145.759224,114.449239 L66.5910645,114.449239 C62.225873,114.449239 58.6751442,110.904826 58.6751442,106.532572 C58.6751442,102.169214 62.2192225,98.6159054 66.5910645,98.6159054 L137.841811,98.6159054 L137.841811,27.365159 C137.841811,22.9999675 141.386223,19.4492387 145.758478,19.4492387 C150.121835,19.4492387 153.675144,22.993317 153.675144,27.365159 L153.675144,106.533318 C153.675144,108.71579 152.789142,110.694669 151.356651,112.127981 Z" transform="translate(106.175144, 66.949239) rotate(-45.000000) translate(-106.175144, -66.949239) "></path>
-    </g>
-</svg></button>
-</span>
-<span class=" tc-reveal" hidden="true"></span>
+<div class="tc-page-container tc-page-view-classic tc-language-en-GB"><div class="tc-dropzone"><span class="tc-topbar tc-topbar-left"></span><span class="tc-topbar tc-topbar-right">
+<button aria-label="hide sidebar" class="tc-btn-invisible" title="Hide sidebar"><svg class="tc-image-chevron-right tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"><g fill-rule="evenodd"><path d="M83.456 63.947c0 2.027-.77 4.054-2.316 5.6l-55.98 55.98a7.92 7.92 0 01-11.196 0c-3.085-3.086-3.092-8.105 0-11.196L64.344 63.95 13.963 13.567a7.92 7.92 0 010-11.195c3.086-3.085 8.105-3.092 11.196 0l55.98 55.98a7.892 7.892 0 012.317 5.595z"></path><path d="M122.069 63.947c0 2.027-.77 4.054-2.316 5.6l-55.98 55.98a7.92 7.92 0 01-11.196 0c-3.085-3.086-3.092-8.105 0-11.196l50.382-50.382-50.382-50.382a7.92 7.92 0 010-11.195c3.086-3.085 8.104-3.092 11.196 0l55.98 55.98a7.892 7.892 0 012.316 5.595z"></path></g></svg></button>
+
+
 </span><div class="tc-sidebar-scrollable" style="overflow-y:auto;overflow-x:auto;-webkit-overflow-scrolling:touch;"><div><div class="tc-sidebar-header"><div class=" tc-reveal"><div class=" tc-reveal"><h1 class="tc-site-title">Tony's Wiki</h1></div><div class=" tc-reveal"><div class="tc-site-subtitle">a non-linear personal web notebook</div></div><div class=" tc-reveal"><p><div class="tc-page-controls"><button aria-label="home" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fhome" title="Open the default tiddlers">
 
-<svg class="tc-image-home-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
-    <g fill-rule="evenodd">
-        <path d="M112.9847,119.501583 C112.99485,119.336814 113,119.170705 113,119.003406 L113,67.56802 C116.137461,70.5156358 121.076014,70.4518569 124.133985,67.3938855 C127.25818,64.2696912 127.260618,59.2068102 124.131541,56.0777326 L70.3963143,2.34250601 C68.8331348,0.779326498 66.7828947,-0.000743167069 64.7337457,1.61675364e-05 C62.691312,-0.00409949529 60.6426632,0.777559815 59.077717,2.34250601 L33,28.420223 L33,28.420223 L33,8.00697327 C33,3.58484404 29.4092877,0 25,0 C20.581722,0 17,3.59075293 17,8.00697327 L17,44.420223 L5.3424904,56.0777326 C2.21694607,59.2032769 2.22220878,64.2760483 5.34004601,67.3938855 C8.46424034,70.5180798 13.5271213,70.5205187 16.6561989,67.3914411 L17,67.04764 L17,119.993027 C17,119.994189 17.0000002,119.995351 17.0000007,119.996514 C17.0000002,119.997675 17,119.998838 17,120 C17,124.418278 20.5881049,128 24.9992458,128 L105.000754,128 C109.418616,128 113,124.409288 113,120 C113,119.832611 112.99485,119.666422 112.9847,119.501583 Z M97,112 L97,51.5736087 L97,51.5736087 L64.7370156,19.3106244 L33,51.04764 L33,112 L97,112 Z"></path>
-    </g>
-</svg>
+<svg class="tc-image-home-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"><path d="M112.985 119.502c.01-.165.015-.331.015-.499V67.568c3.137 2.948 8.076 2.884 11.134-.174a7.999 7.999 0 00-.002-11.316L70.396 2.343A7.978 7.978 0 0064.734 0a7.957 7.957 0 00-5.656 2.343L33 28.42V8.007C33 3.585 29.41 0 25 0c-4.418 0-8 3.59-8 8.007V44.42L5.342 56.078c-3.125 3.125-3.12 8.198-.002 11.316a7.999 7.999 0 0011.316-.003l.344-.343v52.945a8.11 8.11 0 000 .007c0 4.418 3.588 8 8 8h80c4.419 0 8-3.59 8-8a8.11 8.11 0 00-.015-.498zM97 112V51.574L64.737 19.31 33 51.048V112h64z" fill-rule="evenodd"></path></svg>
 
 
 </button><button aria-label="close all" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose-all" title="Close all tiddlers">
 
-<svg class="tc-close-all-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
-    <g fill-rule="evenodd" transform="translate(-23.000000, -23.000000)">
-        <path d="M43,131 L22.9976794,131 C18.5827987,131 15,127.418278 15,123 C15,118.590712 18.5806831,115 22.9976794,115 L43,115 L43,94.9976794 C43,90.5827987 46.581722,87 51,87 C55.4092877,87 59,90.5806831 59,94.9976794 L59,115 L79.0023206,115 C83.4172013,115 87,118.581722 87,123 C87,127.409288 83.4193169,131 79.0023206,131 L59,131 L59,151.002321 C59,155.417201 55.418278,159 51,159 C46.5907123,159 43,155.419317 43,151.002321 L43,131 Z" transform="translate(51.000000, 123.000000) rotate(-45.000000) translate(-51.000000, -123.000000) "></path>
-        <path d="M43,59 L22.9976794,59 C18.5827987,59 15,55.418278 15,51 C15,46.5907123 18.5806831,43 22.9976794,43 L43,43 L43,22.9976794 C43,18.5827987 46.581722,15 51,15 C55.4092877,15 59,18.5806831 59,22.9976794 L59,43 L79.0023206,43 C83.4172013,43 87,46.581722 87,51 C87,55.4092877 83.4193169,59 79.0023206,59 L59,59 L59,79.0023206 C59,83.4172013 55.418278,87 51,87 C46.5907123,87 43,83.4193169 43,79.0023206 L43,59 Z" transform="translate(51.000000, 51.000000) rotate(-45.000000) translate(-51.000000, -51.000000) "></path>
-        <path d="M115,59 L94.9976794,59 C90.5827987,59 87,55.418278 87,51 C87,46.5907123 90.5806831,43 94.9976794,43 L115,43 L115,22.9976794 C115,18.5827987 118.581722,15 123,15 C127.409288,15 131,18.5806831 131,22.9976794 L131,43 L151.002321,43 C155.417201,43 159,46.581722 159,51 C159,55.4092877 155.419317,59 151.002321,59 L131,59 L131,79.0023206 C131,83.4172013 127.418278,87 123,87 C118.590712,87 115,83.4193169 115,79.0023206 L115,59 Z" transform="translate(123.000000, 51.000000) rotate(-45.000000) translate(-123.000000, -51.000000) "></path>
-        <path d="M115,131 L94.9976794,131 C90.5827987,131 87,127.418278 87,123 C87,118.590712 90.5806831,115 94.9976794,115 L115,115 L115,94.9976794 C115,90.5827987 118.581722,87 123,87 C127.409288,87 131,90.5806831 131,94.9976794 L131,115 L151.002321,115 C155.417201,115 159,118.581722 159,123 C159,127.409288 155.419317,131 151.002321,131 L131,131 L131,151.002321 C131,155.417201 127.418278,159 123,159 C118.590712,159 115,155.419317 115,151.002321 L115,131 Z" transform="translate(123.000000, 123.000000) rotate(-45.000000) translate(-123.000000, -123.000000) "></path>
-    </g>
-</svg>
+<svg class="tc-close-all-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"><g fill-rule="evenodd"><path d="M28 111.314l-14.144 14.143a8 8 0 01-11.313-11.313L16.686 100 2.543 85.856a8 8 0 0111.313-11.313L28 88.686l14.144-14.143a8 8 0 0111.313 11.313L39.314 100l14.143 14.144a8 8 0 01-11.313 11.313L28 111.314zM28 39.314L13.856 53.457A8 8 0 012.543 42.144L16.686 28 2.543 13.856A8 8 0 0113.856 2.543L28 16.686 42.144 2.543a8 8 0 0111.313 11.313L39.314 28l14.143 14.144a8 8 0 01-11.313 11.313L28 39.314zM100 39.314L85.856 53.457a8 8 0 01-11.313-11.313L88.686 28 74.543 13.856A8 8 0 0185.856 2.543L100 16.686l14.144-14.143a8 8 0 0111.313 11.313L111.314 28l14.143 14.144a8 8 0 01-11.313 11.313L100 39.314zM100 111.314l-14.144 14.143a8 8 0 01-11.313-11.313L88.686 100 74.543 85.856a8 8 0 0111.313-11.313L100 88.686l14.144-14.143a8 8 0 0111.313 11.313L111.314 100l14.143 14.144a8 8 0 01-11.313 11.313L100 111.314z"></path></g></svg>
 
 
 </button><button aria-label="fold all tiddlers" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Ffold-all" title="Fold the bodies of all opened tiddlers">
 
 
-<svg class="tc-image-fold-all tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
-    <g fill-rule="evenodd">
-        <rect height="16" rx="8" width="128" x="0" y="0"></rect>
-        <rect height="16" rx="8" width="128" x="0" y="64"></rect>
-        <path d="M64.0292774,58.6235628 C61.9791013,58.6242848 59.9275217,57.8435723 58.3632024,56.279253 L35.7458219,33.6618725 C32.6211696,30.5372202 32.6166093,25.4673401 35.7408036,22.3431458 C38.8586409,19.2253085 43.9325646,19.2211982 47.0595304,22.348164 L64.0250749,39.3137085 L80.9906194,22.348164 C84.1152717,19.2235117 89.1851518,19.2189514 92.3093461,22.3431458 C95.4271834,25.460983 95.4312937,30.5349067 92.3043279,33.6618725 L69.6869474,56.279253 C68.1237851,57.8424153 66.0737951,58.6247195 64.0241231,58.6250809 Z" transform="translate(64.024316, 39.313708) scale(1, -1) translate(-64.024316, -39.313708) "></path>
-        <path d="M64.0292774,123.621227 C61.9791013,123.621949 59.9275217,122.841236 58.3632024,121.276917 L35.7458219,98.6595365 C32.6211696,95.5348842 32.6166093,90.4650041 35.7408036,87.3408098 C38.8586409,84.2229725 43.9325646,84.2188622 47.0595304,87.345828 L64.0250749,104.311373 L80.9906194,87.345828 C84.1152717,84.2211757 89.1851518,84.2166154 92.3093461,87.3408098 C95.4271834,90.458647 95.4312937,95.5325707 92.3043279,98.6595365 L69.6869474,121.276917 C68.1237851,122.840079 66.0737951,123.622383 64.0241231,123.622745 Z" transform="translate(64.024316, 104.311372) scale(1, -1) translate(-64.024316, -104.311372) "></path>
-    </g>
-</svg>
+<svg class="tc-image-fold-all tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"><g fill-rule="evenodd"><rect height="16" rx="8" width="128"></rect><rect height="16" rx="8" width="128" y="64"></rect><path d="M64.03 20.004c-2.05 0-4.102.78-5.667 2.344L35.746 44.966c-3.125 3.124-3.13 8.194-.005 11.318 3.118 3.118 8.192 3.122 11.319-.005l16.965-16.965 16.966 16.965c3.124 3.125 8.194 3.13 11.318.005 3.118-3.118 3.122-8.191-.005-11.318L69.687 22.348a7.986 7.986 0 00-5.663-2.346zM64.03 85.002c-2.05-.001-4.102.78-5.667 2.344l-22.617 22.617c-3.125 3.125-3.13 8.195-.005 11.319 3.118 3.118 8.192 3.122 11.319-.005l16.965-16.966 16.966 16.966c3.124 3.125 8.194 3.13 11.318.005 3.118-3.118 3.122-8.192-.005-11.319L69.687 87.346A7.986 7.986 0 0064.024 85z"></path></g></svg>
 
 
 </button><button aria-label="unfold all tiddlers" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Funfold-all" title="Unfold the bodies of all opened tiddlers">
 
 
-<svg class="tc-image-unfold-all tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
-    <g fill-rule="evenodd">
-        <rect height="16" rx="8" width="128" x="0" y="0"></rect>
-        <rect height="16" rx="8" width="128" x="0" y="64"></rect>
-        <path d="M85.598226,8.34884273 C84.1490432,6.89863875 82.1463102,6 79.9340286,6 L47.9482224,6 C43.5292967,6 39.9411255,9.581722 39.9411255,14 C39.9411255,18.4092877 43.5260249,22 47.9482224,22 L71.9411255,22 L71.9411255,45.9929031 C71.9411255,50.4118288 75.5228475,54 79.9411255,54 C84.3504132,54 87.9411255,50.4151006 87.9411255,45.9929031 L87.9411255,14.0070969 C87.9411255,11.7964515 87.0447363,9.79371715 85.5956548,8.34412458 Z" transform="translate(63.941125, 30.000000) scale(1, -1) rotate(-45.000000) translate(-63.941125, -30.000000) "></path>
-        <path d="M85.6571005,72.2899682 C84.2079177,70.8397642 82.2051847,69.9411255 79.9929031,69.9411255 L48.0070969,69.9411255 C43.5881712,69.9411255 40,73.5228475 40,77.9411255 C40,82.3504132 43.5848994,85.9411255 48.0070969,85.9411255 L72,85.9411255 L72,109.934029 C72,114.352954 75.581722,117.941125 80,117.941125 C84.4092877,117.941125 88,114.356226 88,109.934029 L88,77.9482224 C88,75.737577 87.1036108,73.7348426 85.6545293,72.2852501 Z" transform="translate(64.000000, 93.941125) scale(1, -1) rotate(-45.000000) translate(-64.000000, -93.941125) "></path>
-    </g>
-</svg>
+<svg class="tc-image-unfold-all tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"><g fill-rule="evenodd"><rect height="16" rx="8" width="128"></rect><rect height="16" rx="8" width="128" y="64"></rect><path d="M63.945 60.624c-2.05 0-4.101-.78-5.666-2.345L35.662 35.662c-3.125-3.125-3.13-8.195-.005-11.319 3.118-3.118 8.192-3.122 11.319.005L63.94 41.314l16.966-16.966c3.124-3.124 8.194-3.129 11.318-.005 3.118 3.118 3.122 8.192-.005 11.319L69.603 58.279a7.986 7.986 0 01-5.663 2.346zM64.004 124.565c-2.05 0-4.102-.78-5.666-2.345L35.721 99.603c-3.125-3.125-3.13-8.195-.005-11.319 3.118-3.118 8.191-3.122 11.318.005L64 105.255l16.966-16.966c3.124-3.124 8.194-3.129 11.318-.005 3.118 3.118 3.122 8.192-.005 11.319L69.662 122.22a7.986 7.986 0 01-5.663 2.346z"></path></g></svg>
 
 
-</button><button aria-label="new tiddler" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fnew-tiddler" title="Create a new tiddler">
+</button><button aria-label="new tiddler" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fnew-tiddler" title="Create a new tiddler"><svg class="tc-image-new-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"><path d="M56 72H8.007C3.591 72 0 68.418 0 64c0-4.41 3.585-8 8.007-8H56V8.007C56 3.591 59.582 0 64 0c4.41 0 8 3.585 8 8.007V56h47.993c4.416 0 8.007 3.582 8.007 8 0 4.41-3.585 8-8.007 8H72v47.993c0 4.416-3.582 8.007-8 8.007-4.41 0-8-3.585-8-8.007V72z" fill-rule="evenodd"></path></svg></button><button aria-label="new journal" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fnew-journal" title="Create a new journal tiddler">
 
-<svg class="tc-image-new-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
-    <g fill-rule="evenodd">
-        <path d="M56,72 L8.00697327,72 C3.59075293,72 0,68.418278 0,64 C0,59.5907123 3.58484404,56 8.00697327,56 L56,56 L56,8.00697327 C56,3.59075293 59.581722,0 64,0 C68.4092877,0 72,3.58484404 72,8.00697327 L72,56 L119.993027,56 C124.409247,56 128,59.581722 128,64 C128,68.4092877 124.415156,72 119.993027,72 L72,72 L72,119.993027 C72,124.409247 68.418278,128 64,128 C59.5907123,128 56,124.415156 56,119.993027 L56,72 L56,72 Z"></path>
-    </g>
-</svg>
+<svg class="tc-image-new-journal-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"><g fill-rule="evenodd"><path d="M102.545 112.818v11.818c0 1.306 1.086 2.364 2.425 2.364h6.06c1.34 0 2.425-1.058 2.425-2.364v-11.818h12.12c1.34 0 2.425-1.058 2.425-2.363v-5.91c0-1.305-1.085-2.363-2.424-2.363h-12.121V90.364c0-1.306-1.086-2.364-2.425-2.364h-6.06c-1.34 0-2.425 1.058-2.425 2.364v11.818h-12.12c-1.34 0-2.425 1.058-2.425 2.363v5.91c0 1.305 1.085 2.363 2.424 2.363h12.121zM60.016 4.965c-4.781-2.76-10.897-1.118-13.656 3.66L5.553 79.305A9.993 9.993 0 009.21 92.963l51.04 29.468c4.78 2.76 10.897 1.118 13.655-3.66l40.808-70.681a9.993 9.993 0 00-3.658-13.656L60.016 4.965zm-3.567 27.963a6 6 0 106-10.393 6 6 0 00-6 10.393zm31.697 17.928a6 6 0 106-10.392 6 6 0 00-6 10.392z"></path><text class="tc-fill-background" font-family="Helvetica" font-size="47.172" font-weight="bold" transform="rotate(30 25.742 95.82)"><tspan text-anchor="middle" x="42" y="77.485">22</tspan></text></g></svg>
 
 
-</button>
-<button aria-label="new journal" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fnew-journal" title="Create a new journal tiddler">
+</button><button aria-label="control panel" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fcontrol-panel " title="Open control panel">
 
-<svg class="tc-image-new-journal-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
-    <g fill-rule="evenodd">
-        <path d="M102.545455,112.818182 L102.545455,124.636364 L102.545455,124.636364 L102.545455,124.636364 C102.545455,125.941761 103.630828,127 104.969697,127 L111.030303,127 C112.369172,127 113.454545,125.941761 113.454545,124.636364 L113.454545,112.818182 L125.575758,112.818182 C126.914626,112.818182 128,111.759982 128,110.454545 L128,104.545455 C128,103.240018 126.914626,102.181818 125.575758,102.181818 L113.454545,102.181818 L113.454545,90.3636364 C113.454545,89.0582 112.369172,88 111.030303,88 L104.969697,88 L104.969697,88 C103.630828,88 102.545455,89.0582 102.545455,90.3636364 L102.545455,102.181818 L90.4242424,102.181818 L90.4242424,102.181818 C89.0853705,102.181818 88,103.240018 88,104.545455 L88,110.454545 L88,110.454545 L88,110.454545 C88,111.759982 89.0853705,112.818182 90.4242424,112.818182 L102.545455,112.818182 Z"></path>
-        <g transform="translate(59.816987, 64.316987) rotate(30.000000) translate(-59.816987, -64.316987) translate(20.316987, 12.816987)">
-            <g transform="translate(0.000000, 0.000000)">
-                <path d="M9.99631148,0 C4.4755011,0 -2.27373675e-13,4.48070044 -2.27373675e-13,9.99759461 L-2.27373675e-13,91.6128884 C-2.27373675e-13,97.1344074 4.46966773,101.610483 9.99631148,101.610483 L68.9318917,101.610483 C74.4527021,101.610483 78.9282032,97.1297826 78.9282032,91.6128884 L78.9282032,9.99759461 C78.9282032,4.47607557 74.4585355,0 68.9318917,0 L9.99631148,0 Z M20.8885263,26 C24.2022348,26 26.8885263,23.3137085 26.8885263,20 C26.8885263,16.6862915 24.2022348,14 20.8885263,14 C17.5748178,14 14.8885263,16.6862915 14.8885263,20 C14.8885263,23.3137085 17.5748178,26 20.8885263,26 Z M57.3033321,25.6783342 C60.6170406,25.6783342 63.3033321,22.9920427 63.3033321,19.6783342 C63.3033321,16.3646258 60.6170406,13.6783342 57.3033321,13.6783342 C53.9896236,13.6783342 51.3033321,16.3646258 51.3033321,19.6783342 C51.3033321,22.9920427 53.9896236,25.6783342 57.3033321,25.6783342 Z"></path>
-                <text fill="#FFFFFF" font-family="Helvetica" font-size="47.1724138" font-weight="bold">
-                    <tspan text-anchor="middle" x="42" y="77.4847912">5</tspan>
-                </text>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg class="tc-image-options-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"><path d="M110.488 76a47.712 47.712 0 01-5.134 12.384l6.724 6.724c3.123 3.123 3.132 8.192.011 11.313l-5.668 5.668c-3.12 3.12-8.186 3.117-11.313-.01l-6.724-6.725c-3.82 2.258-7.98 4-12.384 5.134v9.505c0 4.417-3.578 8.007-7.992 8.007h-8.016C55.58 128 52 124.415 52 119.993v-9.505a47.712 47.712 0 01-12.384-5.134l-6.724 6.725c-3.123 3.122-8.192 3.131-11.313.01l-5.668-5.668c-3.12-3.12-3.116-8.186.01-11.313l6.725-6.724c-2.257-3.82-4-7.98-5.134-12.384H8.007C3.591 76 0 72.422 0 68.01v-8.017C0 55.58 3.585 52 8.007 52h9.505a47.712 47.712 0 015.134-12.383l-6.724-6.725c-3.123-3.122-3.132-8.191-.011-11.312l5.668-5.669c3.12-3.12 8.186-3.116 11.313.01l6.724 6.725c3.82-2.257 7.98-4 12.384-5.134V8.007C52 3.591 55.578 0 59.992 0h8.016C72.42 0 76 3.585 76 8.007v9.505a47.712 47.712 0 0112.384 5.134l6.724-6.724c3.123-3.123 8.192-3.132 11.313-.01l5.668 5.668c3.12 3.12 3.116 8.186-.01 11.312l-6.725 6.725c2.257 3.82 4 7.979 5.134 12.383h9.505c4.416 0 8.007 3.578 8.007 7.992v8.017c0 4.411-3.585 7.991-8.007 7.991h-9.505zM64 96c17.673 0 32-14.327 32-32 0-17.673-14.327-32-32-32-17.673 0-32 14.327-32 32 0 17.673 14.327 32 32 32z" fill-rule="evenodd"></path></svg>
 
 
-</button>
-<button aria-label="control panel" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fcontrol-panel " title="Open control panel">
+</button><button aria-label="advanced search" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fadvanced-search " title="Advanced search">
 
-<svg class="tc-image-options-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
-    <g fill-rule="evenodd">
-        <path d="M110.48779,76.0002544 C109.354214,80.4045063 107.611262,84.5641217 105.354171,88.3838625 L105.354171,88.3838625 L112.07833,95.1080219 C115.20107,98.2307613 115.210098,103.299824 112.089164,106.420759 L106.420504,112.089418 C103.301049,115.208874 98.2346851,115.205502 95.1077675,112.078585 L88.3836082,105.354425 C84.5638673,107.611516 80.4042519,109.354468 76,110.488045 L76,110.488045 L76,119.993281 C76,124.409501 72.4220153,128.000254 68.0083475,128.000254 L59.9916525,128.000254 C55.5800761,128.000254 52,124.41541 52,119.993281 L52,110.488045 C47.5957481,109.354468 43.4361327,107.611516 39.6163918,105.354425 L32.8922325,112.078585 C29.7694931,115.201324 24.7004301,115.210353 21.5794957,112.089418 L15.9108363,106.420759 C12.7913807,103.301303 12.7947522,98.2349395 15.9216697,95.1080219 L22.6458291,88.3838625 C20.3887383,84.5641217 18.6457859,80.4045063 17.5122098,76.0002544 L8.00697327,76.0002544 C3.59075293,76.0002544 2.19088375e-16,72.4222697 4.89347582e-16,68.0086019 L9.80228577e-16,59.9919069 C1.25035972e-15,55.5803305 3.58484404,52.0002544 8.00697327,52.0002544 L17.5122098,52.0002544 C18.6457859,47.5960025 20.3887383,43.4363871 22.6458291,39.6166462 L15.9216697,32.8924868 C12.7989304,29.7697475 12.7899019,24.7006845 15.9108363,21.5797501 L21.5794957,15.9110907 C24.6989513,12.7916351 29.7653149,12.7950065 32.8922325,15.9219241 L39.6163918,22.6460835 C43.4361327,20.3889927 47.5957481,18.6460403 52,17.5124642 L52,8.00722764 C52,3.5910073 55.5779847,0.000254375069 59.9916525,0.000254375069 L68.0083475,0.000254375069 C72.4199239,0.000254375069 76,3.58509841 76,8.00722764 L76,17.5124642 C80.4042519,18.6460403 84.5638673,20.3889927 88.3836082,22.6460835 L95.1077675,15.9219241 C98.2305069,12.7991848 103.29957,12.7901562 106.420504,15.9110907 L112.089164,21.5797501 C115.208619,24.6992057 115.205248,29.7655693 112.07833,32.8924868 L105.354171,39.6166462 L105.354171,39.6166462 C107.611262,43.4363871 109.354214,47.5960025 110.48779,52.0002544 L119.993027,52.0002544 C124.409247,52.0002544 128,55.5782391 128,59.9919069 L128,68.0086019 C128,72.4201783 124.415156,76.0002544 119.993027,76.0002544 L110.48779,76.0002544 L110.48779,76.0002544 Z M64,96.0002544 C81.673112,96.0002544 96,81.6733664 96,64.0002544 C96,46.3271424 81.673112,32.0002544 64,32.0002544 C46.326888,32.0002544 32,46.3271424 32,64.0002544 C32,81.6733664 46.326888,96.0002544 64,96.0002544 Z"></path>
-    </g>
-</svg>
+<svg class="tc-image-advanced-search-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"><g fill-rule="evenodd"><path d="M74.565 87.985A47.776 47.776 0 0148 96C21.49 96 0 74.51 0 48S21.49 0 48 0s48 21.49 48 48c0 9.854-2.97 19.015-8.062 26.636l34.347 34.347a9.443 9.443 0 010 13.36 9.446 9.446 0 01-13.36 0l-34.36-34.358zM48 80c17.673 0 32-14.327 32-32 0-17.673-14.327-32-32-32-17.673 0-32 14.327-32 32 0 17.673 14.327 32 32 32z"></path><circle cx="48" cy="48" r="8"></circle><circle cx="28" cy="48" r="8"></circle><circle cx="68" cy="48" r="8"></circle></g></svg>
 
 
-</button>
-<button aria-label="advanced search" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fadvanced-search " title="Advanced search">
+</button><button aria-label="tiddler manager" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmanager " title="Open tiddler manager">
 
-<svg class="tc-image-advanced-search-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
-    <g fill-rule="evenodd">
-        <path d="M74.5651535,87.9848361 C66.9581537,93.0488876 57.8237115,96 48,96 C21.490332,96 0,74.509668 0,48 C0,21.490332 21.490332,0 48,0 C74.509668,0 96,21.490332 96,48 C96,57.8541369 93.0305793,67.0147285 87.9377231,74.6357895 L122.284919,108.982985 C125.978897,112.676963 125.973757,118.65366 122.284271,122.343146 C118.593975,126.033442 112.613238,126.032921 108.92411,122.343793 L74.5651535,87.9848361 Z M48,80 C65.673112,80 80,65.673112 80,48 C80,30.326888 65.673112,16 48,16 C30.326888,16 16,30.326888 16,48 C16,65.673112 30.326888,80 48,80 Z"></path>
-        <circle cx="48" cy="48" r="8"></circle>
-        <circle cx="28" cy="48" r="8"></circle>
-        <circle cx="68" cy="48" r="8"></circle>
-    </g>
-</svg>
+<svg class="tc-image-list tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"><path d="M87.748 128H23.999c-4.418 0-7.999-3.59-7.999-8.007V8.007C16 3.585 19.588 0 24 0h80c4.419 0 8 3.59 8 8.007V104H91.25c-.965 0-1.84.392-2.473 1.025a3.476 3.476 0 00-1.029 2.476V128zm8-.12l15.88-15.88h-15.88v15.88zM40 15.508A3.502 3.502 0 0143.5 12h55c1.933 0 3.5 1.561 3.5 3.509v.982A3.502 3.502 0 0198.5 20h-55a3.498 3.498 0 01-3.5-3.509v-.982zM32 22a6 6 0 100-12 6 6 0 000 12zm8 9.509A3.502 3.502 0 0143.5 28h55c1.933 0 3.5 1.561 3.5 3.509v.982A3.502 3.502 0 0198.5 36h-55a3.498 3.498 0 01-3.5-3.509v-.982zm0 16A3.502 3.502 0 0143.5 44h55c1.933 0 3.5 1.561 3.5 3.509v.982A3.502 3.502 0 0198.5 52h-55a3.498 3.498 0 01-3.5-3.509v-.982zm0 16A3.502 3.502 0 0143.5 60h55c1.933 0 3.5 1.561 3.5 3.509v.982A3.502 3.502 0 0198.5 68h-55a3.498 3.498 0 01-3.5-3.509v-.982zm0 16A3.502 3.502 0 0143.5 76h55c1.933 0 3.5 1.561 3.5 3.509v.982A3.502 3.502 0 0198.5 84h-55a3.498 3.498 0 01-3.5-3.509v-.982zm0 16A3.502 3.502 0 0143.5 92h55c1.933 0 3.5 1.561 3.5 3.509v.982A3.502 3.502 0 0198.5 100h-55a3.498 3.498 0 01-3.5-3.509v-.982zm0 16A3.505 3.505 0 0143.497 108h33.006A3.497 3.497 0 0180 111.509v.982A3.505 3.505 0 0176.503 116H43.497A3.497 3.497 0 0140 112.491v-.982zM32 38a6 6 0 100-12 6 6 0 000 12zm0 16a6 6 0 100-12 6 6 0 000 12zm0 16a6 6 0 100-12 6 6 0 000 12zm0 16a6 6 0 100-12 6 6 0 000 12zm0 16a6 6 0 100-12 6 6 0 000 12zm0 16a6 6 0 100-12 6 6 0 000 12z" fill-rule="evenodd"></path></svg>
 
 
-</button>
-<button aria-label="tiddler manager" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmanager " title="Open tiddler manager">
+</button><button aria-label="tag manager" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Ftag-manager " title="Open tag manager">
 
-<svg class="tc-image-list tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
-    <g fill-rule="evenodd">
-        <path d="M0.719999312,185.568543 C2.21955287,181.862817 3.0452019,177.812144 3.0452019,173.568542 C3.0452019,155.891545 -11.2816707,141.568542 -28.9547636,141.568542 L-60.9548326,141.568542 C-78.6344937,141.568542 -92.9547981,155.895431 -92.9547981,173.568542 C-92.9547981,191.24554 -78.6279255,205.568542 -60.9548326,205.568542 L-28.9547636,205.568542 C-27.593228,205.568542 -26.2516158,205.483573 -24.9349335,205.31865 C-31.5207556,201.78951 -36.8809788,196.272192 -40.2126959,189.568542 L-60.9493786,189.568542 C-69.7889277,189.568542 -76.9547981,182.407041 -76.9547981,173.568542 C-76.9547981,164.731986 -69.7994766,157.568542 -60.9493786,157.568542 L-28.9602176,157.568542 C-20.1206685,157.568542 -12.9547981,164.730044 -12.9547981,173.568542 C-12.9547981,176.946528 -14.0004297,180.080016 -15.7866505,182.6623 C-13.6856165,184.473592 -10.949961,185.568542 -7.9585771,185.568542 L0.720002586,185.568542 Z" transform="translate(-44.954798, 173.568542) rotate(-225.000000) translate(44.954798, -173.568542) "></path>
-        <path d="M87.7480315,128 L23.9992458,128 C19.5813843,128 16,124.409247 16,119.993027 L16,8.00697327 C16,3.58484404 19.5881049,0 23.9992458,0 L104.000754,0 C108.418616,0 112,3.59075293 112,8.00697327 L112,104 L91.2492027,104 C90.2848199,104 89.410573,104.391703 88.7768998,105.025201 C88.1373658,105.661376 87.7480315,106.53563 87.7480315,107.501171 L87.7480315,128 Z M95.7480315,127.879386 L111.627417,112 L95.7480315,112 L95.7480315,127.879386 Z M40,15.5089165 C40,13.5709954 41.5636015,12 43.4998101,12 L98.5001899,12 C100.433082,12 102,13.5614718 102,15.5089165 L102,16.4910835 C102,18.4290046 100.436399,20 98.5001899,20 L43.4998101,20 C41.5669183,20 40,18.4385282 40,16.4910835 L40,15.5089165 Z M32,22 C35.3137085,22 38,19.3137085 38,16 C38,12.6862915 35.3137085,10 32,10 C28.6862915,10 26,12.6862915 26,16 C26,19.3137085 28.6862915,22 32,22 Z M40,31.5089165 C40,29.5709954 41.5636015,28 43.4998101,28 L98.5001899,28 C100.433082,28 102,29.5614718 102,31.5089165 L102,32.4910835 C102,34.4290046 100.436399,36 98.5001899,36 L43.4998101,36 C41.5669183,36 40,34.4385282 40,32.4910835 L40,31.5089165 Z M40,47.5089165 C40,45.5709954 41.5636015,44 43.4998101,44 L98.5001899,44 C100.433082,44 102,45.5614718 102,47.5089165 L102,48.4910835 C102,50.4290046 100.436399,52 98.5001899,52 L43.4998101,52 C41.5669183,52 40,50.4385282 40,48.4910835 L40,47.5089165 Z M40,63.5089165 C40,61.5709954 41.5636015,60 43.4998101,60 L98.5001899,60 C100.433082,60 102,61.5614718 102,63.5089165 L102,64.4910835 C102,66.4290046 100.436399,68 98.5001899,68 L43.4998101,68 C41.5669183,68 40,66.4385282 40,64.4910835 L40,63.5089165 Z M40,79.5089165 C40,77.5709954 41.5636015,76 43.4998101,76 L98.5001899,76 C100.433082,76 102,77.5614718 102,79.5089165 L102,80.4910835 C102,82.4290046 100.436399,84 98.5001899,84 L43.4998101,84 C41.5669183,84 40,82.4385282 40,80.4910835 L40,79.5089165 Z M40,95.5089165 C40,93.5709954 41.5636015,92 43.4998101,92 L98.5001899,92 C100.433082,92 102,93.5614718 102,95.5089165 L102,96.4910835 C102,98.4290046 100.436399,100 98.5001899,100 L43.4998101,100 C41.5669183,100 40,98.4385282 40,96.4910835 L40,95.5089165 Z M40,111.508916 C40,109.570995 41.5680474,108 43.4972017,108 L76.5027983,108 C78.4342495,108 80,109.561472 80,111.508916 L80,112.491084 C80,114.429005 78.4319526,116 76.5027983,116 L43.4972017,116 C41.5657505,116 40,114.438528 40,112.491084 L40,111.508916 Z M32,38 C35.3137085,38 38,35.3137085 38,32 C38,28.6862915 35.3137085,26 32,26 C28.6862915,26 26,28.6862915 26,32 C26,35.3137085 28.6862915,38 32,38 Z M32,54 C35.3137085,54 38,51.3137085 38,48 C38,44.6862915 35.3137085,42 32,42 C28.6862915,42 26,44.6862915 26,48 C26,51.3137085 28.6862915,54 32,54 Z M32,70 C35.3137085,70 38,67.3137085 38,64 C38,60.6862915 35.3137085,58 32,58 C28.6862915,58 26,60.6862915 26,64 C26,67.3137085 28.6862915,70 32,70 Z M32,86 C35.3137085,86 38,83.3137085 38,80 C38,76.6862915 35.3137085,74 32,74 C28.6862915,74 26,76.6862915 26,80 C26,83.3137085 28.6862915,86 32,86 Z M32,102 C35.3137085,102 38,99.3137085 38,96 C38,92.6862915 35.3137085,90 32,90 C28.6862915,90 26,92.6862915 26,96 C26,99.3137085 28.6862915,102 32,102 Z M32,118 C35.3137085,118 38,115.313708 38,112 C38,108.686292 35.3137085,106 32,106 C28.6862915,106 26,108.686292 26,112 C26,115.313708 28.6862915,118 32,118 Z"></path>
-    </g>
-</svg>
+<svg class="tc-image-tag-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"><g fill-rule="evenodd"><path d="M18.164 47.66l.004 4.105c.003 3.823 2.19 9.097 4.885 11.792l61.85 61.85c2.697 2.697 7.068 2.69 9.769-.01L125.767 94.3a6.903 6.903 0 00.01-9.77L63.928 22.683c-2.697-2.697-7.976-4.88-11.796-4.881l-27.076-.007a6.902 6.902 0 00-6.91 6.91l.008 9.96.287.033c3.73.411 8.489-.044 13.365-1.153a9.702 9.702 0 0111.14-3.662l.291-.13.128.285a9.7 9.7 0 013.3 2.17c3.796 3.796 3.801 9.945.012 13.734-3.618 3.618-9.386 3.777-13.204.482-5.365 1.122-10.674 1.596-15.309 1.237z"></path><path d="M47.633 39.532l.023.051c-9.689 4.356-21.584 6.799-30.396 5.828C5.273 44.089-1.028 36.43 2.443 24.078 5.562 12.976 14.3 4.361 24.047 1.548c10.68-3.083 19.749 1.968 19.749 13.225h-8.623c0-4.859-3.078-6.573-8.735-4.94-6.91 1.995-13.392 8.383-15.694 16.577-1.915 6.818.417 9.653 7.46 10.43 7.126.785 17.531-1.352 25.917-5.121l.027.06.036-.017c1.76-.758 6.266 6.549 3.524 7.74a2.8 2.8 0 01-.075.03z"></path></g></svg>
 
 
-</button>
-<button aria-label="tag manager" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Ftag-manager " title="Open tag manager">
+</button><span class="tc-popup-keep"><button aria-label="palette" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fpalette" title="Choose the colour palette"><svg class="tc-image-palette tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"><path d="M80.247 39.182a93.52 93.52 0 00-16.228-1.4C28.662 37.781 0 57.131 0 81.002c0 9.642 4.676 18.546 12.58 25.735C23.504 91.19 26.34 72.395 36.89 63.562c15.183-12.713 26.538-7.828 26.538-7.828l16.82-16.552zm26.535 9.655c13.049 7.913 21.257 19.392 21.257 32.166 0 9.35.519 17.411-11.874 25.08-10.797 6.681-3.824-6.536-11.844-10.898s-19.946 1.308-18.213 7.906c3.2 12.181 19.422 11.455 6.314 16.658-13.107 5.202-18.202 4.476-28.403 4.476-7.821 0-15.315-.947-22.243-2.68 9.844-4.197 27.88-12.539 33.354-19.456C82.788 92.409 87.37 80 83.324 72.484c-.194-.359 11.215-11.668 23.458-23.647zM1.134 123.867l-.66.002c33.479-14.94 22.161-64.226 58.818-64.226.317 1.418.644 2.944 1.062 4.494-25.907-4.166-23.567 48.031-59.22 59.73zm.713-.007c38.872-.506 78.152-22.347 78.152-44.813-9.27 0-14.073-3.48-16.816-7.942-16.597-7.003-30.365 45.715-61.336 52.755zm65.351-64.008c-4.45 4.115 4.886 16.433 11.318 11.318l45.27-45.27c11.317-11.318 0-22.635-11.318-11.318-11.317 11.318-33.518 34.405-45.27 45.27z" fill-rule="evenodd"></path></svg> </button></span><span class=" tc-reveal" hidden="true"></span><span class="tc-popup-keep"><button aria-label="theme" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Ftheme" title="Choose the display theme"><svg class="tc-image-theme-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"><g fill-rule="evenodd"><path d="M55.854 66.945a122.626 122.626 0 01-3.9-4.819c-11.064-14.548-16.645-6.888-22.96 0-6.315 6.888 1.664 12.47-4.33 17.335-5.993 4.866-5.623 6.552-15.737-2.35-10.115-8.9-10.815-11.351-6.172-16.43 4.644-5.08 8.524 2.918 18.01-6.108 9.485-9.026 1.517-17.026 1.517-17.026S42.03-2.824 68.42.157c26.39 2.982-9.984-3.86-19.031 27.801-3.874 13.556.72 10.362 8.066 16.087 1.707 1.33 6.428 4.732 12.671 9.318-6.129 5.879-11.157 10.669-14.273 13.582zm11.641 12.947c16.013 17.036 37.742 37.726 45.117 40.42 10.432 3.813 15.388-3.141 15.388-14.79 0-7.151-23.83-26.542-43.924-41.769-7.408 7.156-13.376 12.953-16.58 16.139z"></path><path d="M11.069 109.828L46.31 74.587a3.56 3.56 0 115.037-5.032l15.098 15.098a3.56 3.56 0 11-5.032 5.037l-35.24 35.241c-4.171 4.17-10.933 4.17-15.104 0-4.17-4.17-4.17-10.933 0-15.103zM124.344 6.622l5.034 5.034-7.49 12.524-7.613 2.58L61.413 79.62l-5.034-5.034 52.861-52.862 2.58-7.614 12.524-7.49z"></path></g></svg> </button></span><span class=" tc-reveal" hidden="true"></span><button aria-label="print page" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fprint" title="Print the current page">
 
-<svg class="tc-image-tag-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
-    <g fill-rule="evenodd">
-        <path d="M18.1643182,47.6600756 L18.1677196,51.7651887 C18.1708869,55.5878829 20.3581578,60.8623899 23.0531352,63.5573673 L84.9021823,125.406414 C87.5996731,128.103905 91.971139,128.096834 94.6717387,125.396234 L125.766905,94.3010679 C128.473612,91.5943612 128.472063,87.2264889 125.777085,84.5315115 L63.9280381,22.6824644 C61.2305472,19.9849735 55.9517395,17.801995 52.1318769,17.8010313 L25.0560441,17.7942007 C21.2311475,17.7932358 18.1421354,20.8872832 18.1452985,24.7049463 L18.1535504,34.6641936 C18.2481119,34.6754562 18.3439134,34.6864294 18.4409623,34.6971263 C22.1702157,35.1081705 26.9295004,34.6530132 31.806204,33.5444844 C32.1342781,33.0700515 32.5094815,32.6184036 32.9318197,32.1960654 C35.6385117,29.4893734 39.5490441,28.718649 42.94592,29.8824694 C43.0432142,29.8394357 43.1402334,29.7961748 43.2369683,29.7526887 L43.3646982,30.0368244 C44.566601,30.5115916 45.6933052,31.2351533 46.6655958,32.2074439 C50.4612154,36.0030635 50.4663097,42.1518845 46.6769742,45.94122 C43.0594074,49.5587868 37.2914155,49.7181264 33.4734256,46.422636 C28.1082519,47.5454734 22.7987486,48.0186448 18.1643182,47.6600756 Z"></path>
-        <path d="M47.6333528,39.5324628 L47.6562932,39.5834939 C37.9670934,43.9391617 26.0718874,46.3819521 17.260095,45.4107025 C5.27267473,44.0894301 -1.02778744,36.4307276 2.44271359,24.0779512 C5.56175386,12.9761516 14.3014034,4.36129832 24.0466405,1.54817001 C34.7269254,-1.53487574 43.7955833,3.51606438 43.7955834,14.7730751 L35.1728168,14.7730752 C35.1728167,9.91428944 32.0946059,8.19982862 26.4381034,9.83267419 C19.5270911,11.8276553 13.046247,18.2159574 10.7440788,26.4102121 C8.82861123,33.2280582 11.161186,36.0634845 18.2047888,36.8398415 C25.3302805,37.6252244 35.7353482,35.4884477 44.1208333,31.7188498 L44.1475077,31.7781871 C44.159701,31.7725635 44.1718402,31.7671479 44.1839238,31.7619434 C45.9448098,31.0035157 50.4503245,38.3109156 47.7081571,39.5012767 C47.6834429,39.512005 47.6585061,39.5223987 47.6333528,39.5324628 Z"></path>
-    </g>
-</svg>
+<svg class="tc-image-print-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"><g fill-rule="evenodd"><path d="M112 71V30.5h-.032c-.035-2-.816-3.99-2.343-5.516L86.998 2.357A7.978 7.978 0 0081 .02V0H24a8 8 0 00-8 8v63h8V8h57v14.5c0 4.422 3.582 8 8 8h15V71h8z"></path><rect height="8" rx="4" width="64" x="32" y="36"></rect><rect height="8" rx="4" width="64" x="32" y="52"></rect><rect height="8" rx="4" width="40" x="32" y="20"></rect><path d="M0 80.005C0 71.165 7.156 64 16 64h96c8.836 0 16 7.155 16 16.005v31.99c0 8.84-7.156 16.005-16 16.005H16c-8.836 0-16-7.155-16-16.005v-31.99zM104 96a8 8 0 100-16 8 8 0 000 16z"></path></g></svg>
 
 
-</button>
-<span class="tc-popup-keep">
-<button aria-label="palette" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fpalette" title="Choose the colour palette">
-
-<svg class="tc-image-palette tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
-    <g fill-rule="evenodd">
-        <path d="M80.2470434,39.1821571 C75.0645698,38.2680897 69.6261555,37.7814854 64.0193999,37.7814854 C28.6624616,37.7814854 0,57.1324214 0,81.0030106 C0,90.644534 4.67604329,99.5487133 12.5805659,106.738252 C23.5031767,91.1899067 26.3405471,72.3946229 36.8885698,63.5622337 C52.0716764,50.8486559 63.4268694,55.7343343 63.4268694,55.7343343 L80.2470434,39.1821571 Z M106.781666,48.8370714 C119.830962,56.749628 128.0388,68.229191 128.0388,81.0030106 C128.0388,90.3534932 128.557501,98.4142085 116.165191,106.082518 C105.367708,112.763955 112.341384,99.546808 104.321443,95.1851533 C96.3015017,90.8234987 84.3749007,96.492742 86.1084305,103.091059 C89.3087234,115.272303 105.529892,114.54645 92.4224435,119.748569 C79.3149955,124.950687 74.2201582,124.224536 64.0193999,124.224536 C56.1979176,124.224536 48.7040365,123.277578 41.7755684,121.544216 C51.620343,117.347916 69.6563669,109.006202 75.129737,102.088562 C82.7876655,92.4099199 87.3713218,80.0000002 83.3235694,72.4837191 C83.1303943,72.1250117 94.5392656,60.81569 106.781666,48.8370714 Z M1.13430476,123.866563 C0.914084026,123.867944 0.693884185,123.868637 0.473712455,123.868637 C33.9526848,108.928928 22.6351223,59.642592 59.2924543,59.6425917 C59.6085574,61.0606542 59.9358353,62.5865065 60.3541977,64.1372318 C34.4465025,59.9707319 36.7873124,112.168427 1.13429588,123.866563 L1.13430476,123.866563 Z M1.84669213,123.859694 C40.7185279,123.354338 79.9985412,101.513051 79.9985401,79.0466836 C70.7284906,79.0466835 65.9257264,75.5670082 63.1833375,71.1051511 C46.585768,64.1019718 32.81846,116.819636 1.84665952,123.859695 L1.84669213,123.859694 Z M67.1980193,59.8524981 C62.748213,63.9666823 72.0838429,76.2846822 78.5155805,71.1700593 C89.8331416,59.8524993 112.468264,37.2173758 123.785825,25.8998146 C135.103386,14.5822535 123.785825,3.26469247 112.468264,14.5822535 C101.150703,25.8998144 78.9500931,48.9868127 67.1980193,59.8524981 Z"></path>
-    </g>
-</svg>
-
-
-</button>
-</span>
-<span class=" tc-reveal" hidden="true"></span><span class="tc-popup-keep">
-<button aria-label="theme" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Ftheme" title="Choose the display theme">
-
-<svg class="tc-image-theme-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
-    <g fill-rule="evenodd">
-        <path d="M55.854113,66.9453198 C54.3299482,65.1432292 53.0133883,63.518995 51.9542746,62.1263761 C40.8899947,47.578055 35.3091807,55.2383404 28.9941893,62.1263758 C22.6791979,69.0144112 30.6577916,74.5954741 24.6646171,79.4611023 C18.6714426,84.3267304 19.0414417,86.0133155 8.92654943,77.1119468 C-1.18834284,68.2105781 -1.88793412,65.7597832 2.7553553,60.6807286 C7.39864472,55.601674 11.2794845,63.5989423 20.7646627,54.5728325 C30.2498409,45.5467226 22.2819131,37.5470737 22.2819131,37.5470737 C22.2819131,37.5470737 42.0310399,-2.82433362 68.4206088,0.157393922 C94.8101776,3.13912147 58.4373806,-3.70356506 49.3898693,27.958066 C45.5161782,41.5139906 50.1107906,38.3197672 57.4560458,44.0453955 C59.1625767,45.3756367 63.8839488,48.777453 70.127165,53.3625321 C63.9980513,59.2416709 58.9704753,64.0315459 55.854113,66.9453198 Z M67.4952439,79.8919946 C83.5082212,96.9282402 105.237121,117.617674 112.611591,120.312493 C123.044132,124.12481 128.000001,117.170903 128,105.522947 C127.999999,98.3705516 104.170675,78.980486 84.0760493,63.7529565 C76.6683337,70.9090328 70.7000957,76.7055226 67.4952439,79.8919946 Z"></path>
-        <path d="M58.2852966,138.232794 L58.2852966,88.3943645 C56.318874,88.3923153 54.7254089,86.7952906 54.7254089,84.8344788 C54.7254089,82.8684071 56.3175932,81.2745911 58.2890859,81.2745911 L79.6408336,81.2745911 C81.608998,81.2745911 83.2045105,82.8724076 83.2045105,84.8344788 C83.2045105,86.7992907 81.614366,88.3923238 79.6446228,88.3943645 L79.6446228,88.3943646 L79.6446228,138.232794 C79.6446228,144.131009 74.8631748,148.912457 68.9649597,148.912457 C63.0667446,148.912457 58.2852966,144.131009 58.2852966,138.232794 Z M65.405072,-14.8423767 L72.5248474,-14.8423767 L76.0847351,-0.690681892 L72.5248474,6.51694947 L72.5248474,81.2745911 L65.405072,81.2745911 L65.405072,6.51694947 L61.8451843,-0.690681892 L65.405072,-14.8423767 Z" transform="translate(68.964960, 67.035040) rotate(45.000000) translate(-68.964960, -67.035040) "></path>
-    </g>
-</svg>
-
-
-</button>
-</span>
-<span class=" tc-reveal" hidden="true"></span><button aria-label="print page" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fprint" title="Print the current page">
-
-<svg class="tc-image-print-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
-    <g fill-rule="evenodd">
-        <path d="M112,71 L112,30.5 L111.96811,30.5 L111.96811,30.5 C111.932942,28.4998414 111.151676,26.510538 109.625176,24.9840387 L86.9982489,2.35711116 C85.3482153,0.707077645 83.1589869,-0.071534047 81,0.0201838424 L81,0 L23.9992458,0 C19.5808867,0 16,3.58213437 16,8.00092105 L16,71 L24,71 L24,8 L81,8 L81,22.4996539 C81,26.9216269 84.5818769,30.5 89.0003461,30.5 L104,30.5 L104,71 L112,71 Z"></path>
-        <rect height="8" rx="4" width="64" x="32" y="36"></rect>
-        <rect height="8" rx="4" width="64" x="32" y="52"></rect>
-        <rect height="8" rx="4" width="40" x="32" y="20"></rect>
-        <path d="M0,80.0054195 C0,71.1658704 7.15611005,64 16.0008841,64 L111.999116,64 C120.83616,64 128,71.1553215 128,80.0054195 L128,111.99458 C128,120.83413 120.84389,128 111.999116,128 L16.0008841,128 C7.16383982,128 0,120.844679 0,111.99458 L0,80.0054195 Z M104,96 C108.418278,96 112,92.418278 112,88 C112,83.581722 108.418278,80 104,80 C99.581722,80 96,83.581722 96,88 C96,92.418278 99.581722,96 104,96 Z"></path>
-    </g>
-</svg>
-
-
-</button></div></p></div><div class=" tc-reveal"><div class="tc-sidebar-lists tc-sidebar-search"><p>
-<div class="tc-search">
-<input class="tc-popup-handle" type="search" value="">
-<span class=" tc-reveal" hidden="true"></span>
-<span class=" tc-reveal">
-<button aria-label="advanced search" class="tc-btn-invisible" title="Advanced search">
-<svg class="tc-image-advanced-search-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
-    <g fill-rule="evenodd">
-        <path d="M74.5651535,87.9848361 C66.9581537,93.0488876 57.8237115,96 48,96 C21.490332,96 0,74.509668 0,48 C0,21.490332 21.490332,0 48,0 C74.509668,0 96,21.490332 96,48 C96,57.8541369 93.0305793,67.0147285 87.9377231,74.6357895 L122.284919,108.982985 C125.978897,112.676963 125.973757,118.65366 122.284271,122.343146 C118.593975,126.033442 112.613238,126.032921 108.92411,122.343793 L74.5651535,87.9848361 Z M48,80 C65.673112,80 80,65.673112 80,48 C80,30.326888 65.673112,16 48,16 C30.326888,16 16,30.326888 16,48 C16,65.673112 30.326888,80 48,80 Z"></path>
-        <circle cx="48" cy="48" r="8"></circle>
-        <circle cx="28" cy="48" r="8"></circle>
-        <circle cx="68" cy="48" r="8"></circle>
-    </g>
-</svg>
-</button>
-</span>
-</div>
-
-<div class="tc-block-dropdown-wrapper tc-reveal" hidden="true"></div>
-
-</p></div></div><div class=" tc-reveal"><div class="tc-sidebar-lists tc-sidebar-tabs"><p><div class="tc-tab-set ">
-<div class="tc-tab-buttons ">
+</button></div></p></div><div class=" tc-reveal"><div class="tc-sidebar-lists tc-sidebar-search"><p><div class="tc-search"><input class="tc-popup-handle" type="search" value=""><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="advanced search" class="tc-btn-invisible" title="Advanced search"><svg class="tc-image-advanced-search-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"><g fill-rule="evenodd"><path d="M74.565 87.985A47.776 47.776 0 0148 96C21.49 96 0 74.51 0 48S21.49 0 48 0s48 21.49 48 48c0 9.854-2.97 19.015-8.062 26.636l34.347 34.347a9.443 9.443 0 010 13.36 9.446 9.446 0 01-13.36 0l-34.36-34.358zM48 80c17.673 0 32-14.327 32-32 0-17.673-14.327-32-32-32-17.673 0-32 14.327-32 32 0 17.673 14.327 32 32 32z"></path><circle cx="48" cy="48" r="8"></circle><circle cx="28" cy="48" r="8"></circle><circle cx="68" cy="48" r="8"></circle></g></svg></button></span></div><div class="tc-block-dropdown-wrapper tc-reveal" hidden="true"></div></p></div></div><div class=" tc-reveal"><div class="tc-sidebar-lists tc-sidebar-tabs"><p><div class="tc-tab-set tc-sidebar-tabs-main">
+<div class="tc-tab-buttons tc-sidebar-tabs-main">
 <button class=" tc-tab-selected">
 
 
@@ -2615,81 +2512,29 @@ More
 
 </button>
 </div>
-<div class="tc-tab-divider "></div>
-<div class="tc-tab-content ">
-<div class=" tc-reveal"><p><div class="tc-sidebar-tab-open"><div class="tc-sidebar-tab-open-item"><span class=" tc-droppable"><div class="tc-droppable-placeholder"></div><div><button aria-label="close" class="tc-btn-invisible tc-btn-mini" title="Close this tiddler"><svg class="tc-image-close-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
-    <g fill-rule="evenodd">
-        <path d="M65.0864256,75.4091629 L14.9727349,125.522854 C11.8515951,128.643993 6.78104858,128.64922 3.65685425,125.525026 C0.539017023,122.407189 0.5336324,117.334539 3.65902635,114.209145 L53.7727171,64.0954544 L3.65902635,13.9817637 C0.537886594,10.8606239 0.532659916,5.79007744 3.65685425,2.6658831 C6.77469148,-0.451954124 11.8473409,-0.457338747 14.9727349,2.66805521 L65.0864256,52.7817459 L115.200116,2.66805521 C118.321256,-0.453084553 123.391803,-0.458311231 126.515997,2.6658831 C129.633834,5.78372033 129.639219,10.8563698 126.513825,13.9817637 L76.4001341,64.0954544 L126.513825,114.209145 C129.634965,117.330285 129.640191,122.400831 126.515997,125.525026 C123.39816,128.642863 118.32551,128.648248 115.200116,125.522854 L65.0864256,75.4091629 L65.0864256,75.4091629 Z"></path>
-    </g>
-</svg>
-</button> <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Book%2520Summaries.html">Book Summaries</a></div></span></div><div class="tc-sidebar-tab-open-item"><span class=" tc-droppable"><div class="tc-droppable-placeholder"></div><div><button aria-label="close" class="tc-btn-invisible tc-btn-mini" title="Close this tiddler"><svg class="tc-image-close-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
-    <g fill-rule="evenodd">
-        <path d="M65.0864256,75.4091629 L14.9727349,125.522854 C11.8515951,128.643993 6.78104858,128.64922 3.65685425,125.525026 C0.539017023,122.407189 0.5336324,117.334539 3.65902635,114.209145 L53.7727171,64.0954544 L3.65902635,13.9817637 C0.537886594,10.8606239 0.532659916,5.79007744 3.65685425,2.6658831 C6.77469148,-0.451954124 11.8473409,-0.457338747 14.9727349,2.66805521 L65.0864256,52.7817459 L115.200116,2.66805521 C118.321256,-0.453084553 123.391803,-0.458311231 126.515997,2.6658831 C129.633834,5.78372033 129.639219,10.8563698 126.513825,13.9817637 L76.4001341,64.0954544 L126.513825,114.209145 C129.634965,117.330285 129.640191,122.400831 126.515997,125.525026 C123.39816,128.642863 118.32551,128.648248 115.200116,125.522854 L65.0864256,75.4091629 L65.0864256,75.4091629 Z"></path>
-    </g>
-</svg>
-</button> <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Research%2520Topics.html">Research Topics</a></div></span></div><div><span class=" tc-droppable"><div class="tc-droppable-placeholder"></div><div><button class="tc-btn-invisible tc-btn-mini">close all</button></div></span></div></div></p></div><div class=" tc-reveal" hidden="true"></div><div class=" tc-reveal" hidden="true"></div><div class=" tc-reveal" hidden="true"></div>
+<div class="tc-tab-divider tc-sidebar-tabs-main"></div>
+<div class="tc-tab-content tc-sidebar-tabs-main">
+<div class=" tc-reveal"><p><div class="tc-sidebar-tab-open"><div class="tc-sidebar-tab-open-item"><span class=" tc-droppable"><div class="tc-droppable-placeholder"></div><div><button aria-label="close" class="tc-btn-invisible tc-btn-mini" title="Close this tiddler"><svg class="tc-image-close-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"><path d="M65.086 75.41l-50.113 50.113c-3.121 3.121-8.192 3.126-11.316.002-3.118-3.118-3.123-8.19.002-11.316l50.114-50.114L3.659 13.982C.538 10.86.533 5.79 3.657 2.666c3.118-3.118 8.19-3.123 11.316.002l50.113 50.114L115.2 2.668c3.121-3.121 8.192-3.126 11.316-.002 3.118 3.118 3.123 8.19-.002 11.316L76.4 64.095l50.114 50.114c3.121 3.121 3.126 8.192.002 11.316-3.118 3.118-8.19 3.123-11.316-.002L65.086 75.409z" fill-rule="evenodd"></path></svg></button> <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Book%2520Summaries.html">Book Summaries</a></div></span></div><div class="tc-sidebar-tab-open-item"><span class=" tc-droppable"><div class="tc-droppable-placeholder"></div><div><button aria-label="close" class="tc-btn-invisible tc-btn-mini" title="Close this tiddler"><svg class="tc-image-close-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"><path d="M65.086 75.41l-50.113 50.113c-3.121 3.121-8.192 3.126-11.316.002-3.118-3.118-3.123-8.19.002-11.316l50.114-50.114L3.659 13.982C.538 10.86.533 5.79 3.657 2.666c3.118-3.118 8.19-3.123 11.316.002l50.113 50.114L115.2 2.668c3.121-3.121 8.192-3.126 11.316-.002 3.118 3.118 3.123 8.19-.002 11.316L76.4 64.095l50.114 50.114c3.121 3.121 3.126 8.192.002 11.316-3.118 3.118-8.19 3.123-11.316-.002L65.086 75.409z" fill-rule="evenodd"></path></svg></button> <a class="tc-tiddlylink tc-tiddlylink-resolves" href="static/Research%2520Topics.html">Research Topics</a></div></span></div><div><span class=" tc-droppable"><div class="tc-droppable-placeholder"></div><div><button class="tc-btn-invisible tc-btn-mini">close all</button></div></span></div></div></p></div><div class=" tc-reveal" hidden="true"></div><div class=" tc-reveal" hidden="true"></div><div class=" tc-reveal" hidden="true"></div>
 </div>
-</div></p></div></div></div></div></div></div><section class="tc-story-river"><section class="story-backdrop"></section><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists  tc-tagged-Live tc-tagged-list tc-tagged-reading" data-tags="Live list reading" data-tiddler-title="Book Summaries"><div class="tc-tiddler-title">
-<div class="tc-titlebar">
-<span class="tc-tiddler-controls">
-<span class=" tc-reveal"><button aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"><svg class="tc-image-down-arrow tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
-    <path d="M109.35638,81.3533152 C107.923899,82.7869182 105.94502,83.6751442 103.759224,83.6751442 L24.5910645,83.6751442 C20.225873,83.6751442 16.6751442,80.1307318 16.6751442,75.7584775 C16.6751442,71.3951199 20.2192225,67.8418109 24.5910645,67.8418109 L95.8418109,67.8418109 L95.8418109,-3.40893546 C95.8418109,-7.77412698 99.3862233,-11.3248558 103.758478,-11.3248558 C108.121835,-11.3248558 111.675144,-7.78077754 111.675144,-3.40893546 L111.675144,75.7592239 C111.675144,77.9416955 110.789142,79.9205745 109.356651,81.3538862 Z" transform="translate(64.175144, 36.175144) rotate(45.000000) translate(-64.175144, -36.175144) "></path>
-</svg></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"><svg class="tc-image-edit-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
-    <g fill-rule="evenodd">
-        <path d="M116.870058,45.3431458 L108.870058,45.3431458 L108.870058,45.3431458 L108.870058,61.3431458 L116.870058,61.3431458 L116.870058,45.3431458 Z M124.870058,45.3431458 L127.649881,45.3431458 C132.066101,45.3431458 135.656854,48.9248678 135.656854,53.3431458 C135.656854,57.7524334 132.07201,61.3431458 127.649881,61.3431458 L124.870058,61.3431458 L124.870058,45.3431458 Z M100.870058,45.3431458 L15.6638275,45.3431458 C15.5064377,45.3431458 15.3501085,45.3476943 15.1949638,45.3566664 L15.1949638,45.3566664 C15.0628002,45.3477039 14.928279,45.3431458 14.7913977,45.3431458 C6.68160973,45.3431458 -8.34314575,53.3431458 -8.34314575,53.3431458 C-8.34314575,53.3431458 6.85614548,61.3431458 14.7913977,61.3431458 C14.9266533,61.3431458 15.0596543,61.3384973 15.190398,61.3293588 C15.3470529,61.3385075 15.5049057,61.3431458 15.6638275,61.3431458 L100.870058,61.3431458 L100.870058,45.3431458 L100.870058,45.3431458 Z" transform="translate(63.656854, 53.343146) rotate(-45.000000) translate(-63.656854, -53.343146) "></path>
-        <path d="M35.1714596,124.189544 C41.9594858,123.613403 49.068777,121.917633 58.85987,118.842282 C60.6854386,118.268877 62.4306907,117.705515 65.1957709,116.802278 C81.1962861,111.575575 87.0734839,109.994907 93.9414474,109.655721 C102.29855,109.242993 107.795169,111.785371 111.520478,118.355045 C112.610163,120.276732 115.051363,120.951203 116.97305,119.861518 C118.894737,118.771832 119.569207,116.330633 118.479522,114.408946 C113.146151,105.003414 104.734907,101.112919 93.5468356,101.66546 C85.6716631,102.054388 79.4899908,103.716944 62.7116783,109.197722 C59.9734132,110.092199 58.2519873,110.64787 56.4625698,111.20992 C37.002649,117.322218 25.6914684,118.282267 16.8654804,112.957098 C14.9739614,111.815848 12.5154166,112.424061 11.3741667,114.31558 C10.2329168,116.207099 10.84113,118.665644 12.7326489,119.806894 C19.0655164,123.627836 26.4866335,124.926678 35.1714596,124.189544 Z"></path>
-    </g>
-</svg></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"><svg class="tc-image-close-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
-    <g fill-rule="evenodd">
-        <path d="M65.0864256,75.4091629 L14.9727349,125.522854 C11.8515951,128.643993 6.78104858,128.64922 3.65685425,125.525026 C0.539017023,122.407189 0.5336324,117.334539 3.65902635,114.209145 L53.7727171,64.0954544 L3.65902635,13.9817637 C0.537886594,10.8606239 0.532659916,5.79007744 3.65685425,2.6658831 C6.77469148,-0.451954124 11.8473409,-0.457338747 14.9727349,2.66805521 L65.0864256,52.7817459 L115.200116,2.66805521 C118.321256,-0.453084553 123.391803,-0.458311231 126.515997,2.6658831 C129.633834,5.78372033 129.639219,10.8563698 126.513825,13.9817637 L76.4001341,64.0954544 L126.513825,114.209145 C129.634965,117.330285 129.640191,122.400831 126.515997,125.525026 C123.39816,128.642863 118.32551,128.648248 115.200116,125.522854 L65.0864256,75.4091629 L65.0864256,75.4091629 Z"></path>
-    </g>
-</svg>
-</button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span>
-</span>
-
-<span>
-
-<span class="tc-tiddler-title-icon" style="fill:;">
-
-</span>
-
-
-
-<h2 class="tc-title">
-Book Summaries
-</h2>
-
-</span>
-
-</div>
-
-<div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div>
-</div><div class=" tc-reveal" hidden="true"></div>
-<div class=" tc-reveal">
-<div class="tc-subtitle">
-<a class="tc-tiddlylink tc-tiddlylink-missing" href="static/toreglia.html">
-toreglia
-</a> 18th April 2020 at 6:26pm
-</div>
-</div>
-<div class=" tc-reveal">
+</div></p></div></div></div></div></div></div><section class="tc-story-river"><section class="story-backdrop"></section><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists  tc-tagged-Live tc-tagged-list tc-tagged-reading" data-tags="Live list reading" data-tiddler-title="Book Summaries"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"><svg class="tc-image-down-arrow tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"><path d="M64.177 100.069a7.889 7.889 0 01-5.6-2.316l-55.98-55.98a7.92 7.92 0 010-11.196c3.086-3.085 8.105-3.092 11.196 0l50.382 50.382 50.382-50.382a7.92 7.92 0 0111.195 0c3.086 3.086 3.092 8.104 0 11.196l-55.98 55.98a7.892 7.892 0 01-5.595 2.316z"></path></svg></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"><svg class="tc-image-edit-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"><g fill-rule="evenodd"><path d="M95.627 10.059l-5.656 5.657 11.313 11.313 5.657-5.656-11.314-11.314zm5.657-5.657l1.966-1.966c3.123-3.122 8.194-3.129 11.319-.005 3.117 3.118 3.122 8.192-.005 11.32l-1.966 1.965-11.314-11.314zm-16.97 16.97l-60.25 60.25a8.12 8.12 0 00-.322.342c-.1.087-.198.179-.295.275-5.735 5.735-10.702 22.016-10.702 22.016s16.405-5.09 22.016-10.702c.095-.096.186-.193.272-.292a8.12 8.12 0 00.345-.325l60.25-60.25-11.314-11.313zM35.171 124.19c6.788-.577 13.898-2.272 23.689-5.348 1.825-.573 3.57-1.136 6.336-2.04 16-5.226 21.877-6.807 28.745-7.146 8.358-.413 13.854 2.13 17.58 8.699a4 4 0 006.959-3.946c-5.334-9.406-13.745-13.296-24.933-12.744-7.875.39-14.057 2.052-30.835 7.533-2.739.894-4.46 1.45-6.25 2.012-19.46 6.112-30.77 7.072-39.597 1.747a4 4 0 10-4.132 6.85c6.333 3.82 13.754 5.12 22.438 4.383z"></path></g></svg></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"><svg class="tc-image-close-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"><path d="M65.086 75.41l-50.113 50.113c-3.121 3.121-8.192 3.126-11.316.002-3.118-3.118-3.123-8.19.002-11.316l50.114-50.114L3.659 13.982C.538 10.86.533 5.79 3.657 2.666c3.118-3.118 8.19-3.123 11.316.002l50.113 50.114L115.2 2.668c3.121-3.121 8.192-3.126 11.316-.002 3.118 3.118 3.123 8.19-.002 11.316L76.4 64.095l50.114 50.114c3.121 3.121 3.126 8.192.002 11.316-3.118 3.118-8.19 3.123-11.316-.002L65.086 75.409z" fill-rule="evenodd"></path></svg></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><span class="tc-tiddler-title-icon" style="fill:;"></span><h2 class="tc-title">Book Summaries</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="static/toreglia.html">toreglia</a>18th April 2020 at 7:26pm</div></div><div class=" tc-reveal">
 <div class="tc-tags-wrapper"><span class="tc-tag-list-item">
 <span class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
 fill:rgb(38, 38, 38);
 color:rgb(38, 38, 38);">
- list
+list
 </span>
 <span class="tc-drop-down tc-reveal" hidden="true"></span></span><span class="tc-tag-list-item">
 <span class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
 fill:rgb(38, 38, 38);
 color:rgb(38, 38, 38);">
- Live
+Live
 </span>
 <span class="tc-drop-down tc-reveal" hidden="true"></span></span><span class="tc-tag-list-item">
 <span class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
 fill:rgb(38, 38, 38);
 color:rgb(38, 38, 38);">
- reading
+reading
 </span>
 <span class="tc-drop-down tc-reveal" hidden="true"></span></span></div>
 </div>
@@ -2700,61 +2545,19 @@ color:rgb(38, 38, 38);">
 
 </div>
 
-<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists  tc-tagged-Live tc-tagged-list" data-tags="Live list" data-tiddler-title="Research Topics"><div class="tc-tiddler-title">
-<div class="tc-titlebar">
-<span class="tc-tiddler-controls">
-<span class=" tc-reveal"><button aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"><svg class="tc-image-down-arrow tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
-    <path d="M109.35638,81.3533152 C107.923899,82.7869182 105.94502,83.6751442 103.759224,83.6751442 L24.5910645,83.6751442 C20.225873,83.6751442 16.6751442,80.1307318 16.6751442,75.7584775 C16.6751442,71.3951199 20.2192225,67.8418109 24.5910645,67.8418109 L95.8418109,67.8418109 L95.8418109,-3.40893546 C95.8418109,-7.77412698 99.3862233,-11.3248558 103.758478,-11.3248558 C108.121835,-11.3248558 111.675144,-7.78077754 111.675144,-3.40893546 L111.675144,75.7592239 C111.675144,77.9416955 110.789142,79.9205745 109.356651,81.3538862 Z" transform="translate(64.175144, 36.175144) rotate(45.000000) translate(-64.175144, -36.175144) "></path>
-</svg></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"><svg class="tc-image-edit-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
-    <g fill-rule="evenodd">
-        <path d="M116.870058,45.3431458 L108.870058,45.3431458 L108.870058,45.3431458 L108.870058,61.3431458 L116.870058,61.3431458 L116.870058,45.3431458 Z M124.870058,45.3431458 L127.649881,45.3431458 C132.066101,45.3431458 135.656854,48.9248678 135.656854,53.3431458 C135.656854,57.7524334 132.07201,61.3431458 127.649881,61.3431458 L124.870058,61.3431458 L124.870058,45.3431458 Z M100.870058,45.3431458 L15.6638275,45.3431458 C15.5064377,45.3431458 15.3501085,45.3476943 15.1949638,45.3566664 L15.1949638,45.3566664 C15.0628002,45.3477039 14.928279,45.3431458 14.7913977,45.3431458 C6.68160973,45.3431458 -8.34314575,53.3431458 -8.34314575,53.3431458 C-8.34314575,53.3431458 6.85614548,61.3431458 14.7913977,61.3431458 C14.9266533,61.3431458 15.0596543,61.3384973 15.190398,61.3293588 C15.3470529,61.3385075 15.5049057,61.3431458 15.6638275,61.3431458 L100.870058,61.3431458 L100.870058,45.3431458 L100.870058,45.3431458 Z" transform="translate(63.656854, 53.343146) rotate(-45.000000) translate(-63.656854, -53.343146) "></path>
-        <path d="M35.1714596,124.189544 C41.9594858,123.613403 49.068777,121.917633 58.85987,118.842282 C60.6854386,118.268877 62.4306907,117.705515 65.1957709,116.802278 C81.1962861,111.575575 87.0734839,109.994907 93.9414474,109.655721 C102.29855,109.242993 107.795169,111.785371 111.520478,118.355045 C112.610163,120.276732 115.051363,120.951203 116.97305,119.861518 C118.894737,118.771832 119.569207,116.330633 118.479522,114.408946 C113.146151,105.003414 104.734907,101.112919 93.5468356,101.66546 C85.6716631,102.054388 79.4899908,103.716944 62.7116783,109.197722 C59.9734132,110.092199 58.2519873,110.64787 56.4625698,111.20992 C37.002649,117.322218 25.6914684,118.282267 16.8654804,112.957098 C14.9739614,111.815848 12.5154166,112.424061 11.3741667,114.31558 C10.2329168,116.207099 10.84113,118.665644 12.7326489,119.806894 C19.0655164,123.627836 26.4866335,124.926678 35.1714596,124.189544 Z"></path>
-    </g>
-</svg></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"><svg class="tc-image-close-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt">
-    <g fill-rule="evenodd">
-        <path d="M65.0864256,75.4091629 L14.9727349,125.522854 C11.8515951,128.643993 6.78104858,128.64922 3.65685425,125.525026 C0.539017023,122.407189 0.5336324,117.334539 3.65902635,114.209145 L53.7727171,64.0954544 L3.65902635,13.9817637 C0.537886594,10.8606239 0.532659916,5.79007744 3.65685425,2.6658831 C6.77469148,-0.451954124 11.8473409,-0.457338747 14.9727349,2.66805521 L65.0864256,52.7817459 L115.200116,2.66805521 C118.321256,-0.453084553 123.391803,-0.458311231 126.515997,2.6658831 C129.633834,5.78372033 129.639219,10.8563698 126.513825,13.9817637 L76.4001341,64.0954544 L126.513825,114.209145 C129.634965,117.330285 129.640191,122.400831 126.515997,125.525026 C123.39816,128.642863 118.32551,128.648248 115.200116,125.522854 L65.0864256,75.4091629 L65.0864256,75.4091629 Z"></path>
-    </g>
-</svg>
-</button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span>
-</span>
-
-<span>
-
-<span class="tc-tiddler-title-icon" style="fill:;">
-
-</span>
-
-
-
-<h2 class="tc-title">
-Research Topics
-</h2>
-
-</span>
-
-</div>
-
-<div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div>
-</div><div class=" tc-reveal" hidden="true"></div>
-<div class=" tc-reveal">
-<div class="tc-subtitle">
-<a class="tc-tiddlylink tc-tiddlylink-missing" href="static/toreglia.html">
-toreglia
-</a> 18th April 2020 at 6:27pm
-</div>
-</div>
-<div class=" tc-reveal">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists  tc-tagged-Live tc-tagged-list" data-tags="Live list" data-tiddler-title="Research Topics"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"><svg class="tc-image-down-arrow tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"><path d="M64.177 100.069a7.889 7.889 0 01-5.6-2.316l-55.98-55.98a7.92 7.92 0 010-11.196c3.086-3.085 8.105-3.092 11.196 0l50.382 50.382 50.382-50.382a7.92 7.92 0 0111.195 0c3.086 3.086 3.092 8.104 0 11.196l-55.98 55.98a7.892 7.892 0 01-5.595 2.316z"></path></svg></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"><svg class="tc-image-edit-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"><g fill-rule="evenodd"><path d="M95.627 10.059l-5.656 5.657 11.313 11.313 5.657-5.656-11.314-11.314zm5.657-5.657l1.966-1.966c3.123-3.122 8.194-3.129 11.319-.005 3.117 3.118 3.122 8.192-.005 11.32l-1.966 1.965-11.314-11.314zm-16.97 16.97l-60.25 60.25a8.12 8.12 0 00-.322.342c-.1.087-.198.179-.295.275-5.735 5.735-10.702 22.016-10.702 22.016s16.405-5.09 22.016-10.702c.095-.096.186-.193.272-.292a8.12 8.12 0 00.345-.325l60.25-60.25-11.314-11.313zM35.171 124.19c6.788-.577 13.898-2.272 23.689-5.348 1.825-.573 3.57-1.136 6.336-2.04 16-5.226 21.877-6.807 28.745-7.146 8.358-.413 13.854 2.13 17.58 8.699a4 4 0 006.959-3.946c-5.334-9.406-13.745-13.296-24.933-12.744-7.875.39-14.057 2.052-30.835 7.533-2.739.894-4.46 1.45-6.25 2.012-19.46 6.112-30.77 7.072-39.597 1.747a4 4 0 10-4.132 6.85c6.333 3.82 13.754 5.12 22.438 4.383z"></path></g></svg></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"><svg class="tc-image-close-button tc-image-button" height="22pt" viewBox="0 0 128 128" width="22pt"><path d="M65.086 75.41l-50.113 50.113c-3.121 3.121-8.192 3.126-11.316.002-3.118-3.118-3.123-8.19.002-11.316l50.114-50.114L3.659 13.982C.538 10.86.533 5.79 3.657 2.666c3.118-3.118 8.19-3.123 11.316.002l50.113 50.114L115.2 2.668c3.121-3.121 8.192-3.126 11.316-.002 3.118 3.118 3.123 8.19-.002 11.316L76.4 64.095l50.114 50.114c3.121 3.121 3.126 8.192.002 11.316-3.118 3.118-8.19 3.123-11.316-.002L65.086 75.409z" fill-rule="evenodd"></path></svg></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><span class="tc-tiddler-title-icon" style="fill:;"></span><h2 class="tc-title">Research Topics</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="static/toreglia.html">toreglia</a>18th April 2020 at 7:27pm</div></div><div class=" tc-reveal">
 <div class="tc-tags-wrapper"><span class="tc-tag-list-item">
 <span class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
 fill:rgb(38, 38, 38);
 color:rgb(38, 38, 38);">
- list
+list
 </span>
 <span class="tc-drop-down tc-reveal" hidden="true"></span></span><span class="tc-tag-list-item">
 <span class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
 fill:rgb(38, 38, 38);
 color:rgb(38, 38, 38);">
- Live
+Live
 </span>
 <span class="tc-drop-down tc-reveal" hidden="true"></span></span></div>
 </div>
