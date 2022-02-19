@@ -299,6 +299,12 @@ Error message and password prompt
 
 <li>Crouching Tiger, Hidden Dragon</li>
 
+<li>CSS</li>
+
+<li>CSS Flexbox</li>
+
+<li>CSS Grid</li>
+
 <li>Dev Blogs</li>
 
 <li>ECMA International</li>
@@ -332,6 +338,8 @@ Error message and password prompt
 <li>How to Read a Book Preface</li>
 
 <li>How to Read a Book Resources</li>
+
+<li>HTML</li>
 
 <li>I Care A Lot.</li>
 
@@ -384,6 +392,12 @@ Error message and password prompt
 <li>Recipes</li>
 
 <li>Red Dot</li>
+
+<li>Responsive Web Design</li>
+
+<li>Responsive Web Design Applied</li>
+
+<li>Responsive Web Design Principles</li>
 
 <li>Salmon with Garlic Lemon Butter Sauce</li>
 
@@ -11190,6 +11204,90 @@ This is a classic; I could really remember first seeing the previews of the kung
 The story takes a little effort to follow due to the subtitles; but it's a great romance with a happy ending. I had no problem getting engrossed in the characters journeys and empathizing with them. Overall; a move I would recommend. 
 </pre>
 </div>
+<div created="20220213213514775" creator="toreglia" modified="20220218143648171" modifier="toreglia" tags="[[Responsive Web Design]] Live" title="CSS" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>* CSS can be used to color text
+* style rules can be defined at the top of the HTML page
+** applied style to all HTML elements of a given type 
+** classes can also be defined, and then applied to any element
+** color, text size, font, background, border, border edges, padding, margin etc. 
+* custom fonts can be imported
+* you can target a specic HTML element by ID
+* you can also target HTML elements by type
+* padding and margin can be set for all, or indiviual sides with a compact notation
+* CSS classes have priority by order in the style element, styles applied to HTML element ID trump classes, inline trumps id, the `!imporant` keyword can be used to trump all
+* color can be represent by name (red, blue, etc.) hex, or rgb in decimal 
+* defing css variables in root makes them available everywhere
+* you can make CSS variable depending on screen size </pre>
+</div>
+<div created="20220213213537565" creator="toreglia" modified="20220218143609121" modifier="toreglia" tags="[[Responsive Web Design]] Live" title="CSS Flexbox" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>* A ''flex container'' makes it possible to align any children of that element into rows or columns
+* Make an HTML element a flex container by adding to the styling: 
+```
+display: flex
+```
+
+* flex can also be used to align items within a flex container. They can be aligned to the left, right, top, bottom and along different axis.
+* ''main axis'' is along the flex container orientation -- for example if it is row, then main axis is horizontal
+** ''cross axis'' is opposite to main axis
+* a flex container can also be split into a grid; i.e. multiple rows/columns 
+* some properties can also be applied to the ''flex items'' which are the children of the flex container
+** flex-shrink -- shrink item if container is to small 
+** flex-grow
+** flex-basis -- set the initial size of the item before shinking; enlaring
+** order -- indicates the oder of the children; instead of just following the order in the html 
+** align-self -- set individual alignment for the flex item
+</pre>
+</div>
+<div created="20220218144129403" creator="toreglia" modified="20220218153349073" modifier="toreglia" tags="[[Responsive Web Design]] Live css" title="CSS Grid" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>* Turn html element into a grid container by setting the display prop to `grid`
+* can use `px`, `em`, `fr`, `auto`, `%` to set the width/heights
+* a grid can be defined within a grid
+
+!! CSS Grid Properties 
+!!! container props
+* `grid-template-columns` indicates width and number of columns in grid container
+* `grid-template-rows` indicates the height and number of rows in a grid container
+* `grid-column-gap` to create a gap between columns
+* `grid-row-gap`; or just `grid-gap` to set both at once
+*  `grid-column-gap` to create a gap between columns
+* `grid-row-gap`; or just `grid-gap` to set both at once
+* `justify-items` position all items of container horizontally
+* `align-items`: position all items of container vertically
+* `grid-template-areas`: define areas of the grid with variable names
+
+!!! item props 
+* `grid-column` to have an item take up multiple spaces of the grid
+* `grid-row` for rows; ''starting at 1''
+* `justify-self` to position the item ''horizontally'' within it's cell
+** set with `stretch` (default), `start`, `center`, or `end` 
+* `align-self` to position item ''vertically'' within cell
+* `grid-area` to assign item to named grid location (named with `grid-template-areas`); or set using the grid lines
+
+!!! CSS function 
+* `repeat`: repeat `grid-template-columns` and `grid-template-rows` configurations 
+** `minmax`: set the min and max height/width of an element
+** `auto-fill` -- auto repeat to fill
+** `auto-fit` -- auto repeat to fill; but stretch if no more items to use
+
+
+!! Lexicon 
+; item
+: child of grid element
+
+; container
+: grid html element
+
+; cell
+: box within the grid
+
+; area
+: a grouping of cells
+
+; grid lines
+: the lines between grid cells; starting at one
+
+</pre>
+</div>
 <div created="20210201090157218" creator="toreglia" modified="20210211144149811" modifier="toreglia" tags="list dev Live" title="Dev Blogs" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;&lt;list-links filter:&quot;[tag[dev]tag[blog]tag[Live]]&quot;&gt;&gt;
 </pre>
@@ -11380,6 +11478,16 @@ you operate on the symbols before you in such a way that you gradually lift your
 <div created="20200208224823028" creator="toreglia" modified="20200405172234883" modifier="toreglia" sort-priority="3" tags="Live [[How to Read a Book]]" title="How to Read a Book Resources" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>* Rules for Analytical Reading: http://faculty.tcu.edu/grant/30643/HOWTOREADABOOK.PDF
 </pre>
+</div>
+<div created="20220213213505794" creator="toreglia" modified="20220218143639141" modifier="toreglia" tags="[[Responsive Web Design]] Live" title="HTML" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>* HTML elements are used to display text, videos, links, input, lists, and more. 
+* the first line of HTML indicates which version of html is follows
+* some HTML elements do not effect the display but are just indicative 
+** like header, main, div
+* you can make an API call directly using HTML elements entry form
+* An entry form can be free text, checkboxes, select one
+* links can be embedded behind text
+* You can use header tags to embolden texts are various levels; h1, h2, h3, etc. </pre>
 </div>
 <div created="20210223195241348" creator="toreglia" director="J Blakeson" modified="20220120181849194" modifier="toreglia" rating="3.3" status="done" tags="movie Live review task" title="I Care A Lot." type="text/vnd.tiddlywiki" year="2020" revision="0" bag="default">
 <pre>* Rating: {{!!rating}}/5
@@ -11667,6 +11775,39 @@ Solid, entertaining movie. You don't have to think much. It takes it's time with
 
 For the first 3/4 of the movie; I felt it was as one dimensional as the title suggests. At half way my partner turned to me and admitted &quot;this is a bad movie&quot;. However, the last 20 minutes offer a welcome twist and are much more enjoyable. 
 </pre>
+</div>
+<div created="20220211164444216" creator="toreglia" link="https://www.freecodecamp.org/learn/responsive-web-design/" modified="20220218153451321" modifier="toreglia" tags="FreeCodeCamp html css Live research" title="Responsive Web Design" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>{{!!link}}
+
+!! [[HTML]]
+{{HTML}}
+
+!! [[CSS]]
+{{CSS}}
+
+!! [[Responsive Web Design Principles]]
+{{Responsive Web Design Principles}}
+
+!! [[CSS Flexbox]]
+{{CSS Flexbox}}
+
+!! [[CSS Grid]]
+{{CSS Grid}}
+
+!! [[Responsive Web Design Applied]]
+{{Responsive Web Design Applied}}
+
+
+</pre>
+</div>
+<div created="20220218153400707" creator="toreglia" modified="20220218153426858" modifier="toreglia" tags="[[Responsive Web Design]] Live" title="Responsive Web Design Applied" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre></pre>
+</div>
+<div created="20220213213523806" creator="toreglia" modified="20220218143700245" modifier="toreglia" tags="[[Responsive Web Design]] Live" title="Responsive Web Design Principles" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>* media queries can be used to detect screen size and see CSS based on this condition
+* Images easily be made responsive
+* Images should be set to half size to show properly on retina displays
+* HTML tags can be set to relative sizes based on viewing window height and width </pre>
 </div>
 <div created="20210322184159336" creator="toreglia" modified="20210322184407117" modifier="toreglia" tags="recipe Live salmon" title="Salmon with Garlic Lemon Butter Sauce" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>! Ingredients 

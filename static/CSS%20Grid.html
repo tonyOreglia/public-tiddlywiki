@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="generator" content="TiddlyWiki" />
+<meta name="tiddlywiki-version" content="5.1.23" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no">
+<link id="faviconLink" rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="static.css">
+<title>CSS Grid: Tony's Wiki — a non-linear personal web notebook</title>
+</head>
+<body class="tc-body">
+
+<section class="tc-story-river tc-static-story-river">
+<p><div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists  tc-tagged-Responsive%20Web%20Design tc-tagged-Live tc-tagged-css" data-tags="[[Responsive Web Design]] Live css" data-tiddler-title="CSS Grid"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><span class=" tc-reveal"><button aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal"><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span><span class=" tc-reveal" hidden="true"></span></span><span><h2 class="tc-title">CSS Grid</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="toreglia.html">toreglia</a>18th February 2022 at 3:33pm</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"><span class="tc-tag-list-item">
+<span class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+fill:rgb(38, 38, 38);
+color:rgb(38, 38, 38);">
+css
+</span>
+<span class="tc-drop-down tc-reveal" hidden="true"></span></span><span class="tc-tag-list-item">
+<span class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+fill:rgb(38, 38, 38);
+color:rgb(38, 38, 38);">
+Live
+</span>
+<span class="tc-drop-down tc-reveal" hidden="true"></span></span><span class="tc-tag-list-item">
+<span class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+fill:rgb(38, 38, 38);
+color:rgb(38, 38, 38);">
+Responsive Web Design
+</span>
+<span class="tc-drop-down tc-reveal" hidden="true"></span></span></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><ul><li>Turn html element into a grid container by setting the display prop to <code>grid</code></li><li>can use <code>px</code>, <code>em</code>, <code>fr</code>, <code>auto</code>, <code>%</code> to set the width/heights</li><li>a grid can be defined within a grid</li></ul><h2 class="">CSS Grid Properties </h2><h3 class="">container props</h3><ul><li><code>grid-template-columns</code> indicates width and number of columns in grid container</li><li><code>grid-template-rows</code> indicates the height and number of rows in a grid container</li><li><code>grid-column-gap</code> to create a gap between columns</li><li><code>grid-row-gap</code>; or just <code>grid-gap</code> to set both at once</li><li><code>grid-column-gap</code> to create a gap between columns</li><li><code>grid-row-gap</code>; or just <code>grid-gap</code> to set both at once</li><li><code>justify-items</code> position all items of container horizontally</li><li><code>align-items</code>: position all items of container vertically</li><li><code>grid-template-areas</code>: define areas of the grid with variable names</li></ul><h3 class="">item props </h3><ul><li><code>grid-column</code> to have an item take up multiple spaces of the grid</li><li><code>grid-row</code> for rows; <strong>starting at 1</strong></li><li><code>justify-self</code> to position the item <strong>horizontally</strong> within it's cell<ul><li>set with <code>stretch</code> (default), <code>start</code>, <code>center</code>, or <code>end</code> </li></ul></li><li><code>align-self</code> to position item <strong>vertically</strong> within cell</li><li><code>grid-area</code> to assign item to named grid location (named with <code>grid-template-areas</code>); or set using the grid lines</li></ul><h3 class="">CSS function </h3><ul><li><code>repeat</code>: repeat <code>grid-template-columns</code> and <code>grid-template-rows</code> configurations <ul><li><code>minmax</code>: set the min and max height/width of an element</li><li><code>auto-fill</code> – auto repeat to fill</li><li><code>auto-fit</code> – auto repeat to fill; but stretch if no more items to use</li></ul></li></ul><h2 class="">Lexicon </h2><dl><dt>item</dt><dd>child of grid element</dd><dt>container</dt><dd>grid html element</dd><dt>cell</dt><dd>box within the grid</dd><dt>area</dt><dd>a grouping of cells</dd><dt>grid lines</dt><dd>the lines between grid cells; starting at one</dd></dl></div>
+
+<div class="tc-tiddler-plugin-info tc-reveal"><p>
+</p></div>
+</div>
+
+</p>
+</section>
+</body>
+</html>
+
