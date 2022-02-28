@@ -367,6 +367,8 @@ Error message and password prompt
 
 <li>Kevin Rooke Blog (Book Recommendation)</li>
 
+<li>Learn How To Do The Perfect Jiu Jitsu Mount Attack by John Danaher</li>
+
 <li>Love and Monsters</li>
 
 <li>Martin Tournoij Blog</li>
@@ -394,6 +396,8 @@ Error message and password prompt
 <li>Paul Graham Blog</li>
 
 <li>Portuguese Oven Baked Dourada</li>
+
+<li>React</li>
 
 <li>read  Wealth of Nations</li>
 
@@ -11496,9 +11500,11 @@ This movie came around for me. It's a bit slow in the development of some scenes
 <div created="20200531110205043" creator="toreglia" modified="20220217200345351" modifier="toreglia" tags="recipe vegetarian Live" title="Fritatta de Pimentos e queijo" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>https://www.pingodoce.pt/receitas/frittata-de-pimentos-e-queijo/</pre>
 </div>
-<div created="20220220185548973" creator="toreglia" link="https://www.freecodecamp.org/learn/front-end-development-libraries/" modified="20220224180014784" modifier="toreglia" tags="FreeCodeCamp Live research [[web development]]" title="Front End Development Libraries" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20220220185548973" creator="toreglia" link="https://www.freecodecamp.org/learn/front-end-development-libraries/" modified="20220227134422453" modifier="toreglia" tags="FreeCodeCamp Live research [[web development]]" title="Front End Development Libraries" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>{{!!link}}
-&lt;&lt;toc-tabbed-internal-nav tag:&quot;Front End Development Libraries&quot;&gt;&gt;
+
+&lt;&lt;list-links &quot;[tag[Front End Development Libraries]sort[title]]&quot;&gt;&gt;
+
 </pre>
 </div>
 <div created="20220217200348106" creator="toreglia" minutes="30" modified="20220217200436667" modifier="toreglia" tags="recipe Live" title="Garlic Butter Baked Salmon" type="text/vnd.tiddlywiki" revision="0" bag="default">
@@ -11730,6 +11736,17 @@ $(&quot;button&quot;).addClass(&quot;animated bounce&quot;);
 <div author="Adrien Fabre" created="20210322215029525" creator="toreglia" modified="20210522075256988" modifier="toreglia" tags="Live dev blog reading books bookmark" title="Kevin Rooke Blog (Book Recommendation)" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>https://www.kevinrooke.com/</pre>
 </div>
+<div created="20220227173015432" creator="toreglia" link="https://www.youtube.com/watch?v=8FbGenSia08" modified="20220227174519856" modifier="toreglia" tags="BJJ Live video notes [[John Danaher]] mount" title="Learn How To Do The Perfect Jiu Jitsu Mount Attack by John Danaher" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>* Attack the breathing to create panic reactions ==&gt; setup submissions
+* best advantage of mount is that you can directly attack breathing 
+* look for underhooks and get a crossface by lifting the arm
+* trying to lever the arm up above the head
+* left the head and grab your own elbow, proping the head on top of the arm
+* walk the chest forward into a high mount
+* place entire chest over the face of the opponent and bring my own head down
+* get the feet underneath his back
+ </pre>
+</div>
 <div created="20210415064009896" creator="toreglia" director="Michael Matthews" genre="Adventure/Comedy" modified="20220120181849218" modifier="toreglia" rating="4" status="done" tags="movie review Live task" title="Love and Monsters" type="text/vnd.tiddlywiki" year="2020" revision="0" bag="default">
 <pre>* Rating: {{!!rating}}/5
 * Year: {{!!year}}
@@ -11872,6 +11889,50 @@ Solid, entertaining movie. You don't have to think much. It takes it's time with
 # Bake at 355 degrees F / 170 C
 # bake for ~35 minutes
 </pre>
+</div>
+<div created="20220227134426907" creator="toreglia" link="https://www.freecodecamp.org/learn/front-end-development-libraries/#react" modified="20220227172529316" modifier="toreglia" tags="[[web development]] [[Front End Development Libraries]] Live" title="React" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;&lt;&lt;
+It allows you to compose your UI from many separate, isolated components. This makes it easier to build and maintain complex user interfaces.
+&lt;&lt;&lt;
+
+* JSX allows you to write HTML directly within Javascript
+* You can also write JS within JSX by wrapping it in curly brackets `{}`
+* JSX must actually be transpiled into JS, Babel is often used for this task
+* JSX code must return one single element
+* JSX comments should go inside : `{/* */}`
+* User ReactDOM.render to render React elements to the DOM
+* JSX uses `className` instead of `class` because `class` is a reserved word in JS
+* JSX always uses camel case, e.g. `onClick` and `onChange`
+* Any JSX element can be written with self closing tags (include `&lt;br&gt;`)
+* Everything in React is a component
+** Components can be created as a JS function 
+** React fxn name must start with capital letter
+** Components can be created with ES6 class syntax by extending the React.Component class
+*** contain a constructor which calls `super()`. `super()` calls the parent class constructor.
+*** Usually `props` are passed to the constructor and `super()` method
+** React componentscan be composed together; like building blocks
+** //children// components can be rendered from a //parent// component
+** `ReactDOM.render()` can also render components (not just JSX elements)
+* props
+** props can be passed to components as HTML attributes
+** default props can be set using the class propery, `defaultProps`
+** propTypes can be used to type check incoming props
+* State
+** State consists of any data your application needs to know about, that can change over time
+**  You want your apps to respond to state changes and present an updated UI when necessary
+** Note that if you make a component stateful, no other components are aware of its state. Its state is completely encapsulated, or local to that component, unless you pass state data to a child component as props
+** always use this.setState() when state changes occur
+
+
+!! Lexicon
+; HTML DOM
+: Document Object Model created by the browser when a page is loaded. The DOM is a tree of objects with the Root element `&lt;html&gt;` at the base of the tree. See https://www.w3schools.com/whatis/whatis_htmldom.asp
+
+; stateful component
+: a class component that does maintain its own internal state
+
+; stateless component
+: a class that extends React.Component, but does not use internal state</pre>
 </div>
 <div author="Adam Smith" created="20200131192804086" creator="toreglia" modified="20211201181014621" modifier="toreglia" status="done" tags="[[Book Summary]] Live book Economics task" title="read  Wealth of Nations" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>!! Outline 
