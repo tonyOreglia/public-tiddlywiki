@@ -409,6 +409,8 @@ Error message and password prompt
 
 <li>Responsive Web Design Principles</li>
 
+<li>Rust</li>
+
 <li>Salmon with Garlic Lemon Butter Sauce</li>
 
 <li>SASS</li>
@@ -11890,7 +11892,7 @@ Solid, entertaining movie. You don't have to think much. It takes it's time with
 # bake for ~35 minutes
 </pre>
 </div>
-<div created="20220227134426907" creator="toreglia" link="https://www.freecodecamp.org/learn/front-end-development-libraries/#react" modified="20220227172529316" modifier="toreglia" tags="[[web development]] [[Front End Development Libraries]] Live" title="React" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<div created="20220227134426907" creator="toreglia" link="https://www.freecodecamp.org/learn/front-end-development-libraries/#react" modified="20220228171442515" modifier="toreglia" tags="[[web development]] [[Front End Development Libraries]] Live" title="React" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;&lt;&lt;
 It allows you to compose your UI from many separate, isolated components. This makes it easier to build and maintain complex user interfaces.
 &lt;&lt;&lt;
@@ -11922,7 +11924,10 @@ It allows you to compose your UI from many separate, isolated components. This m
 **  You want your apps to respond to state changes and present an updated UI when necessary
 ** Note that if you make a component stateful, no other components are aware of its state. Its state is completely encapsulated, or local to that component, unless you pass state data to a child component as props
 ** always use this.setState() when state changes occur
-
+** always pass state / props into setState method to make sure it's working with the latest values
+* React can control the internal state for certain elements like `input` and `textarea`
+* ''complex stateful apps can be broken down into just a few, or maybe a single, stateful component. This principle of separating state logic from UI logic is one of React's key principles.''
+* You can also pass handler functions or any method that's defined on a React component to a child component. This is how you allow child components to interact with their parent components.
 
 !! Lexicon
 ; HTML DOM
@@ -11932,7 +11937,10 @@ It allows you to compose your UI from many separate, isolated components. This m
 : a class component that does maintain its own internal state
 
 ; stateless component
-: a class that extends React.Component, but does not use internal state</pre>
+: a class that extends React.Component, but does not use internal state
+
+; unidirectional data flow
+: State flows in one direction down the tree of your application's components, from the stateful parent component to child components. The child components only receive the state data they need.</pre>
 </div>
 <div author="Adam Smith" created="20200131192804086" creator="toreglia" modified="20211201181014621" modifier="toreglia" status="done" tags="[[Book Summary]] Live book Economics task" title="read  Wealth of Nations" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>!! Outline 
@@ -11975,6 +11983,69 @@ For the first 3/4 of the movie; I felt it was as one dimensional as the title su
 * Images easily be made responsive
 * Images should be set to half size to show properly on retina displays
 * HTML tags can be set to relative sizes based on viewing window height and width </pre>
+</div>
+<div created="20220228172201625" creator="toreglia" link="https://doc.rust-lang.org/book/title-page.html" modified="20220228182746278" modifier="toreglia" tags="rust-programming-language software notes Live" title="Rust" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>! Hello, World!
+* Rust files always end with the .rs extension
+* Use underscores for multi-world file names
+* define a function:&lt;span&gt;
+
+```
+fn main(&lt;parameters&gt;) {}
+```
+&lt;/span&gt;
+* there is an automatic formatter tool called rustfmt to format your code in a particular style
+* Rust style is to indent with four spaces, not a tab
+* using a ! means that you’re calling a macro instead of a normal function
+* end rust lines with a semicolon
+
+! Hello, Cargo!
+* Cargo is Rust’s build system and package manager. 
+!! Cargo.toml
+* [package], is a section heading that indicates that the following statements are configuring a package
+* [dependencies], is the start of a section for you to list any of your project’s dependencies
+* In Rust, packages of code are referred to as //crates//
+* `cargo check` checks your code to make sure it compiles but doesn’t produce an executable
+* `cargo build` to build a program
+* `cargo run` to build and run a program
+
+
+! Programming a Guessing Game
+* `let` statement to create the variable
+*  To make a variable mutable, we add `mut` before the variable name
+* `String::new` is a function that returns a new instance of a `String` type
+* use `&amp;` to pass by reference
+* use `&amp;mut` to pass by reference and have it be mutable
+* The `Result` types are enumerations, often referred to as //enums//, which can have a fixed set of possibilities known as //variants//
+** nums are often used with match, a conditional that makes it convenient to execute different code based on which variant an enum value is when the conditional is evaluated.
+** `Result` type is for error handling 
+** `Result` can be variants are `Ok` or `Err`
+* when printing use `{}` as a placeholder for a variable, this is for any type (apparently)
+* running the cargo doc --open command will build documentation provided by all of your dependencies locally and open it in your browser
+* use `cmp` to compare any comparable value. It's a method to be called on a value, and it takes a reference to another value as argument
+* there are `match` expressions which has `arms`. Each `arm` is a possible value (like a switch statement), along with the code to run if that is the case
+* 
+
+!! Lexicon
+; variant
+: possible value of an enum
+
+; type
+
+; enums
+
+; types
+
+; method
+: function 
+
+; crate
+: a collection of Rust source code files
+
+; trait (ch 10)
+: 
+
+</pre>
 </div>
 <div created="20210322184159336" creator="toreglia" modified="20210322184407117" modifier="toreglia" tags="recipe Live salmon" title="Salmon with Garlic Lemon Butter Sauce" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>! Ingredients 
