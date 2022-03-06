@@ -4242,7 +4242,7 @@ web development
 <span class="tc-drop-down tc-reveal" hidden="true"></span></span></div>
 </div>
 
-<div class="tc-tiddler-body tc-reveal"><p><a class="tc-tiddlylink-external" href="https://www.freecodecamp.org/learn/front-end-development-libraries/" rel="noopener noreferrer" target="_blank">https://www.freecodecamp.org/learn/front-end-development-libraries/</a></p><p><ul class=""><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#Bootstrap">Bootstrap</a></li><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#jQuery">jQuery</a></li><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#SASS">SASS</a></li><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#React">React</a></li><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#Redux">Redux</a></li></ul></p></div>
+<div class="tc-tiddler-body tc-reveal"><p><a class="tc-tiddlylink-external" href="https://www.freecodecamp.org/learn/front-end-development-libraries/" rel="noopener noreferrer" target="_blank">https://www.freecodecamp.org/learn/front-end-development-libraries/</a></p><p><ul class=""><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#Bootstrap">Bootstrap</a></li><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#jQuery">jQuery</a></li><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#SASS">SASS</a></li><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#React">React</a></li><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#Redux">Redux</a></li><li><a class="tc-tiddlylink tc-tiddlylink-resolves" href="#React%20with%20Redux">React with Redux</a></li></ul></p></div>
 </div>
 </a><a name="Garlic Butter Baked Salmon">
 <div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists  tc-tagged-recipe tc-tagged-Live" data-tags="recipe Live" data-tiddler-title="Garlic Butter Baked Salmon"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><button aria-expanded="false" aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span><span class="tc-tiddler-title-icon" style="fill:;"></span><h2 class="tc-title">Garlic Butter Baked Salmon</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
@@ -5369,6 +5369,32 @@ web development
 
 ; unidirectional data flow
 : State flows in one direction down the tree of your application's components, from the stateful parent component to child components. The child components only receive the state data they need.</code></html></span></li></ul></div>
+</div>
+</a><a name="React with Redux">
+<div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists  tc-tagged-web%20development tc-tagged-Front%20End%20Development%20Libraries tc-tagged-Live" data-tags="[[web development]] [[Front End Development Libraries]] Live" data-tiddler-title="React with Redux"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><button aria-expanded="false" aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span><span class="tc-tiddler-title-icon" style="fill:;"></span><h2 class="tc-title">React with Redux</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
+<div class=" tc-reveal"><div class="tc-subtitle"><a class="tc-tiddlylink tc-tiddlylink-missing" href="#toreglia">toreglia</a>5th March 2022 at 9:34pm</div></div><div class=" tc-reveal">
+<div class="tc-tags-wrapper"><span class="tc-tag-list-item" data-tag-title="Front End Development Libraries">
+<span aria-expanded="false" class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+fill:rgb(38, 38, 38);
+color:rgb(38, 38, 38);">
+Front End Development Libraries
+</span>
+<span class="tc-drop-down tc-reveal" hidden="true"></span></span><span class="tc-tag-list-item" data-tag-title="Live">
+<span aria-expanded="false" class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+fill:rgb(38, 38, 38);
+color:rgb(38, 38, 38);">
+Live
+</span>
+<span class="tc-drop-down tc-reveal" hidden="true"></span></span><span class="tc-tag-list-item" data-tag-title="web development">
+<span aria-expanded="false" class="tc-tag-label tc-btn-invisible" draggable="true" style="background-color:;
+fill:rgb(38, 38, 38);
+color:rgb(38, 38, 38);">
+web development
+</span>
+<span class="tc-drop-down tc-reveal" hidden="true"></span></span></div>
+</div>
+
+<div class="tc-tiddler-body tc-reveal"><ul><li>typically a single redux store will be used for an entire react application </li><li>a special library is needed to integrate redux with react (react-redux)</li><li><code>react-redux</code> lib comes with <code>Provider</code> wrapper which wraps the react app in order to expose Redux state to react app</li><li>access to the state is provided to redux via the <code>mapStateToProps</code> and <code>mapDispatchToProps</code> methods</li><li><code>mapDispatchToProps</code> method exposes action creators to a specific react component</li></ul></div>
 </div>
 </a><a name="read  Wealth of Nations">
 <div class="tc-tiddler-frame tc-tiddler-view-frame tc-tiddler-exists  tc-tagged-Book%20Summary tc-tagged-Live tc-tagged-book tc-tagged-Economics tc-tagged-task" data-tags="[[Book Summary]] Live book Economics task" data-tiddler-title="read  Wealth of Nations"><div class="tc-tiddler-title"><div class="tc-titlebar"><span class="tc-tiddler-controls"><button aria-expanded="false" aria-label="more" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fmore-tiddler-actions" title="More actions"></button><div class=" tc-reveal" hidden="true"></div><button aria-label="edit" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fedit" title="Edit this tiddler"></button><button aria-label="close" class="tc-btn-invisible tc-btn-%24%3A%2Fcore%2Fui%2FButtons%2Fclose" title="Close this tiddler"></button></span><span><span class="tc-tiddler-title-icon" style="fill:;"></span><h2 class="tc-title">read  Wealth of Nations</h2></span></div><div class="tc-tiddler-info tc-popup-handle tc-reveal" hidden="true"></div></div><div class=" tc-reveal" hidden="true"></div>
