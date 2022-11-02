@@ -1,0 +1,55 @@
+created: 20220218144129403
+creator: toreglia
+modified: 20220617082538843
+modifier: toreglia
+tags: [[Responsive Web Design]] Live css [[web design]]
+title: CSS Grid
+type: text/vnd.tiddlywiki
+
+* Turn html element into a grid container by setting the display prop to `grid`
+* can use `px`, `em`, `fr`, `auto`, `%` to set the width/heights
+* a grid can be defined within a grid
+
+!! CSS Grid Properties 
+!!! container props
+* `grid-template-columns` indicates width and number of columns in grid container
+* `grid-template-rows` indicates the height and number of rows in a grid container
+* `grid-column-gap` to create a gap between columns
+* `grid-row-gap`; or just `grid-gap` to set both at once
+*  `grid-column-gap` to create a gap between columns
+* `grid-row-gap`; or just `grid-gap` to set both at once
+* `justify-items` position all items of container horizontally
+* `align-items`: position all items of container vertically
+* `grid-template-areas`: define areas of the grid with variable names
+
+!!! item props 
+* `grid-column` to have an item take up multiple spaces of the grid
+* `grid-row` for rows; ''starting at 1''
+* `justify-self` to position the item ''horizontally'' within it's cell
+** set with `stretch` (default), `start`, `center`, or `end` 
+* `align-self` to position item ''vertically'' within cell
+* `grid-area` to assign item to named grid location (named with `grid-template-areas`); or set using the grid lines
+
+!!! CSS function 
+* `repeat`: repeat `grid-template-columns` and `grid-template-rows` configurations 
+** `minmax`: set the min and max height/width of an element
+** `auto-fill` -- auto repeat to fill
+** `auto-fit` -- auto repeat to fill; but stretch if no more items to use
+
+
+!! Lexicon 
+; item
+: child of grid element
+
+; container
+: grid html element
+
+; cell
+: box within the grid
+
+; area
+: a grouping of cells
+
+; grid lines
+: the lines between grid cells; starting at one
+

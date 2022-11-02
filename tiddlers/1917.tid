@@ -1,0 +1,16 @@
+created: 20210105073339464
+creator: toreglia
+director: Sam Mendes
+modified: 20220120181849035
+modifier: toreglia
+rating: 4.2
+tags: movie review Live
+title: 1917
+type: text/vnd.tiddlywiki
+year: 2019
+
+* Rating: {{!!rating}}/5
+* Year: {{!!year}}
+* Director {{!!director}}
+
+Very entertaining film shot in real-time (apparently nearly continuous shot). The dialogue (british soldiers bantering and telling stories) feels authentic. There are some really beautiful shots. The action feels more real; I think because of the continuous shot which creates an immersive feeling like you are there. In particular the final sprint perpindicular to the first wave of the attack is thrilling to see and a memorable climax.

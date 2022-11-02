@@ -1,0 +1,50 @@
+created: 20200315172402952
+creator: toreglia
+modified: 20210211143743638
+modifier: toreglia
+tags: [[software engineering]] vim bash Live
+title: VIM Cheat Sheet
+type: text/vnd.tiddlywiki
+
+Execute script without leaving editor
+
+```
+:w !bash
+```
+
+Move to the beginning of the line
+
+```
+0 
+```
+
+Delete single character
+
+```
+d
+```
+
+Practice you Regex [[here|https://regexr.com/]].
+
+!! Macros 
+
+Store a macro in register 'a' with 
+
+```
+q a <do stuff> q
+```
+
+followed by the commend. To repeat the macro, run
+
+```
+@ a
+``` 
+
+copy line
+
+```
+yy
+```
+
+
+

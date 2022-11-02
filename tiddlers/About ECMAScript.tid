@@ -1,0 +1,17 @@
+created: 20200307122502008
+creator: toreglia
+modified: 20200502110842551
+modifier: toreglia
+tags: Live ECMAScript
+title: About ECMAScript
+type: text/vnd.tiddlywiki
+
+This is a standard published by Ecma International. It contains the specification for a general purpose scripting language. 
+
+ECMAScript provides the rules, details, and guidelines that a scripting language must observe to be considered ECMAScript compliant.
+
+ECMAScript is a standardized specification of a scripting language developed by Brendan Eich of Netscape; initially it was named Mocha, later LiveScript, and finally JavaScript. In December 1995, Sun Microsystems and Netscape announced JavaScript in a press release. 
+
+In November 1996, Netscape announced a meeting of the Ecma International standards organization to advance the standardization of JavaScript. The first edition of ECMA-262 was adopted by the Ecma General Assembly in June 1997. Several editions of the language standard have been published since then.
+
+[[ECMA International]] is responsible for ECMAScript. 

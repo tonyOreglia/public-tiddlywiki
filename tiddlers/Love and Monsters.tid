@@ -1,0 +1,21 @@
+created: 20210415064009896
+creator: toreglia
+director: Michael Matthews
+genre: Adventure/Comedy
+modified: 20220120181849218
+modifier: toreglia
+rating: 4
+status: done
+tags: movie review Live task
+title: Love and Monsters
+type: text/vnd.tiddlywiki
+year: 2020
+
+* Rating: {{!!rating}}/5
+* Year: {{!!year}}
+* Director {{!!director}}
+* Genre: {{!genre}} 
+* Actors: [[Dylan O'Brien]]
+
+This movie is awesome. It's a lot of fun to watch. It kind of has like a Deadpool vibe. It's silly but you still enjoy the tension and action scenes; and it's not so silly that the relationships don't matter. Dylan O'Brien's acting is great and really funny. The CGI is really cool; crazy monsters of all sorts. 
+

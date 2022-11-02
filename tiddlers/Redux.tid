@@ -1,0 +1,29 @@
+created: 20220304114119983
+creator: toreglia
+link: https://www.freecodecamp.org/learn/front-end-development-libraries/#redux
+modified: 20220304143352184
+modifier: toreglia
+tags: [[web development]] [[Front End Development Libraries]] Live
+title: Redux
+type: text/vnd.tiddlywiki
+
+* The first principle of Redux: ''all app state is held in a single state object in the store.''
+* core principle ''state immutability in Redux''
+
+!! Notes 
+* Redux implements a single state object responsible for all state
+* The `getState` method returns the state
+* Redux store is updated via "actions" 
+* Usually you use "action creator" function to create actions
+* actions are sent to redux via the `dispatch` method
+* use a `reducer` method to tell redux how to handle a given action 
+** reducer should be a pure function
+* state should be immutable
+* the store `subscribe` method can be used to attach hooks to the store; triggered by actions
+* multiple reducers can be used to simplify complex state. There is a `combineReducers` method for ... well combining them
+* actions usuallly contiain some additional information beyond just `type` 
+* there is redux middleware passed to the store constructor to enalbe handling async state updates
+* the spread operator (`...`) is a good way to implement an immutable append operation 
+
+
+

@@ -1,0 +1,26 @@
+author: John Stuart Mill
+created: 20210313144326342
+creator: toreglia
+date: 1861
+genre: political philosophy
+modified: 20211122082239666
+modifier: toreglia
+tags: [[Book Summary]] Live
+title: Considerations on Representative Government
+type: text/vnd.tiddlywiki
+
+! WORK IN PROGRESS 
+ 
+"[[Considerations on Representative Government]]" is a work of {{!!genre}} by {{!!author}}. 
+
+
+!! Outline 
+
+<$macrocall
+	$name="toc-selective-expandable"
+	tag="Considerations on Representative Government"
+        sort="nsort[chapter]"
+	selectedTiddler="$:/temp/toc/selectedTiddler"
+	unselectedText="<p>Select a topic in the table of contents. Click the arrow to expand a topic.</p>"
+	missingText="<p>Missing tiddler.</p>"
+/>

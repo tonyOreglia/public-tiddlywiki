@@ -1,0 +1,50 @@
+created: 20200307110641760
+creator: toreglia
+modified: 20200502110732259
+modifier: toreglia
+tags: [[software engineering]] ECMAScript Live
+title: TC39
+type: text/vnd.tiddlywiki
+
+Ecma International's Technical Committee 39 responsible for ECMA-262 (ECMAScript)
+
+TC39 intends to submit a specification to the ECMA General Assembly for ratification in July of each year.
+
+TC39 is the committee that evolves JavaScript. Its members are companies (among others, all major browser vendors). TC39 meets regularly, its meetings are attended by delegates that members send and by invited experts. Minutes of the meetings are available online and give you a good idea of how TC39 works.
+
+It is interesting to note that TC39 operates by consensus: Decisions require that a large majority agrees and nobody disagrees strongly enough to veto. For many members, agreements lead to real obligations (they’ll have to implement features etc.).
+
+!!! How to get involved
+
+There are a number of ways to contribute to the development of this specification:
+
+* GitHub Repository: https://github.com/tc39/ecma262
+* Issues: All Issues, File a New Issue
+* Pull Requests: All Pull Requests, Create a New Pull Request
+* Test Suite: Test262
+* Editors:
+** Jordan Harband (@ljharb)
+** Kevin Smith (@zenparsing)
+* Community:
+** Discourse: https://es.discourse.group
+** IRC: #tc39 on freenode
+** Mailing L​ist Archives: https://esdiscuss.org/
+
+TC39 Royalty Free Task Group permits under special conditions technical contributions by 3rd parties (i.e. non-Ecma TC39 members) to the work of this group.
+
+You are kindly invited to fill in your personal information https://tc39.es/agreements/contributor/ if you wish to contribute as a non-member.
+
+Ideas for evolving the ECMAScript language are accepted in any form. Any discussion, idea or proposal for a change or addition which has not been submitted as a formal proposal is considered to be a “strawperson” (stage 0) and has no acceptance requirements. Such submissions must either come from members of TC39 or from non-members who have registered via Ecma International.
+
+!!! TR39 Process (https://tc39.es/process-document/)
+Five Stage for a proposal
+
+Stage 0: Strawperson -- input
+
+# Proposal: A "champion" outlines the idea, makes a case for it, possibly demoes
+# Draft: Precisely describe the syntax and semantics using formal spec language	
+# Candidate: Indicate that further refinement will require feedback from implementations and users. All ECMAScript editors have signed off on the current spec text
+# Finished: Indicate that the addition is ready for inclusion in the formal ECMAScript standard
+
+
+many tc39-members are accessible by subscribing to and chatting on the es-discuss@mozilla.org mailing-list. i highly recommend subscribing, if you are curious about the thought-process and politics of how javascript language-features get added or changed.

@@ -1,0 +1,43 @@
+created: 20220225133408910
+creator: toreglia
+link: https://www.freecodecamp.org/learn/front-end-development-libraries/#sass
+modified: 20220225140054147
+modifier: toreglia
+tags: [[web development]] [[Front End Development Libraries]] Live
+title: SASS
+type: text/vnd.tiddlywiki
+
+* Sass uses variables
+** In Sass, variables start with a $ followed by the variable name. For example:<span>
+
+```
+$main-fonts: Arial, sans-serif;
+$headings-color: green;
+
+h1 {
+  font-family: $main-fonts;
+  color: $headings-color;
+}
+```
+</span>
+* Sass allows nesting of CSS rules
+* a //mixin// is a group of CSS declarations that can be reused throughout the style sheet. It works like a function, accepting values as parameters
+** A mixin is called with the `@include` directive
+* The `@if` directive in Sass is useful to test for a specific case
+** `@else if` and `@else` also work
+* `@for` also works
+* the `@each` directive which loops over each item in a list or map, for example:<span>
+
+```
+@each $color in blue, red, green {
+  .#{$color}-text {color: $color;}
+}
+```
+</span>
+* `@while` is also supported
+* //Partials// in Sass are separate files that hold segments of CSS code
+** Names for partials start with an underscore (`_`)
+** To bring the code in the partial into another Sass file, use the @import directive
+* `extend` enables borrowing the CSS rules from one element and build upon them in another
+
+

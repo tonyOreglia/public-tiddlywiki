@@ -1,0 +1,70 @@
+created: 20220227134426907
+creator: toreglia
+link: https://www.freecodecamp.org/learn/front-end-development-libraries/#react
+modified: 20220310180346996
+modifier: toreglia
+tags: [[web development]] [[Front End Development Libraries]] Live
+title: React
+type: text/vnd.tiddlywiki
+
+<<<
+It allows you to compose your UI from many separate, isolated components. This makes it easier to build and maintain complex user interfaces.
+<<<
+
+* JSX allows you to write HTML directly within Javascript
+* You can also write JS within JSX by wrapping it in curly brackets `{}`
+* JSX must actually be transpiled into JS, Babel is often used for this task
+* JSX code must return one single element
+* JSX comments should go inside : `{/* */}`
+* User ReactDOM.render to render React elements to the DOM
+* JSX uses `className` instead of `class` because `class` is a reserved word in JS
+* JSX always uses camel case, e.g. `onClick` and `onChange`
+* Any JSX element can be written with self closing tags (include `<br>`)
+* Everything in React is a component
+** Components can be created as a JS function 
+** React fxn name must start with capital letter
+** Components can be created with ES6 class syntax by extending the React.Component class
+*** contain a constructor which calls `super()`. `super()` calls the parent class constructor.
+*** Usually `props` are passed to the constructor and `super()` method
+** React componentscan be composed together; like building blocks
+** //children// components can be rendered from a //parent// component
+** `ReactDOM.render()` can also render components (not just JSX elements)
+* props
+** props can be passed to components as HTML attributes
+** default props can be set using the class propery, `defaultProps`
+** propTypes can be used to type check incoming props
+* State
+** State consists of any data your application needs to know about, that can change over time
+**  You want your apps to respond to state changes and present an updated UI when necessary
+** Note that if you make a component stateful, no other components are aware of its state. Its state is completely encapsulated, or local to that component, unless you pass state data to a child component as props
+** always use this.setState() when state changes occur
+** always pass state / props into setState method to make sure it's working with the latest values
+* React can control the internal state for certain elements like `input` and `textarea`
+* ''complex stateful apps can be broken down into just a few, or maybe a single, stateful component. This principle of separating state logic from UI logic is one of React's key principles.''
+* You can also pass handler functions or any method that's defined on a React component to a child component. This is how you allow child components to interact with their parent components.
+* Lifecycle methods / hooks
+** `componentDidMount()` -- good place to add API calls and even listeners
+** `shouldComponentUpdate()`  -- stop unecessary re-rendering when new state/props passed in
+* You can apply inline styles in JSX as an object with properties in camelCase, e.g.
+* CSS can be conditionally rendered in React by modifying the styles object under some condition only 
+* server side rendering of react can be helpful for search engine optimization. Also it's faster to render.
+<span>
+
+```
+<div style={{color: "yellow", fontSize: 24}}>Style Me!</div>
+```
+</span>
+
+!! Lexicon
+
+; HTML DOM
+: Document Object Model created by the browser when a page is loaded. The DOM is a tree of objects with the Root element `<html>` at the base of the tree. See https://www.w3schools.com/whatis/whatis_htmldom.asp
+
+; stateful component
+: a class component that does maintain its own internal state
+
+; stateless component
+: a class that extends React.Component, but does not use internal state
+
+; unidirectional data flow
+: State flows in one direction down the tree of your application's components, from the stateful parent component to child components. The child components only receive the state data they need.

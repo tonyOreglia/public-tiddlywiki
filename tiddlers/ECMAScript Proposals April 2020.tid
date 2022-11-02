@@ -1,0 +1,28 @@
+created: 20200418154245321
+creator: toreglia
+modified: 20200502110814849
+modifier: toreglia
+tags: Live ECMAScript
+title: ECMAScript Proposals April 2020
+type: text/vnd.tiddlywiki
+
+! Stage 4
+* https://github.com/tc39/proposal-dynamic-import
+* https://github.com/tc39/proposal-optional-chaining
+
+! State 3 
+* https://github.com/tc39/proposal-weakrefs
+* https://github.com/tc39/proposal-class-fields 
+
+! Stage 2
+* https://github.com/tc39/proposal-decorators
+
+! Stage 1
+* https://github.com/tc39/proposal-pipeline-operator
+* https://github.com/tc39/proposal-record-tuple
+* https://github.com/tc39/proposal-operator-overloading
+
+! Stage 0 
+
+
+

@@ -1,0 +1,29 @@
+author: Susan Jeffers
+created: 20210125200544296
+creator: toreglia
+date: 1987
+genre: practical
+modified: 20211128100435925
+modifier: toreglia
+status: done
+tags: [[Book Summary]] Live task
+title: Feel the fear and do it anyway
+type: text/vnd.tiddlywiki
+
+! WORK IN PROGRESS 
+ 
+"[[How to Read a Book]]" is an expository practical work written by {{!!author}}. It was first published in {{!!date}}.
+
+It is a book about dealing with fear. Specifically the book describes both useful and harmful beliefs about fear; arguing that we can approach fear in a healthy and empowering way with the right set of beliefs. 
+
+
+!! Outline 
+
+<$macrocall
+	$name="toc-selective-expandable"
+	tag="Feel the fear and do it anyway"
+        sort="nsort[chapter]"
+	selectedTiddler="$:/temp/toc/selectedTiddler"
+	unselectedText="<p>Select a topic in the table of contents. Click the arrow to expand a topic.</p>"
+	missingText="<p>Missing tiddler.</p>"
+/>

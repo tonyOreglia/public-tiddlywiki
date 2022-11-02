@@ -1,0 +1,17 @@
+created: 20210116102609432
+creator: toreglia
+director: Darius Marder
+modified: 20220120181849306
+modifier: toreglia
+rating: 4.4
+status: done
+tags: movie Live review task
+title: Sound of Metal
+type: text/vnd.tiddlywiki
+year: 2019
+
+* Rating: {{!!rating}}/5
+* Year: {{!!year}}
+* Director {{!!director}}
+
+Not what you think from the title or opening scene. This film explores addiction, overcoming and grief through the experience of a musician losing his hearing. This film says that life is difficult; we have to accept that and take responsibility for being well. It leaves you feeling hopeful. Well acted. 

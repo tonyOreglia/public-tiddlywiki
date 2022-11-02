@@ -1,0 +1,14 @@
+created: 20200307104411303
+creator: toreglia
+modified: 20200502110749358
+modifier: toreglia
+tags: Live javascript ECMAScript [[software engineering]] definition
+title: JavaScript engine
+type: text/vnd.tiddlywiki
+
+A JavaScript engine
+A program or interpreter that understands and executes JavaScript code.
+
+Synonyms: JavaScript interpreter, JavaScript implementation.
+
+JavaScript engines are commonly found in web browsers, including V8 in Chrome, SpiderMonkey in Firefox, and Chakra in Edge. Each engine is like a language module for its application, allowing it to support a certain subset of the JavaScript language.

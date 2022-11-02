@@ -1,0 +1,21 @@
+author: Adam Smith
+created: 20200131192804086
+creator: toreglia
+modified: 20220419154319254
+modifier: toreglia
+status: done
+tags: [[Book Summary]] Live book Economics task to-read
+title: Wealth of Nations
+type: text/vnd.tiddlywiki
+
+!! Outline 
+
+<$macrocall
+	$name="toc-selective-expandable"
+	tag="Wealth of Nations"
+        sort="nsort[sort-priority]"
+	selectedTiddler="$:/temp/toc/selectedTiddler"
+	unselectedText="<p>Select a topic in the table of contents. Click the arrow to expand a topic.</p>"
+	missingText="<p>Missing tiddler.</p>"
+/>
+

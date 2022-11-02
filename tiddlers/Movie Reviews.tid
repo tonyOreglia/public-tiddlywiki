@@ -1,0 +1,12 @@
+created: 20210105073608076
+creator: toreglia
+modified: 20220120181914212
+modifier: toreglia
+tags: Live list
+title: Movie Reviews
+type: text/vnd.tiddlywiki
+
+<ol><$list filter="[tag[movie]tag[review]!nsort[rating]]">
+     <li><$link>{{!!title}}</$link> - {{!!rating}} / 5 stars</li>
+     </$list>
+     </ol>

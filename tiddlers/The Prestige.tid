@@ -1,0 +1,19 @@
+created: 20210214084517228
+creator: toreglia
+director: Christopher Nolan
+modified: 20220120181849583
+modifier: toreglia
+rating: 3.6
+status: done
+tags: movie review Live task
+title: The Prestige
+type: text/vnd.tiddlywiki
+year: 2006
+
+* Rating: {{!!rating}}/5
+* Year: {{!!year}}
+* Director: {{!!director}}
+* Actors: [[Christian Bale]], [[Hugh Jackman]], [[Scarlett Johansson]], [[Michael Caine]]
+
+Very entertaining movie with it's share of surprises. It seems to recreate the feeling of a magic show through film. Unexpected developments and great acting; especially Bale. 
+

@@ -1,0 +1,17 @@
+created: 20220731084223633
+creator: toreglia
+director: Ari Aster
+modified: 20220731084747052
+modifier: toreglia
+rating: 4.1
+status: done
+tags: movie review Live task done
+title: Midsommar
+type: text/vnd.tiddlywiki
+year: 2019
+
+* Rating: {{!!rating}}/5
+* Year: {{!!year}}
+* Director {{!!director}}
+
+Crazy movie. The central plot is actually that of a failing relationship. The relationship dynamic and characters are believable. The dialogue is sensical and realistic. I really like the writing for this reason. Around this simple plot is a super crazy ancient nordic planting season festival. The festival cleverly plays in to the progression of the failing relationship and there is a sense that the whole thing is a metaphor for the stages of a failing relationship. It's gruesome and scary and fun. Great movie. 

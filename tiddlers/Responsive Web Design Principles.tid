@@ -1,0 +1,12 @@
+created: 20220213213523806
+creator: toreglia
+modified: 20220617082459317
+modifier: toreglia
+tags: [[Responsive Web Design]] Live [[web design]]
+title: Responsive Web Design Principles
+type: text/vnd.tiddlywiki
+
+* media queries can be used to detect screen size and see CSS based on this condition
+* Images easily be made responsive
+* Images should be set to half size to show properly on retina displays
+* HTML tags can be set to relative sizes based on viewing window height and width 

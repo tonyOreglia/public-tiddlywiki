@@ -1,0 +1,23 @@
+created: 20220213213514775
+creator: toreglia
+modified: 20220804165349704
+modifier: toreglia
+tags: [[Responsive Web Design]] Live [[web design]]
+title: CSS
+type: text/vnd.tiddlywiki
+
+* CSS can be used to color text
+* style rules can be defined at the top of the HTML page
+** applied style to all HTML elements of a given type 
+** classes can also be defined, and then applied to any element
+** color, text size, font, background, border, border edges, padding, margin etc. 
+* custom fonts can be imported
+* you can target a specic HTML element by ID
+* you can also target HTML elements by type
+* padding and margin can be set for all, or indiviual sides with a compact notation
+* CSS classes have priority by order in the style element, styles applied to HTML element ID trump classes, inline trumps id, the `!imporant` keyword can be used to trump all
+* color can be represent by name (red, blue, etc.) hex, or rgb in decimal 
+* defing css variables in root makes them available everywhere
+* you can make CSS variable depending on screen size 
+* ems and rems are increasingly becoming the default for font size measurements as they allow the greatest form of flexibility.
+* 

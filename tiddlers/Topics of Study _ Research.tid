@@ -1,0 +1,9 @@
+created: 20200418182701559
+creator: toreglia
+modified: 20220301092808903
+modifier: toreglia
+tags: Live list
+title: Topics of Study / Research
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[research]sort[created]]">>

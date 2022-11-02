@@ -1,0 +1,33 @@
+created: 20220225121732910
+creator: toreglia
+link: https://www.freecodecamp.org/learn/front-end-development-libraries/#jquery
+modified: 20220225133402940
+modifier: toreglia
+tags: [[web development]] [[Front End Development Libraries]] Live
+title: jQuery
+type: text/vnd.tiddlywiki
+
+<<<
+The most popular JavaScript tool of all time.
+<<<
+
+* All jQuery functions start with a `$`
+* Typically, you target an HTML element with a //selector//
+** for example<span>
+
+```
+$("button").addClass("animated bounce");
+```
+</span>
+* Simlarly, `removeClass` function removes a class from the target elements
+* Elements can be targetted by type, class, or ID
+* jQuery has a function called `.css()` that allows you to change the CSS of an element
+* jQuery has a function called `.prop()` that allows you to adjust the properties of elements
+* jQuery has a function called `.html()` that lets you add HTML tags and text within an element
+* jQuery has a function called `.remove()` that will remove an HTML element entirely
+* jQuery has a function called `appendTo()` that allows you to select HTML elements and append them to another element
+* jQuery has a function called `clone()` that makes a copy of an element
+* jQuery has a function called `parent()` that allows you to access the parent of whichever element you've selected
+* jQuery has a function called `children()` that allows you to access the children of whichever element you've selected
+* The `target:nth-child(n)` CSS selector allows you to select all the //nth// elements with the target class or element type
+* use `:odd`, `:even`, or `nth-child()` selectors to target specific elements in another way

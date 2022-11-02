@@ -1,0 +1,9 @@
+created: 20200405163728915
+creator: toreglia
+modified: 20211111134454610
+modifier: toreglia
+tags: Live list reading
+title: Book Summaries
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[Book Summary]tag[Live]]">>

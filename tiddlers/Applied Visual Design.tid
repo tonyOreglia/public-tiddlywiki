@@ -1,0 +1,46 @@
+created: 20220218153400707
+creator: toreglia
+modified: 20220617082512928
+modifier: toreglia
+tags: [[Responsive Web Design]] Live [[web design]]
+title: Applied Visual Design
+type: text/vnd.tiddlywiki
+
+* Complementary Colors
+** More Information: https://en.wikipedia.org/wiki/Color_model
+** colors on opposite side of color wheel appear more vibrant juxtaposed
+*** when mixed they cancel out into a grey
+* Tertiary Colors
+** split-complementary color scheme: start with base color, then take two colors adjacent to it's complement
+** Tertiary color is a result of combining are the ones made by combining a prmary color with one of it's secondary color neighbors
+* Usually when using complementary colors, one is primary while the secondary is used more sparingly to highlight some items 
+* `hsl()` method can be used to set hue, saturation, and lightness
+* `linear-gradient()` method can create a color gradient over an element
+** an extension of this is the `repeating-linear-gradient()` method
+* with CSS `keyframes` you can implement animation
+** the `opacity` property can be used within the keyframe to make an object fade
+** use `animation-iteration-count` to control the number of iterations
+* Bezier curves 
+** can be used to change the rate of an animation
+** `cubic-bezier`
+** https://cubic-bezier.com/#.2,.8,.76,.33
+
+
+!! lexicon
+; hue
+: the color
+
+; saturation
+: how much grey is mixed in with the color
+
+; lightness
+: amount of white or black in a color (50% being normal color) 
+
+; tint
+: a color with added white
+
+; shade
+: a color with added black
+
+; tone
+: a color with added gray

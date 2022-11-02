@@ -1,0 +1,18 @@
+created: 20210110122827966
+creator: toreglia
+director: George Clooney
+modified: 20220120181849557
+modifier: toreglia
+rating: 3.5
+status: done
+tags: movie review Live task
+title: The Midnight Sky
+type: text/vnd.tiddlywiki
+year: 2020
+
+* Rating: {{!!rating}}/5
+* Year: {{!!year}}
+* Director {{!!director}}
+
+Action seems contrived; like it was somehow un-necessary to the story line. I thought the acting was great. But I wasn't altogether captivated by the film or story. The ending is very satisfying though. 
+

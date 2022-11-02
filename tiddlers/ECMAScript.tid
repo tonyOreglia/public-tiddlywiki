@@ -1,0 +1,17 @@
+created: 20200307103803447
+creator: toreglia
+modified: 20210206133710580
+modifier: toreglia
+tags: Live research
+title: ECMAScript
+type: text/vnd.tiddlywiki
+
+! ECMAScript
+<$macrocall
+	$name="toc-selective-expandable"
+	tag="ECMAScript"
+        sort="nsort[sort-priority]"
+	selectedTiddler="$:/temp/toc/selectedTiddler"
+	unselectedText="<p>Select a topic in the table of contents. Click the arrow to expand a topic.</p>"
+	missingText="<p>Missing tiddler.</p>"
+/>

@@ -1,0 +1,24 @@
+created: 20220213213537565
+creator: toreglia
+modified: 20220617082538843
+modifier: toreglia
+tags: [[Responsive Web Design]] Live [[web design]]
+title: CSS Flexbox
+type: text/vnd.tiddlywiki
+
+* A ''flex container'' makes it possible to align any children of that element into rows or columns
+* Make an HTML element a flex container by adding to the styling: 
+```
+display: flex
+```
+
+* flex can also be used to align items within a flex container. They can be aligned to the left, right, top, bottom and along different axis.
+* ''main axis'' is along the flex container orientation -- for example if it is row, then main axis is horizontal
+** ''cross axis'' is opposite to main axis
+* a flex container can also be split into a grid; i.e. multiple rows/columns 
+* some properties can also be applied to the ''flex items'' which are the children of the flex container
+** flex-shrink -- shrink item if container is to small 
+** flex-grow
+** flex-basis -- set the initial size of the item before shinking; enlaring
+** order -- indicates the oder of the children; instead of just following the order in the html 
+** align-self -- set individual alignment for the flex item

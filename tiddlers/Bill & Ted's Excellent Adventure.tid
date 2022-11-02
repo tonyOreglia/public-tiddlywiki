@@ -1,0 +1,25 @@
+created: 20210603181028838
+creator: toreglia
+director: Stephen Herek
+genre: Adventure/Comedy/History
+modified: 20220120181849088
+modifier: toreglia
+rating: 5
+tags: movie review Live
+title: Bill & Ted's Excellent Adventure
+type: text/vnd.tiddlywiki
+year: 1989
+
+* Rating: {{!!rating}}/5
+* Year: {{!!year}}
+* Director: {{!!director}}
+* Genre: {{!!genre}}
+* Actors: [[Keanu Reeves]], [[Alex Winter]]
+
+If you've seen it, you know. If you haven't, go see it. 
+
+<<<
+Be excellent to each other
+<<< 
+
+

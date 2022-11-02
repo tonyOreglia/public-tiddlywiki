@@ -1,0 +1,17 @@
+created: 20210124183312150
+creator: toreglia
+director: Ramin Bahrani
+modified: 20220120181849644
+modifier: toreglia
+rating: 3.9
+status: done
+tags: movie Live review task
+title: The White Tiger
+type: text/vnd.tiddlywiki
+year: 2021
+
+* Rating: {{!!rating}}/5
+* Year: {{!!year}}
+* Director {{!!director}}
+
+A solid movie. Good storyline. A great, seemingly authentic peak into India without making that the focus of the movie. Seems timely in terms of progress in India away from the ultra rigid caste system. It's the story of a servant whose ambitions grow beyond his caste and circumstances bring him to a crossroads. Well acted. But a little bit too long for me considering that not a whole lot of things happen; found my attention waning at times. 

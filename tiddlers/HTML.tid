@@ -1,0 +1,16 @@
+created: 20220213213505794
+creator: toreglia
+modified: 20220617082538843
+modifier: toreglia
+tags: [[Responsive Web Design]] Live [[web design]]
+title: HTML
+type: text/vnd.tiddlywiki
+
+* HTML elements are used to display text, videos, links, input, lists, and more. 
+* the first line of HTML indicates which version of html is follows
+* some HTML elements do not effect the display but are just indicative 
+** like header, main, div
+* you can make an API call directly using HTML elements entry form
+* An entry form can be free text, checkboxes, select one
+* links can be embedded behind text
+* You can use header tags to embolden texts are various levels; h1, h2, h3, etc. 

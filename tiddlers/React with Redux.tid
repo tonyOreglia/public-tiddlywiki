@@ -1,0 +1,14 @@
+created: 20220305155804035
+creator: toreglia
+link: https://www.freecodecamp.org/learn/front-end-development-libraries/#react-and-redux
+modified: 20220305213450341
+modifier: toreglia
+tags: [[web development]] [[Front End Development Libraries]] Live
+title: React with Redux
+type: text/vnd.tiddlywiki
+
+* typically a single redux store will be used for an entire react application 
+* a special library is needed to integrate redux with react (react-redux)
+* `react-redux` lib comes with `Provider` wrapper which wraps the react app in order to expose Redux state to react app
+* access to the state is provided to redux via the `mapStateToProps` and `mapDispatchToProps` methods
+* `mapDispatchToProps` method exposes action creators to a specific react component

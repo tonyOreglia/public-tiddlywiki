@@ -1,0 +1,27 @@
+author: Mortimer J. Adler & Charles Van Doren
+created: 20200208205817701
+creator: toreglia
+genre: practical
+modified: 20211128100435964
+modifier: toreglia
+status: done
+tags: [[Book Summary]] Live task
+title: How to Read a Book
+type: text/vnd.tiddlywiki
+
+"[[How to Read a Book]]" is an expository work written by Mortimer J. Adler and Charles Van Doren. It was first published in 1940. 
+
+It is a practical guide on the art of reading for the purpose of increased understanding. 
+
+{{The Art of Reading}}
+
+!! Outline 
+
+<$macrocall
+	$name="toc-selective-expandable"
+	tag="How to Read a Book"
+        sort="nsort[sort-priority]"
+	selectedTiddler="$:/temp/toc/selectedTiddler"
+	unselectedText="<p>Select a topic in the table of contents. Click the arrow to expand a topic.</p>"
+	missingText="<p>Missing tiddler.</p>"
+/>

@@ -1,0 +1,19 @@
+created: 20210111085546599
+creator: toreglia
+director: Patrice Laliberté
+modified: 20220120181849423
+modifier: toreglia
+rating: 4
+status: done
+tags: movie review Live task
+title: The Decline
+type: text/vnd.tiddlywiki
+year: 2020
+
+* Rating: {{!!rating}}/5
+* Year: {{!!year}}
+* Director {{!!director}}
+
+Awesome French film about a group of survival enthusiasts (people convinced of some impending cataclysm and subsequent global resource shortage) that sign up for a weeklong survival training course with some Youtube guy they all follow. It's at his survival bunker deep in the middle of nowhere. It's all good until it's not. A lot of fun to watch. 
+
+

@@ -1,0 +1,21 @@
+created: 20200603200502904
+creator: toreglia
+modified: 20220419154319256
+modifier: toreglia
+sort-priority: 1
+tags: Economics Live [[Wealth of Nations]]
+title: Wealth of Nations Book 1 Summary
+type: text/vnd.tiddlywiki
+
+Of the Causes of Improvement in the productive Powers of Labour
+
+!! Outline 
+
+<$macrocall
+	$name="toc-tabbed-internal-nav"
+	tag="Wealth of Nations Book 1 Summary"
+        sort="nsort[sort-priority]"
+	selectedTiddler="$:/temp/toc/selectedTiddler"
+	unselectedText="<p>Select a topic in the table of contents. Click the arrow to expand a topic.</p>"
+	missingText="<p>Missing tiddler.</p>"
+/>
